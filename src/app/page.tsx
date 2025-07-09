@@ -32,19 +32,19 @@ export default function Home() {
             </div>
             <div className=" flex justify-between gap-5">
               <Image
-                src="/icons/search.svg"
+                src="/Assets/search.svg"
                 alt="My Icon"
                 width={20}
                 height={20}
               />
               <Image
-                src="/icons/Cart.svg"
+                src="/Assets/Cart.svg"
                 alt="My Icon"
                 width={20}
                 height={20}
               />
               <Image
-                src="/icons/Globe.svg"
+                src="/Assets/Globe.svg"
                 alt="My Icon"
                 width={20}
                 height={20}
@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </div>
         <div className="secondtab flex  justify-between  px-[10] py-[10]">
-          <Image src="/icons/logo.svg" alt="My Icon" width={400} height={24} />
+          <Image src="/Assets/logo.svg" alt="My Icon" width={400} height={24} />
           <div className="flex  gap-8">
             <button className="bg-transparent  text-black  rounded  px-[10px] py-[10px] ">
               Sign In
@@ -74,7 +74,7 @@ export default function Home() {
               <button className="bg-white   rounded-[12px]   border-[1px] px-[12px] py-[10px] ">
                 <div className="flex justify-start gap-5">
                   <Image
-                    src="/icons/loading.svg"
+                    src="/Assets/loading.svg"
                     alt="My Icon"
                     width={24}
                     height={24}
@@ -112,7 +112,7 @@ export default function Home() {
 
           <div className=" w-[720px] h-[600px] py-[10px]">
             <Image
-              src="/icons/Tree.svg"
+              src="/Assets/Tree.svg"
               alt="My Icon"
               width={720}
               height={600}
@@ -156,54 +156,54 @@ export default function Home() {
           </p></div>
           <div className=" flex gap-10 py-[30px]">
             <Icons
-                 path="/icons/Airbnb.svg"
+                 path="/Assets/Airbnb.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/icons/Amazon.svg"
+                 path="/Assets/Amazon.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/icons/Gitlab.svg"
+                 path="/Assets/Gitlab.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/icons/Rippling.svg"
+                 path="/Assets/Rippling.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/icons/Atlassian.svg"
+                 path="/Assets/Atlassian.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/icons/Google.svg"
+                 path="/Assets/Google.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/icons/Automatic.svg"
+                 path="/Assets/Automatic.svg"
             
               width={141}
               height={40}
             />   <Icons
-                 path="/icons/Sonos.svg"
+                 path="/Assets/Sonos.svg"
             
               width={141}
               height={40}
             />
                <Icons
-                 path="/icons/bruze.svg"
+                 path="/Assets/bruze.svg"
             
               width={141}
               height={40}
@@ -215,7 +215,7 @@ export default function Home() {
       </div>
        <div className="flex justify-center">
         <Icons
-                 path="/icons/line.svg"
+                 path="/Assets/line.svg"
             
               width={62}
               height={144}
