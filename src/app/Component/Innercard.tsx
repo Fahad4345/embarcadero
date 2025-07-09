@@ -1,13 +1,14 @@
-import React from "react";
+import React, { ReactEventHandler } from "react";
 import Image from "next/image";
 
-export default function innercard({
+export default function Innercard({
   text,
   head,
   button1text,
   button2text,
   IconPath,
   ImagePath,
+  
 }: {
   text: string;
   head: string;
@@ -15,9 +16,10 @@ export default function innercard({
   button2text: string;
   IconPath: string;
   ImagePath: string;
+
 }) {
   return (
-    <div className=" flex gap-24">
+    <div  className=" flex gap-24">
       <div className=" flex-col    "><Image src={IconPath} alt="My Icon" width={48} height={48} />
       <div className="flex justify-start ">
         <p className="text-black text-[20px] leading-[150%] font-[600]">{head}</p>
