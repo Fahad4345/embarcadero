@@ -1,9 +1,10 @@
 "use client";
-import React, { useState, ChangeEvent } from "react";
+import React, { useState } from "react";
 
 import Innercard from "./Innercard";
 
 export default function card() {
+  const [selectedOption, setSelectedOption] = useState("option1");
   type TextContent = {
     Image: string;
     IconPath: string;
@@ -54,11 +55,12 @@ export default function card() {
       button2text: "View Details",
     },
   };
-  const [selectedOption, setSelectedOption] = useState("option1");
+  
 
   const handleOptionChange = (event: {
     target: { value: React.SetStateAction<string> };
   }) => {
+    
     setSelectedOption(event.target.value);
   };
 
