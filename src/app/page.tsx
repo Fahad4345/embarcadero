@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Icons from "./Component/Icon";
+import Icons from "./Component/icon";
 import Card from "./Component/Card"
 
 export default function Home() {
