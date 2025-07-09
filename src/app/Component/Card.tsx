@@ -126,14 +126,14 @@ export default function Card() {
   const [selectedOption, setSelectedOption] = useState("option1");
 
   
-  type TextContent = {
-    Image: string;
-    IconPath: string;
-    heading: string;
-    text: string;
-    button1text: string;
-    button2text: string;
-  };
+  // type TextContent = {
+  //   Image: string;
+  //   IconPath: string;
+  //   heading: string;
+  //   text: string;
+  //   button1text: string;
+  //   button2text: string;
+  // };
   const textContent: Record<string, TextContent> = {
     option1: {
       Image: "/icons/Tree.svg",
