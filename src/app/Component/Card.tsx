@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import Innercard from "./Innercard";
 
-export default function card() {
+export default function Card() {
   const [selectedOption, setSelectedOption] = useState("option1");
   type TextContent = {
     Image: string;
