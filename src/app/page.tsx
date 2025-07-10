@@ -3,10 +3,11 @@ import Icons from "./component/Icon_Component";
 import Card from "./component/Sec2_Component"
 import Span_Heading from "./component/Span_Heading";
 import Sec3_Component from "./component/Sec3_Component";
-import Text from"./component/Text"
 import {Archivo} from "next/font/google";
 import Button from "./component/Button";
-const archivo = Archivo();
+const archivo = Archivo({
+  subsets:['latin']
+});
 
 export default function Home() {
   

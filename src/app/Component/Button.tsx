@@ -1,6 +1,6 @@
 import React from 'react'
 import Icons from './Icon_Component'
-import Image from "next/image";
+
 
 export default function Button({className, Button_text ,IconPath}:{className:string,Button_text:string ,IconPath?:string}) {
   return (
