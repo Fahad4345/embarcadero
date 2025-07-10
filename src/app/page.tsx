@@ -1,36 +1,45 @@
 import Image from "next/image";
 import Icons from "./component/Icon_Component";
-import Card from "./component/Card_Component"
+import Card from "./component/Sec2_Component"
+import Span_Heading from "./component/Span_Heading";
+import Sec3_Component from "./component/Sec3_Component";
+import Text from"./component/Text"
+import {Archivo} from "next/font/google";
+import Button from "./component/Button";
+const archivo = Archivo();
 
 export default function Home() {
+  
   return (
-    <div className=" MainTab bg-white ">
+    <html>
+      <head></head>
+      <body className= {archivo.className}>
+        <div className=" MainTab bg-white ">
       <div className="Navtab , mx-w-[/1920px]">
         <div className="firsttab  flex-row  bg-black justify-between flex  pt-5 pr-7 pb-5 pl-7">
-          <div className="  flex gap-5">
-            <p className="text-[16px] leading-[150%] text-white font-[300px]">
-              See what’s new in Delphi, C++ Builder, and RAD Studio
-            </p>
-            <a href="" className="text-white text-sm">
+          <div className="  flex gap-1">
+             
+            <p className="text-[16px] leading-[150%] font-[Archivo] text-white font-[300px]">See what’s new in <span className="text-[16px]  leading-[150%] font-[Archivo] text-white font-[500px]">Delphi, C++ Builder, and RAD Studio Watch a Replay</span></p>
+              <a href="" className="text-[16px]  leading-[150%]  text-white font-[500px] decoration-solid font-[Archivo] decoration-white">
               Watch the Replay
             </a>
           </div>
-          <div className=" flex  justify-between gap-5">
-            <div className=" flex   gap-5">
-              <a href="http://" className="text-white text-sm">
+          <div className=" flex  justify-between gap-[32] ">
+            <div className=" flex   gap-[32]">
+              <a href="http://" className="text-white  font-[Archivo] text-[16px] leading-[150%] font-[500]">
                 My Downloads
               </a>
-              <a href="http://" className="text-white text-sm">
+              <a href="http://" className="text-white font-[Archivo] text-[16px] leading-[150%] font-[500]">
                 UpgradeCenter
               </a>
-              <a href="http://" className="text-white text-sm">
+              <a href="http://" className="text-white font-[Archivo] text-[16px] leading-[150%] font-[500]">
                 MyCustomerPortal
               </a>
-              <a href="http://" className="text-white text-sm">
+              <a href="http://" className="text-white font-[Archivo] text-[16px] leading-[150%] font-[500]">
                 Contact Us
               </a>
             </div>
-            <div className=" flex justify-between gap-5">
+            <div className=" flex justify-between gap-[16px]">
               <Image
                 src="/Assets/search.svg"
                 alt="My Icon"
@@ -52,18 +61,16 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="secondtab flex  justify-between  px-[10] py-[10]">
-          <Image src="/Assets/logo.svg" alt="My Icon" width={400} height={24} />
-          <div className="flex  gap-8">
-            <button className="bg-transparent  text-black  rounded  px-[10px] py-[10px] ">
-              Sign In
-            </button>
-            <button className="rounded border-black text-black border-3 px-[10px] py-[10px]  ">
-              Buy Now
-            </button>
-            <button className="bg-black  text-white  rounded px-[10px] py-[10px] ">
-              Free Trial
-            </button>
+
+        <div className="flex  justify-between  px-[196px] py-[16px] gap-[32] bg-white">
+          <div className="gap-[8px]"><Image src="/Assets/logo.svg" alt="My Icon" width={400} height={24} /></div>
+          
+          <div className="flex  gap-[8px]">
+            <Button className={"bg-transparent  text-black  rounded font-[500] text-[14px] leading-[22px] "} Button_text={"Sign In"} />
+           <Button className={"rounded border-black text-black border-3 px-[20px] py-[8px] "} Button_text={"Buy Now"}/>
+           <Button className={"bg-black  text-white  rounded px-[20px] py-[8px]"} Button_text={"Free Trial"}/>
+           
+           
           </div>
         </div>
       </div>
@@ -156,54 +163,54 @@ export default function Home() {
           </p></div>
           <div className=" flex gap-10 py-[30px]">
             <Icons
-                 path="/Assets/Airbnb.svg"
+                 IconPath="/Assets/Airbnb.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/Assets/Amazon.svg"
+                 IconPath="/Assets/Amazon.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/Assets/Gitlab.svg"
+                 IconPath="/Assets/Gitlab.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/Assets/Rippling.svg"
+                 IconPath="/Assets/Rippling.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/Assets/Atlassian.svg"
+                 IconPath="/Assets/Atlassian.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/Assets/Google.svg"
+                 IconPath="/Assets/Google.svg"
             
               width={141}
               height={40}
             />
              <Icons
-                 path="/Assets/Automatic.svg"
+                 IconPath="/Assets/Automatic.svg"
             
               width={141}
               height={40}
             />   <Icons
-                 path="/Assets/Sonos.svg"
+                 IconPath="/Assets/Sonos.svg"
             
               width={141}
               height={40}
             />
                <Icons
-                 path="/Assets/bruze.svg"
+                 IconPath="/Assets/bruze.svg"
             
               width={141}
               height={40}
@@ -213,20 +220,19 @@ export default function Home() {
           </div>
         </div>
       </div>
-       <div className="flex justify-center">
-        <Icons
-                 path="/Assets/line.svg"
-            
-              width={62}
-              height={144}
-            />
-        
-        <p className="text-black text-[22px] leading-[120%] font-[600]">Trusted by Over Three Million Developers World Wide</p>
-       </div>
-       <div>
+    
+        <Span_Heading Span_Text={" Over Three Million Developers "} IconPath={"/Assets/line.svg"} Text_1={"Trusted by"} Text_2={"World Wide"} className={" flex justify-center gap-5"}/>
         <Card/>
         
-       </div>
+      
+       <Span_Heading Span_Text={"Embarcadero Blog"} IconPath={"./Assets/Arrow.svg"} Text_1={"Learn More on the "} Text_2={""} className={" flex justify-center  gap-5"}/>
+       
+        <Sec3_Component/>
     </div>
+  
+      </body>
+    </html>
+    
+   
   );
 }

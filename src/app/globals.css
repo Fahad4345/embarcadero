@@ -1,3 +1,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+@font-face {
+    font-family: "ClashGrotesk";
+    src: url("/Font/Archivo-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "ClashGrotesk";
+    src: url("/Font/Archivo-VariableFont_wdth,wght.ttf") format("truetype");
+}

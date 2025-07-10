@@ -3,13 +3,13 @@ import Image from "next/image";
  
 
  
-export default function Icons( { path, width, height} :{path: string,width:number, height:number}
+export default function Icons( { IconPath, width, height} :{IconPath: string,width:number, height:number}
    
        
 ){
  return( 
   <Image
-               src={path}
+               src={IconPath}
                alt="My Icon"
                width={width}
                height={height}
