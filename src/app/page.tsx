@@ -130,8 +130,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" flex gap-9 pt-12">
-          <div>
+        <div className=" flex  gap-10 pt-12">
+          <div >
             <h1 className="text-black text-[18px] leading-[150%] font-[400] ">
               90
             </h1>
@@ -139,7 +139,7 @@ export default function Home() {
               Of the fortune 100
             </p>
           </div>
-          <div>
+          <div className="border-l-2 border-black pl-[20px]">
             <h1 className="text-black text-[18px] leading-[150%] font-[400] ">
               3M+
             </h1>
@@ -147,7 +147,7 @@ export default function Home() {
               Developer community
             </p>
           </div>
-          <div>
+          <div className="border-l-2 justify-center border-black pl-[20px]">
             <h1 className="text-black text-[18px] leading-[150%] font-[400] ">
               30+
             </h1>
@@ -222,7 +222,7 @@ export default function Home() {
         </div>
       </div>
     
-        <Span_Heading Span_Text={" Over Three Million Developers "} IconPath={"/Assets/line.svg"} Text_1={"Trusted by"} Text_2={"World Wide"} className={" flex justify-center gap-5"}/>
+        <Span_Heading Span_Text={" Over Three Million Developers "} IconPath={"/Assets/line.svg"} Text_1={"Trusted by"} Text_2={"World Wide"} className={" flex justify-center text-black gap-5"}/>
         <Card/>
         
       
