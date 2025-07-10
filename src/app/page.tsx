@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Icons from "./component/Icon_Component";
-import Card from "./component/Sec2_Component"
-import Span_Heading from "./component/Span_Heading";
-import Sec3_Component from "./component/Sec3_Component";
+import Icons from "./Component/Icon_Component";
+import Card from "./Component/Sec2_Component"
+import Span_Heading from "./Component/Span_Heading";
+import Sec3_Component from "./Component/Sec3_Component";
 import {Archivo} from "next/font/google";
-import Button from "./component/Button";
+import Button from "./Component/Button";
 const archivo = Archivo({
   subsets:['latin']
 });
