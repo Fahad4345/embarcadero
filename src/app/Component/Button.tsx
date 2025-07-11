@@ -4,7 +4,7 @@ import Icons from './Icon_Component'
 
 export default function Button({className, Button_text ,IconPath}:{className:string,Button_text:string ,IconPath?:string}) {
   return (
-    <div className=''>
+    <div className='gap-8'>
        <button className={className}>
             {Button_text}
             {

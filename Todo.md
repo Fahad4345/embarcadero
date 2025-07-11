@@ -1,17 +1,21 @@
 ### Embarcadero :
 Update : 
 Integrated  :
-- Completed first section
-- Radio button section by using component
+- Section 3 Structure Created
+- Created Component such as Button ,Text ,Icon
+- Created Gradient Headings 
 
 
 
 In Progress : 
-- Radio button section CSS
+- Section 3 CSS
 
 
 Next : 
-- Other Sections 
+- Email section
+- Question section
+- Footer
 
 
-Loom : (https://www.loom.com/share/c0ca7bca6fbb493eb57b8a9567ace102?sid=659ff9a6-befe-427d-b46b-8c6fd3570c9c)
+Loom : (https://www.loom.com/share/df2799090136432e81a65988816eb930?sid=748b0f20-1820-4a6c-9e22-c3c047ebe8e9)
+Preview : (https://embarcadero-xi.vercel.app/)
