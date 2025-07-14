@@ -9,3 +9,12 @@
     font-family: "ClashGrotesk";
     src: url("/Font/Archivo-VariableFont_wdth,wght.ttf") format("truetype");
 }
+
+@theme {
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 744px;
+  --breakpoint-lg: 1440px;
+  --breakpoint-xl: 1920px;
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}

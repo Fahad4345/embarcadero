@@ -1,21 +1,14 @@
 ### Embarcadero :
 Update : 
 Integrated  :
-- Section 3 Structure Created
-- Created Component such as Button ,Text ,Icon
-- Created Gradient Headings 
-
-
-
-In Progress : 
-- Section 3 CSS
-
+- Section 3  using component 
+- Section 4  using component
+- Improved ui according to figma properties for 1920 resolution
 
 Next : 
-- Email section
 - Question section
 - Footer
 
 
-Loom : (https://www.loom.com/share/df2799090136432e81a65988816eb930?sid=748b0f20-1820-4a6c-9e22-c3c047ebe8e9)
-Preview : (https://embarcadero-xi.vercel.app/)
+Loom : (https://www.loom.com/share/7f83c8be31c9485393954bb5cf44096a?sid=3b86c62e-89fa-46b8-a357-0195eca6f6cf)
+Preview : (https://vercel.com/fahad-rehans-projects/embarcadero)
