@@ -4,7 +4,7 @@ import Icons from "./Icon_Component";
 
 export default function Sec5_Component() {
   return (
-    <div className=" flex-col overflow-hidden w-[816px] space-y-[24px] mt-[80px] ml-[552px]">
+    <div className=" flex-col overflow-hidden w-[816px] xl:space-y-[24px] xl:mt-[80px] xl:ml-[552px] sm:mx-[16px] sm:hidden ">
       <div className=" flex   border-[#D4D4D4] border-[1px]  p-[24px] rounded-[16px] border-dashed  gap-[16px]">
         <input
           className=" text-[#525252]   font-[Archivo] text-[20px]  w-[816px] leading-[120%] Tracking-[-1px] font-[500]   "

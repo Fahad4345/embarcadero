@@ -1,49 +1,57 @@
 "use client";
 import React from "react";
 import Span_Heading from "./Span_Heading";
-import Text from "./Text";
-import Image from "next/image";
+
 
 export default function Sec4_Component() {
   return (
-    <div className=" flex items-center ml-[192px] mt-[128] gap-[20px]">
-      <div className=" ">
-        <div className="">
-          <Span_Heading
-            className={
-              "text-[48px] font-[600] flex flex-col uppercase  font-[Archivo] leading-[120%] Tracking-[-1px] text-[#262626]"
-            }
-            Span_Text={" Global Developer Community"}
-            Regular_Text={"Join Our"}
-          />
+    <div className=" flex sm:flex-col items-center xl:ml-[192px]  xl:mt-[128px] sm:mt-[48px] sm:gap-[48px]  xl:gap-[20px]">
+      <div className="   sm:px-[16px] sm:gap-[32px] ">
+    <div className="sm:gap-[8px] flex flex-col">
+      <div className="flex justify-center" >
+       <Span_Heading
+          className={"    inline-block xl:text-[48px] text-center sm:text-[30px] sm:font-[600] sm:leading-[140%]  md:text-[36px] uppercase  font-[Archivo] leading-[120%] Tracking-[-1px] text-[#262626]"}
+          Span_Text={" Global Developer Community"}
+          Regular_Text={"Join Our"} 
+          
+              />
+     
+    </div>
+         
+        <div className=" ">
+          <p
+            className=
+              " sm:text-[20px]  sm:text-center sm:leading-[28px] font-[400] font-[Archivo] xl:text-[24px] xl:leading-[150%] text-[#525252]">
+                
+              Join our email list and receive the latest case studies, event updates, product news, and much more.
+              </p>
+          
+          
+            
+          
         </div>
-        <div className="">
-          <Text
-            className={
-              "font-[400] font-[Archivo] text-[24px] leading-[150%] text-[#525252]"
-            }
-            Text={
-              "Join our email list and receive the latest case studies, event updates, product news, and much more."
-            }
-          />
-        </div>
-        <div className=" flex mt-[32px] gap-[8px]">
-          <div className="   border-[#D4D4D4] border-1 rounded-[10px]  px-[20px] py-[12px]">
+    
+    </div>
+        <div className=" flex sm:flex-col md:justify-center md:flex-row mt-[32px] gap-[8px]">
+          
             <input
-              className=" text-[#525252] text-[16px] leading-[150%]  w-[361px] font-[400]  "
+              className=" text-[#525252] text-[16px] leading-[150%] md:w-[386px]  font-[400]  sm:text-center  md:text-start border-[#D4D4D4] border-1 rounded-[10px]  px-[20px] py-[12px] "
               type="text"
               value="Your Email"
               onChange={() => {}}
             />
-          </div>
+       
           <button className="rounded-[10px] border-[#262626] bg-[#262626] border-1 px-[24px] py-[12px] ">
             Subscribe
           </button>
         </div>
       </div>
-      <div className=" mr-[193px]">
+
+
+
+      <div className=" xl:mr-[193px]">
         {" "}
-        <Image src="./Assets/Map.svg" alt="My Icon" width={882} height={438} />
+        <img src="./Assets/Map.svg" alt="My Icon"  className="xl:w-[882px] xl:h-[438px] md:w-[696px] md:h-[323.97px] sm:w-[343px] sm:h-[209px] "/>
       </div>
     </div>
   );

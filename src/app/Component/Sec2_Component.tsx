@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Innercard from "./Innercard";
 
+
 type TextContent = {
   Image: string;
   IconPath: string;
@@ -68,8 +69,8 @@ export default function Card() {
   };
 
   return (
-    <div className=" flex ml-[192px] mt-[128px] items-center">
-      <div className="  pt-[30px] ">
+    <div className=" flex ml-[192px] mt-[128px]  sm:hidden md:hidden items-center">
+      <div className="   lg:flex  pt-[30px] ">
         <ul className="space-y-5">
           <li className="flex items-center gap-4">
             <input
@@ -156,6 +157,7 @@ export default function Card() {
             </label>
           </li>
         </ul>
+       
       </div>
 
       <Innercard
@@ -174,6 +176,7 @@ export default function Card() {
           textContent[selectedOption]?.button2text ?? "Not available"
         }
       />
+      
     </div>
   );
 }
