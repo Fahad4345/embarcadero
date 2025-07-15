@@ -10,7 +10,7 @@ export default function HeaderSec() {
    
        {/* <Image src={"/Assets/Logo.svg"} alt={""} width={138.67} height={24}   /> */}
         
-                      <Icons IconPath={"/Assets/Logo.svg"} className="sm:w-[138.67px] sm:h-[24px]" />
+                      <Icons IconPath={"/Assets/logo.svg"} className="sm:w-[138.67px] sm:h-[24px]" />
                     
           {/* <img src="/Assets/logo.svg" alt="My Icon" className="sm:w-[138.67px] sm:h-[24px]"/> */}
         
