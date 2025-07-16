@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-     <div className="firsttab  bg-[#262626]  flex md:flex-row md:px-[24px] md:py-[16px] md:justify-between sm:flex-wrap  sm:flex-col sm:justify-center    sm:p-[16px] sm:gap-[16px]">
+     <div className="firsttab  bg-[#262626]  flex md:flex-row md:px-[24px] lg:px[80px] md:py-[16px] md:justify-between sm:flex-wrap  sm:flex-col sm:justify-center    sm:p-[16px] sm:gap-[16px]">
                 <div className=" flex sm:flex-col  md:flex-row ">
                  <div className=' flex md:flex-row sm:flex-col  sm:justify-center sm:gap-[4px]'> 
                     
-                    <div><p className="  sm:text-[14px]   sm:leading-[150%]  text-white sm:font-[300] font-[Archivo]">
+                    <div><p className="  sm:text-[14px] sm:text-center  sm:leading-[150%]  text-white sm:font-[300] font-[Archivo]">
                     See what s new in{" "}
                     <span className="  sm:text-[14px]  sm:leading-[150%] font-[Archivo] text-white sm:font-[500]">
                       Delphi, C++ Builder, and RAD Studio {" "}

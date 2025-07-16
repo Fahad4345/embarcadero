@@ -4,8 +4,8 @@ import Buttons from "./Button";
 
 export default function Sec3_Component() {
   return (
-    <div className="flex flex-wrap sm:mx-[16px] sm:gap-[40px] md:gap-[48px] mt-[80px] xl::ml-[192px]   ">
-      <div className="  sm:justify-start  sm:w-[466px] md:w-[331.5px]  sm:gap-[16px] ">
+    <div className="flex flex-wrap  justify-center  xl:ml-[192px]   lg:gap-[80px]  lg:mx-[80px]  mt-[105px]  md:gap-[48px] sm:mx-[16px] sm:gap-[40px]   ">
+      <div className="  sm:justify-center  sm:w-[466px] md:w-[331.5px] xl:w-[466.5px]   sm:gap-[16px] ">
         <p className="text-[#525252] sm:font-[400]  sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>
@@ -21,7 +21,7 @@ export default function Sec3_Component() {
         />
       </div>
 
-      <div className=" sm:justify-start  sm:w-[466px] md:w-[331.5px]  sm:gap-[16px] ">
+      <div className=" sm:justify-start  sm:w-[466px] md:w-[331.5px] xl:w-[466.5px]  sm:gap-[16px]">
         <p className="text-[#525252] sm:font-[400]  sm:text-[18px]  text-[20px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>
@@ -37,7 +37,7 @@ export default function Sec3_Component() {
         />
       </div>
 
-      <div className="  sm:justify-start  sm:w-[466px] md:w-[331.5px]  sm:gap-[16px] ">
+      <div className="  sm:justify-start  sm:w-[466px] md:w-[331.5px] xl:w-[466.5px]  sm:gap-[16px] ">
         <p className="text-[#525252] sm:font-[400]  sm:text-[18px] text-[20px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>
@@ -52,7 +52,7 @@ export default function Sec3_Component() {
           IconPath={"./Assets/RightArrow.svg"}
         />
       </div>
-      <div className=" sm:justify-start  sm:w-[466px] md:w-[331.5px]  sm:gap-[16px]">
+      <div className=" sm:justify-start  sm:w-[466px] md:w-[331.5px] ] xl:w-[466.5px]  sm:gap-[16px]">
         <p className="text-[#525252] sm:font-[400]  sm:text-[18px] text-[20px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>
@@ -67,7 +67,7 @@ export default function Sec3_Component() {
           IconPath={"./Assets/RightArrow.svg"}
         />
       </div>
-      <div className="sm:justify-start  sm:w-[466px] md:w-[331.5px]  sm:gap-[16px]]">
+      <div className="sm:justify-start  sm:w-[466px] md:w-[331.5px]  xl:w-[466.5px]  sm:gap-[16px]]">
         <p className="text-[#525252] sm:font-[400]  sm:text-[18px] text-[20px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>
@@ -82,7 +82,7 @@ export default function Sec3_Component() {
           IconPath={"./Assets/RightArrow.svg"}
         />
       </div>
-      <div className="sm:justify-start  sm:w-[466px] md:w-[331.5px]  sm:gap-[16px]">
+      <div className="sm:justify-start  sm:w-[466px] md:w-[331.5px]  xl:w-[466.5px]  sm:gap-[16px]">
         <p className="text-[#525252] sm:font-[400]  sm:text-[18px] text-[20px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>

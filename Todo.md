@@ -1,14 +1,16 @@
 ### Embarcadero :
 Update : 
 Integrated  :
-- Auestion section completed
-- Footer completed
-- Improved ui according to figma properties for 375, 745 resolution
-
-Next : 
-- Remaining responsiveness for 1440, 1920 resolution
+- 375 responsiveness screen completed
+- 744 responsiveness screen completed
 - 
+Fixes  :
+- Question Answer section drop down
+Next : 
+- Responsiveness for 1440, 1920 resolution
+- Gradient in baground body
 
 
-Loom : (https://www.loom.com/share/fb4268391f444b35907f19bcd7d62032?sid=23a74a73-7c24-4f13-8e72-4fb04cdedb50)
+
+Loom : (https://www.loom.com/share/00c7826350444b55b454f9a4915e16c6?sid=f56208bd-5035-4047-8dab-f17759607a10)
 Preview : (https://embarcadero-xi.vercel.app/)

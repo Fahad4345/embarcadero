@@ -87,7 +87,7 @@ export default function Footer() {
               <p className="font-[400]  text-[#4B5563] text-[16px] leading-[16px]sm:leading[150%]  md:leading-[16px]font-[Archivo]">
                 MVP Program
               </p>
-              <p className="font-[400]  text-[#4B5563] text-[16px] leading-[16px] sm:leading[150%]md:leading-[16px] font-[Archivo]">
+              <p className="font-[400]  text-[#4B5563] text-[16px] leading-[16px] sm:leading[150%] md:leading-[16px] font-[Archivo]">
                 WEB APP Development
               </p>
             </div>
@@ -99,7 +99,7 @@ export default function Footer() {
                 Blogs
               </p>
             </div>
-            <div className=" flex-col flex-1 sm:min-w-[107.5px]   md:min-w-[215.67px]] space-y-[24px]">
+            <div className=" flex-col flex-1 sm:min-w-[107.5px]   md:min-w-[215.67px] space-y-[24px]">
               <h1 className="font-[700]  text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
                 Compnay
               </h1>
@@ -132,9 +132,7 @@ export default function Footer() {
               <p className="font-[400]  text-[#4B5563] text-[16px] leading-[16px] md:leading-[16px]sm:leading[150%] font-[Archivo]">
                 DE: +49 (0)6103-3866-100
               </p>
-              <p className="font-[400]  text-[#4B5563] text-[16px] leading-[16px] md:leading-[16px]sm:leading[150%] font-[Archivo]">
-                info@embarcadero.com
-              </p>
+             
             </div>
           </div>
         </div>

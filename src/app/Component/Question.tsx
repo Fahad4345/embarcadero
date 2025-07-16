@@ -30,7 +30,7 @@ const FAQItem = ({
     <div className=" border-[#D4D4D4] border-[1px]  p-[24px] rounded-[16px] border-dashed  gap-[16px]">
     <div className=" flex flex-row items-center">
       
-         <p className=" text-[#525252]  text-start font-[Archivo] text-[20px]  w-[816px] leading-[120%] Tracking-[-1px] font-[500]   ">
+         <p className=" text-[#525252]  text-start font-[Archivo] text-[20px]  sm:w-[259px] md:w-[648px] lg:w-[758px]  leading-[120%] Tracking-[-1px] font-[500]   ">
         {question}
       </p>
       
@@ -74,12 +74,12 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="">
+    
       <div className="  flex  flex-col gap-[24px]">
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
         ))}
       </div>
-    </section>
+
   );
 }

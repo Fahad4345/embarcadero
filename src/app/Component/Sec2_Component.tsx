@@ -69,12 +69,12 @@ export default function Card() {
   };
 
   return (
-    <div className=" flex ml-[192px] mt-[128px]  sm:hidden md:hidden items-center">
+    <div className=" flex xl:ml-[192px] lg:mt-[128px]  lg:h-[455px]  lg:gap-[85px] lg:mx-[81px] sm:hidden md:hidden lg:flex items-center">
       <div className="   lg:flex  pt-[30px] ">
-        <ul className="space-y-5">
-          <li className="flex items-center gap-4">
+        <ul className=" flex flex-col gap-[24px]">
+          <li className="flex items-center gap-[16px]">
             <input
-              className="w-5 h-5 "
+              className="w-[12px] h-[12px] border-none"
               type="radio"
               value="option1"
               checked={selectedOption === "option1"}
@@ -82,15 +82,15 @@ export default function Card() {
             />
             <label
               className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] ${
-                selectedOption === "option1" ? "font-semibold" : "font-[300]"
+                selectedOption === "option1" ? "" : "font-[300]"
               }`}
             >
               Rad Studio
             </label>
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-[24px]">
             <input
-              className="w-5 h-5"
+              className="w-[12px] h-[12px] border-none"
               type="radio"
               value="option2"
               checked={selectedOption === "option2"}
@@ -99,15 +99,15 @@ export default function Card() {
             <label
               htmlFor=""
               className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] ${
-                selectedOption === "option2" ? "font-semibold" : "font-[300]"
+                selectedOption === "option2" ? "font-[600]" : "font-[300]"
               }`}
             >
               Delphi
             </label>
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-[24px]">
             <input
-              className="w-5 h-5"
+              className="w-[12px] h-[12px] border-none"
               type="radio"
               value="option3"
               checked={selectedOption === "option3"}
@@ -116,15 +116,15 @@ export default function Card() {
             <label
               htmlFor=""
               className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] ${
-                selectedOption === "option3" ? "font-semibold" : "font-[300]"
+                selectedOption === "option3" ? "font-[600]" : "font-[300]"
               }`}
             >
               C++ Builder
             </label>
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-[24px]">
             <input
-              className="w-5 h-5"
+              className="w-[12px] h-[12px] border-none"
               type="radio"
               value="option4"
               checked={selectedOption === "option4"}
@@ -133,15 +133,15 @@ export default function Card() {
             <label
               htmlFor=""
               className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] ${
-                selectedOption === "option4" ? "font-semibold" : "font-[300]"
+                selectedOption === "option4" ? "font-[600]" : "font-[300]"
               }`}
             >
               InterBase
             </label>
           </li>
-          <li className="flex items-center gap-4">
+          <li className="flex items-center gap-[24px]">
             <input
-              className="w-5 h-5"
+              className="w-[12px] h-[12px] border-none"
               type="radio"
               value="option5"
               checked={selectedOption === "option5"}
@@ -150,7 +150,7 @@ export default function Card() {
             <label
               htmlFor=""
               className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] ${
-                selectedOption === "option5" ? "font-semibold" : "font-[300]"
+                selectedOption === "option5" ? "font-[600]" : "font-[300]"
               }`}
             >
               RadServer

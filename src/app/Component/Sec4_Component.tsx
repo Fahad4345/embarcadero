@@ -5,13 +5,14 @@ import Span_Heading from "./Span_Heading";
 
 export default function Sec4_Component() {
   return (
-    <div className=" flex sm:flex-col items-center xl:ml-[192px]  xl:mt-[128px] sm:mt-[48px] sm:gap-[48px]  xl:gap-[20px]">
-      <div className="   sm:px-[16px] sm:gap-[32px] ">
-    <div className="sm:gap-[8px] flex flex-col">
-      <div className="flex justify-center" >
+    <div className=" flex sm:items-center xl:gap-[20px]   xl:mt-[128px] xl:ml-[192px] lg:flex-row sm:flex-col  sm:mt-[48px] sm:gap-[48px]  ">
+      <div className="   sm:px-[16px] sm:gap-[32px] lg:ml-[80px] ">
+    <div className=" flex flex-col sm:gap-[8px]">
+      <div className="flex sm:justify-center  " >
        <Span_Heading
-          className={"    inline-block xl:text-[48px] text-center sm:text-[30px] sm:font-[600] sm:leading-[140%]  md:text-[36px] uppercase  font-[Archivo] leading-[120%] Tracking-[-1px] text-[#262626]"}
-          Span_Text={" Global Developer Community"}
+          className={"  inline-block xl:leading-[120%] xl:text-[48px] lg:text-[48px]   lg:leading-[120%] lg:text-start md:text-[36px] sm:text-center sm:text-[30px] sm:font-[600] sm:leading-[140%]   uppercase  font-[Archivo]  Tracking-[-1px] text-[#262626]"}
+        
+          Span_Text={"Global Developer Community"}
           Regular_Text={"Join Our"} 
           
               />
@@ -21,7 +22,7 @@ export default function Sec4_Component() {
         <div className=" ">
           <p
             className=
-              " sm:text-[20px]  sm:text-center sm:leading-[28px] font-[400] font-[Archivo] xl:text-[24px] xl:leading-[150%] text-[#525252]">
+              " sm:text-[20px]  sm:text-center lg:text-start sm:leading-[28px] font-[400] font-[Archivo] xl:text-[24px] xl:leading-[150%] text-[#525252]">
                 
               Join our email list and receive the latest case studies, event updates, product news, and much more.
               </p>
@@ -32,7 +33,7 @@ export default function Sec4_Component() {
         </div>
     
     </div>
-        <div className=" flex sm:flex-col md:justify-center md:flex-row mt-[32px] gap-[8px]">
+        <div className=" flex sm:flex-col  lg:justify-start md:justify-center md:flex-row mt-[32px] gap-[8px]">
           
             <input
               className=" text-[#525252] text-[16px] leading-[150%] md:w-[386px]  font-[400]  sm:text-center  md:text-start border-[#D4D4D4] border-1 rounded-[10px]  px-[20px] py-[12px] "
@@ -49,9 +50,9 @@ export default function Sec4_Component() {
 
 
 
-      <div className=" xl:mr-[193px]">
+      <div className=" xl:mr-[193px] lg:mr-[80px]">
         {" "}
-        <img src="./Assets/Map.svg" alt="My Icon"  className="xl:w-[882px] xl:h-[438px] md:w-[696px] md:h-[323.97px] sm:w-[343px] sm:h-[209px] "/>
+        <img src="./Assets/Map.svg" alt="My Icon"  className="xl:w-[882px] xl:h-[438px] lg:w-[733.60px] lg:h-[341.52px] md:w-[696px] md:h-[323.97px] sm:w-[343px] sm:h-[209px] "/>
       </div>
     </div>
   );

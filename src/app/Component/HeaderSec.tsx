@@ -20,7 +20,7 @@ export default function HeaderSec() {
           <Dropdown className="sm:hidden  md:hidden lg:flex"/>
         </div>
 
-        <div className="flex  justify-center gap-[8px] sm:gap-[24px]   ">
+        <div className="flex  justify-center lg:gap-[8px] sm:gap-[24px]   ">
           <Button
             className={
               
