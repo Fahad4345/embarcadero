@@ -29,7 +29,7 @@ export default function Dropdown( {className}:{className?:string}) {
       <div style={{ position: "relative", display: "inline-block" }}>
         <button
           onClick={toggle1Dropdown}
-          className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex "
+          className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex  hover:scale-120 transition duration-300 cursor-pointer "
         >
           Products
           <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
@@ -132,10 +132,8 @@ export default function Dropdown( {className}:{className?:string}) {
       <div style={{ position: "relative", display: "inline-block" }}>
         <button
           onClick={toggle2Dropdown}
-          className="text-[#262626] font-[400]  gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex "
-          style={{
-            cursor: "pointer",
-          }}
+          className="text-[#262626] font-[400]  gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer "
+          
         >
           Free Tools
           <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
@@ -216,7 +214,7 @@ export default function Dropdown( {className}:{className?:string}) {
       </div>
       <button
         onClick={() => {}}
-        className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex "
+        className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex  hover:scale-120 transition duration-300 cursor-pointer"
         style={{
           cursor: "pointer",
         }}
@@ -226,7 +224,7 @@ export default function Dropdown( {className}:{className?:string}) {
       <div style={{ position: "relative", display: "inline-block" }}>
         <button
           onClick={toggle3Dropdown}
-          className="text-[#262626] font-[400]  gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex "
+          className="text-[#262626] font-[400]  gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex  hover:scale-120 transition duration-300 cursor-pointer"
           style={{
             cursor: "pointer",
           }}
@@ -379,19 +377,15 @@ export default function Dropdown( {className}:{className?:string}) {
       </div>
       <button
         onClick={() => {}}
-        className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex "
-        style={{
-          cursor: "pointer",
-        }}
+        className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex  hover:scale-120 transition duration-300 cursor-pointer"
+       
       >
         Getit
       </button>
       <button
         onClick={() => {}}
-        className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex "
-        style={{
-          cursor: "pointer",
-        }}
+        className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex  hover:scale-120 transition duration-300 cursor-pointer "
+      
       >
         New Tools
       </button>

@@ -1,16 +1,16 @@
 ### Embarcadero :
 Update : 
 Integrated  :
-- 375 responsiveness screen completed
-- 744 responsiveness screen completed
-- 
-Fixes  :
-- Question Answer section drop down
+- 375 responsivene screen completed
+- 744 responsivene screen completed
+- 1440 responsive screen completed
+- 1920 responsive screen completed
+
 Next : 
-- Responsiveness for 1440, 1920 resolution
-- Gradient in baground body
+- Pointer hover effect
+- Some remaining Gradient in bacground body
 
 
 
-Loom : (https://www.loom.com/share/00c7826350444b55b454f9a4915e16c6?sid=f56208bd-5035-4047-8dab-f17759607a10)
+Loom : (https://www.loom.com/share/2d92a5583bd7446ea82ce4f211056d92?sid=e3374a96-b43c-4a3c-bc52-a84219486394)
 Preview : (https://embarcadero-xi.vercel.app/)

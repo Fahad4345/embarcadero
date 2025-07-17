@@ -27,8 +27,8 @@ const FAQItem = ({
     //         </div>
     //     {isOpen && <div className=" text-gray-600 ">{answer}</div>}
     // </div>
-    <div className=" border-[#D4D4D4] border-[1px]  p-[24px] rounded-[16px] border-dashed  gap-[16px]">
-    <div className=" flex flex-row items-center">
+    <div className=" border-[#D4D4D4] border-[1px]  p-[24px] rounded-[16px] border-dashed on hover:border-[#4F46E5] hover:border-1 gap-[16px] cursor-pointer">
+    <div className=" flex flex-row items-center" onClick={() => setIsOpen(!isOpen)}>
       
          <p className=" text-[#525252]  text-start font-[Archivo] text-[20px]  sm:w-[259px] md:w-[648px] lg:w-[758px]  leading-[120%] Tracking-[-1px] font-[500]   ">
         {question}
@@ -36,7 +36,7 @@ const FAQItem = ({
       
         <p
           className="text-[#4F46E5] text-[40px] "
-          onClick={() => setIsOpen(!isOpen)}
+          
           >
           {isOpen ? "-" : "+"}
         </p>

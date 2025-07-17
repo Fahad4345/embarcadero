@@ -1,5 +1,6 @@
-import Image from "next/image";
+
 import Icons from "./Component/Icon_Component";
+import LoadingIcon from "./Component/SvgIcon";
 import Card from "./Component/Sec2_Component";
 import Span_Heading from "./Component/Span_Heading";
 import Multiple_Span_Heading from "./Component/Multiple _Span";
@@ -14,6 +15,7 @@ import HeaderSec from "./Component/HeaderSec";
 import NavBar from "./Component/NavBar";
 import SmCard from "./Component/SmCard";
 import FAQItem from"./Component/Question"
+
 const archivo = Archivo({
   subsets: ["latin"],
 });
@@ -32,26 +34,20 @@ export default function Home() {
          
 
           
-          <div className=" lg:ml-[79px] lg:mt-[88px] sm:px-[16px] xl:ml-[192px]">
-            <div className="flex flex-wrap lg:flex-row lg:gap-[32px] 
-             lg:justify-start sm:justify-center  ">
-              <div className="flex  lg:justify-start lg:max-w-[600px] xl:max-w-[792px] sm:flex-col sm:mt-[11px] md:mt-[64px] sm:gap-[32px] ">
+          <div className=" lg:ml-[79px] lg:mt-[88px] sm:px-[16px] xl:ml-[192px] ">
+            <div className="flex flex-wrap lg:flex-row lg:gap-[32px] sm:flex-col 
+             lg:justify-start sm:justify-center md:flex-col md:justify-around  ">
+              <div className="flex xl:max-w-[792px] xl:gap-[24px] xl:mt-[50px] lg:justify-start lg:max-w-[624px] md:mt-[64px]  sm:flex-col sm:mt-[11px]  sm:gap-[32px] ">
                
 
 
-                  <div className="sm:items-center sm:justify-center lg:justify-start sm:flex gap-[33px]   ">
-                    <button>
-                      <div className="  flex  bg-white   rounded-[12px]   border-[0.75px] px-[12px] py-[10px]">
-                        <Image
-                          src="/Assets/loading.svg"
-                          alt="My Icon"
-                          width={24}
-                          height={24}
-                        />
-                        <p className="text-[#262626] text-[14px] leading-[150%] font-[Archivo] font-[500px]">
+                  <div className="sm:items-center sm:justify-center lg:justify-start sm:flex gap-[8px]   ">
+                    <button  className=" flex  bg-[#F8FAFC]  text-center  hover:bg-black transition duration-300  rounded-[12px]    px-[12px] py-[10px] text-[#262626] text-[14px] leading-[150%] font-[Archivo] font-[500px] hover:text-white  hover:scale-120 cursor-pointer group]:">
+                    
+                     <LoadingIcon className={""}/>
                           RAD Studio 11.2 out now
-                        </p>
-                      </div>
+                        
+                      
                     </button>
                 
                   </div>
@@ -83,32 +79,18 @@ export default function Home() {
               
                  
                   <div className="flex lg:justify-start md:flex-row sm:flex-col sm:justify-center sm:gap-[16px] ">
-                    <button className="bg-[#262626]  text-white   rounded-[12px] px-[28px] py-[14px] ">
+                    <button className="bg-[#262626]  text-white   rounded-[12px] px-[28px] py-[14px]  hover:bg-white hover:text-[black] hover:rounded-[10px] hover:scale-110  border-3  hover:border-black  transition duration-300 cursor-pointer ">
                       Free Trial
                     </button>
-                    <button className="rounded-[12px] border-[#262626]   md:w-auto  text-[#262626] border-1 px-[28px] py-[14px] ">
+                    <button className="rounded-[12px] border-[#262626]   md:w-auto  text-[#262626] border-3 px-[28px] py-[14px] transition duration-300 hover:scale-110  hover:bg-[#262626]  hover:text-white cursor-pointer">
                       Buy Now
                     </button>
                   </div>
-                
-              </div>
-
-              <div className="  lg:mt-[96px] md:mt-[54px]  sm:mt-[33px] ">
-                <img
-                  src="/Assets/Tree.svg"
-                  alt="My Icon"
-                 className="sm:w-[343px] sm:h-[285px] sm:mx-[16px] md:w-[516px] md:h-[430px] lg:w-[624px] lg:h-[520px] xl:w-[720px] xl:h-[600px]"
-                />
-              </div>
-
-
-
-
-              <div className=" flex lg-mt-[86px] md:mt-[64px] md:flex-row  sm:flex-col sm:justify-center sm:gap-[24px] sm:mt-[48px] ">
+                           <div className=" flex lg-mt-[86px] md:mt-[64px] md:flex-row  sm:flex-col sm:justify-center sm:gap-[24px] sm:mt-[48px] sm:hidden md:hidden lg:flex xl:flex">
 
 
                 <div className=" flex  sm:flex-col gap-[4px] " >
-                  <h1 className="text-black font-[IBM_Plex_Mono]  sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] ">
+                  <h1 className="text-black font-[IBM_Plex_Mono] lg:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] ">
                     90
                   </h1>
                   <p className="text-[#374151] sm:text-center  text-[16px] uppercase leading-[150%] font-[400] ">
@@ -120,7 +102,61 @@ export default function Home() {
                 
                 
                 <div className=" flex  sm:flex-col gap-[4px] ">
-                  <h1 className="text-black sm:text-center  font-[IBM_Plex_Mono] sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
+                  <h1 className="text-black sm:text-center lg:text-start font-[IBM_Plex_Mono] sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
+                    3M+
+                  </h1>
+                  <p className="text-[#374151] text-[16px] sm:text-center   uppercase leading-[150%] font-[400] ">
+                    Developer community
+                  </p>
+                </div>
+
+
+                <div className="w-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
+                
+                
+                <div className=" flex  sm:flex-col gap-[4px] ">
+                  <h1 className="text-black lg:text-start font-[IBM_Plex_Mono] sm:text-center  sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
+                    30+
+                  </h1>
+                  <p className="text-[#374151]  text-[16px] uppercase sm:text-center   leading-[150%] font-[400] ">
+                    Years in the business
+                  </p>
+                </div>
+
+
+
+              </div>
+                
+              </div>
+
+              <div className="   flex lg:mt-[96px] md:mt-[54px]  sm:mt-[33px]  md:justify-center sm:justify-center">
+                <img
+                  src="/Assets/Tree.svg"
+                  alt="My Icon"
+                 className=" sm:mx-[16px] sm:w-[343px] sm:h-[285px]md:w-[516px] md:h-[430px] lg:w-[624px] lg:h-[520px] xl:w-[720px] xl:h-[600px]"
+                />
+              </div>
+
+
+
+
+              <div className=" flex md:max-w-[696px] mx-auto lg-mt-[86px] md:mt-[64px] md:flex-row md:justify-center sm:flex-col  sm:gap-[24px] sm:mt-[48px] xl:hidden lg:hidden md:flex  sm:flex ">
+
+
+                <div className=" flex  sm:flex-col gap-[4px]  " >
+                  <h1 className="text-black font-[IBM_Plex_Mono] lg:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] ">
+                    90
+                  </h1>
+                  <p className="text-[#374151] sm:text-center lg:text-start  text-[16px] uppercase leading-[150%] font-[400] ">
+                    Of the fortune 100
+                  </p>
+                </div>
+
+                <div className="w-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
+                
+                
+                <div className=" flex  sm:flex-col gap-[4px] ">
+                  <h1 className="text-black sm:text-center  lg:text-start font-[IBM_Plex_Mono] sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
                     3M+
                   </h1>
                   <p className="text-[#374151] text-[16px] sm:text-center   uppercase leading-[150%] font-[400] ">
@@ -154,32 +190,32 @@ export default function Home() {
                 </span>
               </div>
               <div className=" flex flex-wrap  justify-center sm:gap-[62.42px] ">
-                <Icons IconPath="/Assets/Airbnb.svg" className="sm:w-[74.67px]  sm:h-[28px] md:w-[106px]  md:h-[28px]"  />
-                <Icons IconPath="/Assets/Amazon.svg"   className="sm:w-[64.17px]  sm:h-[28px] md:w-[91px]  md:h-[28px]"/>
-                <Icons IconPath="/Assets/Gitlab.svg"   className="sm:w-[79.33px]  sm:h-[28px]  md:w-[113px]  md:h-[28px]"/>
-                 <Icons IconPath="/Assets/Gitlab.svg"   className="sm:w-[79.33px]  sm:h-[28px]  md:w-[113px]  md:h-[28px] lg:hidden "/>
-                 <Icons IconPath="/Assets/bruze.svg" width={76} height={40} className="sm:w-[53.67px]  sm:h-[28]  md:w-[76.67px]   md:h-[28px] lg:hidden"/>
+                <Icons IconPath="/Assets/Airbnb.svg" className="sm:w-[74.67px]  sm:h-[28px] md:w-[106px]  md:h-[28px]  transition duration-300  hover:scale-120  cursor-pointer"  />
+                <Icons IconPath="/Assets/Amazon.svg"   className="sm:w-[64.17px]  sm:h-[28px] md:w-[91px]  md:h-[28px]  transition duration-300  hover:scale-120  cursor-pointer"/>
+                <Icons IconPath="/Assets/Gitlab.svg"   className="sm:w-[79.33px]  sm:h-[28px]  md:w-[113px]  md:h-[28px]  transition duration-300  hover:scale-120  cursor-pointer"/>
+                 <Icons IconPath="/Assets/Gitlab.svg"   className="sm:w-[79.33px]  sm:h-[28px]  md:w-[113px]  md:h-[28px] lg:hidden  transition duration-300  hover:scale-120  cursor-pointer"/>
+                 <Icons IconPath="/Assets/bruze.svg" width={76} height={40} className="sm:w-[53.67px]  sm:h-[28]  md:w-[76.67px]   md:h-[28px] lg:hidden  transition duration-300  hover:scale-120  cursor-pointer"/>
              
                <Icons
                   IconPath="/Assets/Rippling.svg"
-                  className="sm:w-[99.17px]  sm:h-[28px] md:w-[px]  md:h-[28px] md:hidden lg:flex "
+                  className="sm:w-[99.17px]  sm:h-[28px] md:w-[px]  md:h-[28px] md:hidden lg:flex  transition duration-300  hover:scale-120  cursor-pointer "
                   width={141}
                   height={40}
                 />
                 <Icons
                   IconPath="/Assets/Atlassian.svg"
-                  className="sm:w-[103px]  sm:h-[28px]  md:w-[148px]  md:h-[28px]"
+                  className="sm:w-[103px]  sm:h-[28px]  md:w-[148px]  md:h-[28px]  transition duration-300  hover:scale-120  cursor-pointer"
                   width={148}
                   height={40}
                 />
-                <Icons IconPath="/Assets/Google.svg" width={94} height={40} className="sm:w-[79.33px]  sm:h-[28px]"/>
+                <Icons IconPath="/Assets/Google.svg" width={94} height={40} className="sm:w-[79.33px]  sm:h-[28px]  transition duration-300  hover:scale-120  cursor-pointer"/>
                 <Icons
                   IconPath="/Assets/Automatic.svg"
-                  className="sm:w-[135.92px]  sm:h-[28px]  md:w-[194.18px]  md:h-[28px]"
+                  className="sm:w-[135.92px]  sm:h-[28px]  md:w-[194.18px]  md:h-[28px]  transition duration-300  hover:scale-120  cursor-pointer"
                   width={194}
                   height={40}
                 />{" "}
-                <Icons IconPath="/Assets/Sonos.svg" width={95} height={40} className="sm:w-[67.08px]  sm:h-[28px]  md:w-[95.72px]  md:h-[28px] lg:hidden "/>
+                <Icons IconPath="/Assets/Sonos.svg" width={95} height={40} className="sm:w-[67.08px]  sm:h-[28px]  md:w-[95.72px]  md:h-[28px] lg:hidden  transition duration-300  hover:scale-120  cursor-pointer"/>
               </div>
             
               
@@ -202,7 +238,7 @@ export default function Home() {
             Text_1={"Learn More on the "}
             Text_2={""}
             className={" flex  relative text-center justify-center mt-[196px]"}
-            Icon_Class={" absolute lg:right-60 lg:top-0 xl:right-128 xl:top-5 sm:hidden md:hidden lg:flex"}
+            Icon_Class={" absolute lg:right-60 lg:top-0 xl:right-120 xl:top-5 sm:hidden md:hidden lg:flex"}
           />
 </div>
           <div className=" flex  flex-col   md:flex-col  md:gap-[96px] ">
@@ -210,7 +246,7 @@ export default function Home() {
           <div><Sec4_Component /></div>
           <div className=" flex flex-col  mx-auto  md:gap-[48px]">
             <Multiple_Span_Heading
-            Icon_Class={"sm:hidden md:hidden lg:flex absolute lg:top-853 lg:left-75 xl:top-939 xl:left-135"}
+            Icon_Class={"sm:hidden md:hidden lg:flex absolute lg:top-843 lg:left-75 xl:top-930 xl:left-135"}
             className={
               "flex justify-center"
             }
@@ -225,6 +261,7 @@ export default function Home() {
           </div>
           <Footer />
           </div>
+   
           
         </div>
 

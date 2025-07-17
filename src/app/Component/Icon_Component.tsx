@@ -1,6 +1,7 @@
 import React from "react";
 
 
+
 export default function Icons({
   className,
   IconPath,
@@ -13,12 +14,6 @@ export default function Icons({
 }) {
   return (
     <img src={IconPath} alt=""  className={className}/>
-    // <Image
-    //   className={className}
-    //   src={IconPath}
-    //   alt="My Icon"
-    //   width={width}
-    //   height={height}
-    // />
+  
   );
 }

@@ -77,7 +77,7 @@ export default function Card({className}:{className:string}) {
               alt="Icon"
               width={64}
               height={64}
-              className=""
+              className=" transition duration-300   hover:scale-120  cursor-pointer"
             />
 
             
@@ -94,10 +94,10 @@ export default function Card({className}:{className:string}) {
            
             
             <div className="flex sm:flex-col md:flex-row justify-center gap-[12px]">
-              <button  className="bg-[#171717]  text-white   rounded-[10px] py-[12px] px-[24px]">
+              <button  className="bg-[#171717]  text-white  border-1   border-[#262626] rounded-[10px] py-[12px] px-[24px]  transition duration-300  hover:bg-[white]  hover:text-black cursor-pointer hover:scale-110">
                 {content.button1text}
               </button>
-              <button  className="rounded-[10px] border-[#262626]   text-[#262626] border-1 px-[24px] py-[12px] ">
+              <button  className="rounded-[10px] border-[#262626]   text-[#262626] border-1 px-[24px] py-[12px]  hover:bg-[#262626]  hover:text-white transition duration-300   hover:scale-110  cursor-pointer ">
                 {content.button2text}
               </button>
             </div>

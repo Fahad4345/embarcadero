@@ -3,23 +3,25 @@ import Icons from "./Icon_Component";
 
 export default function Button({
   className,
+  IconClass,
   Button_text,
   IconPath,
 }: {
   className: string;
   Button_text: string;
   IconPath?: string;
+  IconClass?: string;
 }) {
   return (
-    <div className="">
+   
       <button className={className}>
         {Button_text}
         {IconPath == null ? (
           <div></div>
         ) : (
-          <Icons IconPath={IconPath ?? ""} width={28} height={28} />
+          <Icons className={IconClass} IconPath={IconPath ?? ""} width={28} height={28} />
         )}
       </button>
-    </div>
+ 
   );
 }

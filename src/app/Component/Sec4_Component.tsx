@@ -36,13 +36,14 @@ export default function Sec4_Component() {
         <div className=" flex sm:flex-col  lg:justify-start md:justify-center md:flex-row mt-[32px] gap-[8px]">
           
             <input
-              className=" text-[#525252] text-[16px] leading-[150%] md:w-[386px]  font-[400]  sm:text-center  md:text-start border-[#D4D4D4] border-1 rounded-[10px]  px-[20px] py-[12px] "
+              className=" text-[#525252] text-[16px] leading-[150%] md:w-[386px]  font-[400]  sm:text-center  md:text-start border-[#D4D4D4] border-1 rounded-[8px]  px-[20px] py-[12px] "
               type="text"
               value="Your Email"
+              
               onChange={() => {}}
             />
        
-          <button className="rounded-[10px] border-[#262626] bg-[#262626] border-1 px-[24px] py-[12px] ">
+          <button className="rounded-[10px] border-[#262626] bg-[#262626] border-1 px-[24px] py-[12px]  transition duration-300  hover:scale-110 cursor-pointer ">
             Subscribe
           </button>
         </div>

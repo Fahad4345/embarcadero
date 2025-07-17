@@ -22,7 +22,7 @@ export default function Innercard({
     <div className=" flex  items-center lg:gap-[77px] xl:gap-[124px]">
       <div className="   flex flex-col  gap-[32px] ">
         <div className="flex flex-col justify-start gap-[12px] ">
-        <Image src={IconPath} alt="My Icon" width={48} height={48} />
+        <Image src={IconPath} alt="My Icon" width={48} height={48} className="transition duration-300   hover:scale-120  cursor-pointer" />
         <div className="flex "> <p className="text-[#262626] text-[36px] leading-[150%] font-[Archivo] font-[600]">
             {Head_span}
           </p>
@@ -40,10 +40,10 @@ export default function Innercard({
           </div>
           
           <div className="flex mt-[32px] gap-3">
-            <button className="bg-[#262626]  text-[16px] text-white leading-[24px] rounded-[10px] font-[Archivo] px-[24px] py-[10px]  font-[500px]">
+            <button className="bg-[#262626]  text-[16px] text-white leading-[24px] rounded-[10px] font-[Archivo] px-[24px] py-[10px]  font-[500px]  hover:bg-white hover:text-[black] hover:rounded-[10px] border-3  hover:border-black  transition duration-300 hover:scale-110  cursor-pointer">
               {button1text}
             </button>
-            <button className="rounded-[10px]  text-[16px] border-[#262626] text-[#262626] border-3 leading-[24px] font-[Archivo] px-[24px] py-[10px]  font-[500px] ">
+            <button className="rounded-[10px]  text-[16px] border-[#262626] text-[#262626] border-3 leading-[24px] font-[Archivo] px-[24px] py-[10px]  font-[500px]  bg-[white] transition duration-300  hover:bg-[#262626]  hover:text-white  hover:scale-110  cursor-pointer">
               {button2text}
             </button>
         
