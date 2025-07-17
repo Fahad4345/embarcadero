@@ -1,13 +1,12 @@
 ### Embarcadero :
 Update : 
 Integrated  :
-- 375 responsivene screen completed
-- 744 responsivene screen completed
-- 1440 responsive screen completed
-- 1920 responsive screen completed
+-  Added cursor pointer on buttons
+-  Added hover effect button , links
+-  Added click handler on radio button label
+-  Info Card fixed 
 
 Next : 
-- Pointer hover effect
 - Some remaining Gradient in bacground body
 
 
