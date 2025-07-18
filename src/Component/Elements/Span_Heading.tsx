@@ -11,7 +11,7 @@ export default function Span_Heading({
 }) {
   return (
     <h1 className={`gap-2 ${className}`}>
-      <span>{Regular_Text}</span>  {" "}
+      <span className="">{Regular_Text}</span>{" "}
       <span className=" bg-clip-text text-transparent bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD]">
         {Span_Text}
       </span>

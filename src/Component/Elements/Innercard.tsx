@@ -19,9 +19,9 @@ export default function Innercard({
   ImagePath: string;
 }) {
   return (
-    <div className=" flex  items-center lg:gap-[77px] xl:gap-[124px]">
+    <div className=" z-10 flex  items-center lg:gap-[77px] xl:gap-[124px]">
       <div className="   flex flex-col  gap-[32px] ">
-        <div className="flex flex-col justify-start gap-[12px] ">
+        <div className="flex flex-col justify-start ">
         <Image src={IconPath} alt="My Icon" width={48} height={48} className="transition duration-300   hover:scale-120  cursor-pointer" />
         <div className="flex "> <p className="text-[#262626] text-[36px] leading-[150%] font-[Archivo] font-[600]">
             {Head_span}
@@ -32,8 +32,8 @@ export default function Innercard({
         </div>
           
         
-          <div className="  w-[490px] justify-start">
-            <p className="text-[#525252] text-[20px] leading-[150%] font-[400]  ">
+          <div className=" xl:w-[491px] lg:w-[437px] justify-start">
+            <p className="text-[#525252] text-wrap text-[20px] leading-[150%] font-[400]  font-[Archivo]">
               {text}
             </p>
             </div>

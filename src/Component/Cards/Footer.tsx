@@ -1,18 +1,18 @@
 import React from "react";
-import Icons from "./Icon_Component";
+import Icons from "../Elements/Icon_Component";
 import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div>
-      <div className=" xl: mt-[128px] xl:px-[80px] xl:py-[48px] sm:px-[16px] sm:py-[32px] md:px-[24px] md:py-[40px]">
-        <div className="flex sm:flex-col  sm:gap-[40px] md:flex-wrap md:gap-[48px]">
-        <Image src={"/Assets/logo.svg"} alt={""} width={138} height={40}/>
-          
+    
+      <div className=" z-10 xl:mt-[128px]  xl:px-[80px] xl:py-[48px] lg:px-[80px] lg:py-[48px] sm:px-[16px] sm:py-[32px] md:px-[24px] md:py-[40px]">
+        <div className="flex sm:flex-col  xl:flex-row lg:flex-col xl:gap-[32px] sm:gap-[40px] md:flex-wrap md:gap-[48px]">
+        <div className=" flex justify-start xl:w-[447] "><Image src={"/Assets/logo.svg"} alt={""} width={138} height={40}className="w-[138px] h-[35px]"/>
+          </div>
             
           
-          <div className="flex lg:justify-between  flex-wrap justify-center xl:gap-[70.8px] lg:gap-[32px] sm:gap-[48px] md:gap-y-[48px] md:gap-x-[24px]  ">
-            <div className="  flex-col flex-1 sm:min-w-[107.5px]   md:min-w-[215.67px] space-y-[24px]">
+          <div className="z-10 flex xl:justify-between md:justify-center flex-wrap  lg:gap-[70.8px] sm:gap-[20px] md:gap-[48px] ">
+            <div className="  flex flex-col    gap-[26px]">
               <h1 className="font-[700]  text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
                 Products
               </h1>
@@ -32,7 +32,7 @@ export default function Footer() {
                 RAD SERVER™
               </p>
             </div>
-            <div className=" flex-col flex-1 sm:min-w-[107.5px]   md:min-w-[215.67px]   space-y-[24px]">
+            <div className="  flex flex-col     gap-[26px]">
               <h1 className="font-[700]  text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
                 Free Tools
               </h1>
@@ -59,7 +59,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className=" flex-col flex-1  sm:min-w-[107.5px]   md:min-w-[215.67px]  space-y-[24px]">
+            <div className="  flex flex-col   gap-[26px]">
               <h1 className="font-[700]  text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
                 Resources
               </h1>
@@ -91,7 +91,7 @@ export default function Footer() {
                 WEB APP Development
               </p>
             </div>
-            <div className=" flex-col  flex-1 sm:min-w-[107.5px]   md:min-w-[215.67px]  space-y-[24px]">
+            <div className="  flex flex-col  gap-[26px]">
               <h1 className="font-[700]  text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
                 Community
               </h1>
@@ -99,7 +99,7 @@ export default function Footer() {
                 Blogs
               </p>
             </div>
-            <div className=" flex-col flex-1 sm:min-w-[107.5px]   md:min-w-[215.67px] space-y-[24px]">
+            <div className="  flex flex-col gap-[24px]">
               <h1 className="font-[700]  text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
                 Compnay
               </h1>
@@ -122,7 +122,7 @@ export default function Footer() {
                 Logo
               </p>
             </div>
-            <div className=" flex-col flex-1 sm:min-w-[107.5px]   md:min-w-[215.67px]   space-y-[24px]">
+            <div className="  flex flex-col   gap-[26px]">
               <h1 className="font-[700]  text-[#1F2937] text-[20px] leading-[20px] sm:leading-[150%]md:leading-[16px] font-[Archivo]">
                 Get in Touch
               </h1>
@@ -139,12 +139,12 @@ export default function Footer() {
 
         <div className="flex md:justify-between xl:mt-[81px] md:flex-row sm:flex-col-reverse sm:item-center  sm:mt-[32px] sm:gap-[16px] md:gap-[32px]">
         
-          <div><p className="font-[400] sm:text-center text-[#4B5563] text-[14px] xl:leading-[14px] sm:leading-[22px] font-[Archivo]transition duration-300 cursor-pointer hover:scale-105">
+          <div className="z-10"><p className=" z-10 font-[400] sm:text-center text-[#4B5563] text-[14px] xl:leading-[14px] sm:leading-[22px] font-[Archivo]transition duration-300 cursor-pointer hover:scale-105">
             2022 Embarcadero Inc. All Rights Reserved
           </p>
           </div>
         
-          <div className="flex gap-[24px] sm:justify-center">
+          <div className=" z-10 flex gap-[24px] sm:justify-center">
             <Icons IconPath={"/Assets/Twitter.svg"} width={24} height={24} className="transition duration-300 cursor-pointer hover:scale-130"/>
             <Icons IconPath={"/Assets/FaceBook.svg"} width={24} height={24} className="transition duration-300 cursor-pointer hover:scale-130"/>
             <Icons IconPath={"/Assets/Internet.svg"} width={24} height={24}className="transition duration-300 cursor-pointer hover:scale-130" />
@@ -152,6 +152,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }

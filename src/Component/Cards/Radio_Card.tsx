@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Innercard from "./Innercard";
+import Innercard from "../Elements/Innercard";
 
 
 type TextContent = {
@@ -69,13 +69,13 @@ export default function Card() {
   };
 
   return (
-    <div className=" flex xl:ml-[192px] lg:mt-[128px]  lg:h-[455px]  lg:gap-[85px] lg:mx-[81px] sm:hidden md:hidden lg:flex items-center">
-      <div className="   lg:flex  pt-[30px] ">
+    <div className=" z-10 xl:justify-center flex xl:ml-[192px] lg:mt-[128px]  lg:h-[455px]  lg:gap-[85px] xl:gap-[128px] lg:mx-[81px] sm:hidden md:hidden lg:flex items-center">
+      <div className="   flex  xl:py-[167.42px] ">
         <ul className=" flex flex-col gap-[24px]">
           <li className="flex items-center gap-[16px]">
             <input
             id="1"
-              className="w-[12px] h-[12px] border-none"
+              className="w-[12px] h-[12px] border-none cursor-pointer"
               type="radio"
               value="option1"
               checked={selectedOption === "option1"}
@@ -85,7 +85,7 @@ export default function Card() {
             htmlFor="1"
             
               onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] ${
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
                 selectedOption === "option1" ? "font-[600]" : "font-[300]"
               }`}
             >
@@ -96,7 +96,7 @@ export default function Card() {
         
             <input
             id="2"
-              className="w-[12px] h-[12px] border-none"
+              className="w-[12px] h-[12px] border-none cursor-pointer"
               type="radio"
               value="option2"
               checked={selectedOption === "option2"}
@@ -105,7 +105,7 @@ export default function Card() {
             <label
               htmlFor="2"
               onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] ${
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
                 selectedOption === "option2" ? "font-[600]" : "font-[300]"
               }`}
             >
@@ -115,7 +115,7 @@ export default function Card() {
           <li className="flex items-center gap-[24px]">
             <input
             id="3"
-              className="w-[12px] h-[12px] border-none"
+              className="w-[12px] h-[12px] border-none cursor-pointer"
               type="radio"
               value="option3"
               checked={selectedOption === "option3"}
@@ -125,7 +125,7 @@ export default function Card() {
               htmlFor="3"
                
               onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] ${
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
                 selectedOption === "option3" ? "font-[600]" : "font-[300]"
               }`}
             >
@@ -135,7 +135,7 @@ export default function Card() {
           <li className="flex items-center gap-[24px]">
             <input
              id="4"
-              className="w-[12px] h-[12px] border-none"
+              className="w-[12px] h-[12px] border-none cursor-pointer"
               type="radio"
               value="option4"
               checked={selectedOption === "option4"}
@@ -145,7 +145,7 @@ export default function Card() {
               htmlFor="4"
              
               onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] ${
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
                 selectedOption === "option4" ? "font-[600]" : "font-[300]"
               }`}
             >
@@ -155,7 +155,7 @@ export default function Card() {
           <li className="flex items-center gap-[24px]">
             <input
             id="5"
-              className="w-[12px] h-[12px] border-none"
+              className="w-[12px] h-[12px] border-none cursor-pointer"
               type="radio"
               value="option5"
               checked={selectedOption === "option5"}
@@ -165,7 +165,7 @@ export default function Card() {
               htmlFor="5"
               
               onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] ${
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
                 selectedOption === "option5" ? "font-[600]" : "font-[300]"
               }`}
             >
@@ -177,7 +177,7 @@ export default function Card() {
       </div>
 
       <Innercard
-        // onClick={handleOptionChange}
+        
         text={textContent[selectedOption]?.text ?? "Not Available"}
         Head_span={textContent[selectedOption]?.heading_span ?? "Not Available"}
         Head_version={

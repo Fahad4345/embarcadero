@@ -1,5 +1,5 @@
 import React from "react";
-import Icons from "./Icon_Component";
+import Icons from "../Elements/Icon_Component";
 
 export default function Button({
   className,

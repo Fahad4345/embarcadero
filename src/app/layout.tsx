@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import Image from "next/image";
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,12 +27,109 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased  w-[100%]`}
-      
       >
-        {children} 
-        {/* <Image src={"Assets/BackBox.svg"} alt={""} width={300} height={200}  className=" absolute sm:hidden md:hidden lg:flex  right-0 top-80"/>
-        <Image src={"./Assets/Ellipse 14.svg"} alt={""} width={720} height={600}  className=" absolute right-0 top-70"/>
-         <Image src={"./Assets/Ellipse 19.svg"} alt={""} width={720} height={600}  className=" absolute right-0 top-750"/> */}
+        {children}
+
+        <Image
+          src={"/Assets/BackBox.svg"}
+          alt={""}
+          width={300}
+          height={200}
+          className=" absolute sm:hidden md:hidden lg:flex  right-0 top-80"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 11.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute left-[0px] xl:top-[130px]  lg:top-[130px] md:top-[130px] sm:top-[180px] w-[765px] h-[765px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 11.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute left-[0px] xl:top-[130px]   lg:top-[130px] md:top-[130px] sm:top-[180px]  w-[432px] h-[432px]"
+        />
+
+        <Image
+          src={"/Assets/Gradients/Ellipse 13.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute left-[0px] top-[811px] w-[644px] h-[644px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 13.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute left-[0px] top-[811px] w-[440px] h-[440px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 14 (2).png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute right-[0px] top-[574px] w-[869px] h-[869px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 14 (2).png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute right-[0px] top-[574px] w-[869px] h-[869px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 15.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute left-[0px] top-[1691px] w-[906px] h-[906px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 16.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute right-[0px] top-[1899px] w-[644px] h-[644px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 18.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute left-[0px] top-[3936px] w-[497px] h-[497px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 19.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute right-[0px] top-[3936px] w-[731px] h-[731px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 20.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute left-[0px] top-[3514px] w-[678px] h-[678px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 21.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute right-[70px] top-[5101px] w-[497px] h-[497px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 22.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute left-[0px] top-[4667px] w-[731px] h-[731px]"
+        />
+        {/* <Image src={"/Assets/Gradients/Vector 233 (1).png"} alt={""} width={720} height={600}  className=" absolute right-0 top-[841px] w-[1063.44873046875px] h-[266.67626953125px]"/> */}
       </body>
     </html>
   );

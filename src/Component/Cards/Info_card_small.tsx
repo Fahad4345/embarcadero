@@ -62,7 +62,7 @@ export default function Card({className}:{className:string}) {
   };
 
   return (
-    <div className={` flex flex-col md:mx-[89px] sm:mx-[16px] sm:gap-[32px]${className}` }>
+    <div className={`z-10 flex flex-col md:mx-[89px] md:mt-[89px] sm:mx-[16px] sm:gap-[32px]${className}` }>
       {Object.entries(textContent).map(([key, content]) => (
         <div
           key={key}
