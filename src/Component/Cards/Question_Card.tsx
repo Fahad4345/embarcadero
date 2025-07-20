@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Icons from "../Elements/Icon_Component";
 
 
 const FAQItem = ({
@@ -74,12 +75,15 @@ export default function FAQSection() {
   ];
 
   return (
+    <div className=" relative ">
     
-      <div className="  flex  flex-col gap-[24px]">
+    
+    <div className=" z-50 relative flex  flex-col gap-[24px] ">
         {faqs.map((faq, index) => (
           <FAQItem key={index} question={faq.question} answer={faq.answer} />
-        ))}
+        ))}   <Icons IconPath={"Assets/Line 6.svg"} className="absolute bottom-[-75px] z-0 left-[780px] " />
       </div>
-
+</div>
+      
   );
 }

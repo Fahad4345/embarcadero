@@ -26,30 +26,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased  w-[100%]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased  w-[100%] `}
       >
         {children}
-
+ <Image
+                          src={"/Assets/BackBox.svg"}
+                          alt={""}
+                          width={536}
+                          height={100}
+                          className=" absolute  z-0 sm:hidden md:hidden  lg:flex  xl:left-[1100px] xl:top-[379.53px] lg:left-[1163.36px] lg:top-[289.53px]"
+                        />
+       
         <Image
-          src={"/Assets/BackBox.svg"}
+          src={"/Assets/Gradients/Ellipse 11.png"}
           alt={""}
-          width={300}
-          height={200}
-          className=" absolute sm:hidden md:hidden lg:flex  right-0 top-80"
+          width={720}
+          height={600}
+          className=" absolute xl:left-[-155px] xl:top-[-156px]  z-0 lg:top-[-156px] lg:left-[-156px] md:top-[130px] sm:top-[-156px] sm:left-[-396px] w-[765px] h-[765px]"
         />
         <Image
           src={"/Assets/Gradients/Ellipse 11.png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute left-[0px] xl:top-[130px]  lg:top-[130px] md:top-[130px] sm:top-[180px] w-[765px] h-[765px]"
-        />
-        <Image
-          src={"/Assets/Gradients/Ellipse 11.png"}
-          alt={""}
-          width={720}
-          height={600}
-          className=" absolute left-[0px] xl:top-[130px]   lg:top-[130px] md:top-[130px] sm:top-[180px]  w-[432px] h-[432px]"
+          className=" absolute left-[-144px] xl:top-[-156px]  z-0 lg:top-[156px] md:top-[130px] sm:top-[-156px] sm:left-[-385px] w-[432px] h-[432px]"
         />
 
         <Image
@@ -57,77 +57,133 @@ export default function RootLayout({
           alt={""}
           width={720}
           height={600}
-          className=" absolute left-[0px] top-[811px] w-[644px] h-[644px]"
+          className=" absolute xl:left-[-127px] xl:top-[811px] z-0 lg:left-[-128px] lg:top-[811px] md:left-[-139px] md:top-[811px] sm:top-[811px] sm:left-[-379px] w-[440px] h-[440px]"
         />
         <Image
           src={"/Assets/Gradients/Ellipse 13.png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute left-[0px] top-[811px] w-[440px] h-[440px]"
+          className=" absolute xl:left-[-138px] z-0 xl:top-[811px] lg:left-[-139px] lg:top-[811px] md:left-[-128px] md:top-[811px] sm:top-[811px] sm:left-[-368px] w-[869px] h-[869px] "
         />
         <Image
           src={"/Assets/Gradients/Ellipse 14 (2).png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute right-[0px] top-[574px] w-[869px] h-[869px]"
+          className=" absolute xl:right-[0px]  z-0 xl:top-[574px] lg:right-[0px] lg:top-[574px] md:left-[192px] md:top-[440px] sm:hidden sm:top-[0px] sm:left-[-48px] w-[869px] h-[869px] overflow-hidden"
         />
         <Image
           src={"/Assets/Gradients/Ellipse 14 (2).png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute right-[0px] top-[574px] w-[869px] h-[869px]"
+          className=" absolute xl:right-[0px] z-0 xl:top-[574px] lg:right-[0px] lg:top-[574px]  md:right-[0px] md:top-[440px] sm:top-[440px] sm:right:-[-10px] w-[869px] h-[869px]"
         />
         <Image
           src={"/Assets/Gradients/Ellipse 15.png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute left-[0px] top-[1691px] w-[906px] h-[906px]"
+          className=" absolute xl:left-[-279px] z-0 xl:top-[1691px] lg:left-[-280px] lg:top-[1691px] md:left-[-280px] md:top-[1691px] sm:top-[1691px] sm:left-[-520px] w-[906px] h-[906px]"
         />
         <Image
           src={"/Assets/Gradients/Ellipse 16.png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute right-[0px] top-[1899px] w-[644px] h-[644px]"
+          className=" absolute xl:right-[0px]  z-0 xl:top-[1899px] lg:left-[0px] lg:top-[1899px]  md:left-[689px] md:top-[1765px]  sm:hidden w-[644px] h-[644px]"
         />
         <Image
           src={"/Assets/Gradients/Ellipse 18.png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute left-[0px] top-[3936px] w-[497px] h-[497px]"
+          className=" absolute xl:left-[-144px]  z-0 xl:top-[3936px] lg:left-[-145px] lg:top-[3936px]  md:left-[-145px] md:top-[3936px] sm:top-[3936px] sm:left-[-385px] w-[497px] h-[497px]"
         />
         <Image
           src={"/Assets/Gradients/Ellipse 19.png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute right-[0px] top-[3936px] w-[731px] h-[731px]"
+          className=" absolute z-0 xl:right-[0px] xl:top-[3936px] lg:right-[0px] lg:top-[3936px] md:right-[0px] md:top-[3802px]  sm:top-[3802px] sm:right-[0px] w-[731px] h-[731px]"
         />
         <Image
           src={"/Assets/Gradients/Ellipse 20.png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute left-[0px] top-[3514px] w-[678px] h-[678px]"
+          className=" absolute xl:left-[-51px]  z-0 xl:top-[3514px] lg:left-[-52px] lg:top-[3514px] md:left-[-52px] md:top-[3514px] sm:top-[3514px] sm:left-[-292px] w-[678px] h-[678px]"
         />
         <Image
           src={"/Assets/Gradients/Ellipse 21.png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute right-[70px] top-[5101px] w-[497px] h-[497px]"
+          className=" absolute z-0 xl:left-[1336px] xl:top-[5101px]  lg:hidden lg:left-[1335px] lg:top-[5101px] md:right-[0px] md:top-[4967px] sm:top-[4967px] sm:right-[0px] w-[497px] h-[497px]"
         />
         <Image
           src={"/Assets/Gradients/Ellipse 22.png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute left-[0px] top-[4667px] w-[731px] h-[731px]"
+          className=" absolute xl:left-[-294px]  z-0 xl:top-[4667px] lg:left-[-295px] lg:top-[4430px]  md:left-[-295px] md:top-[4667px] sm:top-[4667px] sm:left-[-535px] w-[731px] h-[731px]"
+        />
+        <Image
+          src={"/Assets/Gradients/Ellipse 23 (1).png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute lg:left-[0px] z-0 lg:hidden lg:top-[5832px] md:left-[-488px] md:top-[715px]  sm:top-[5698px] sm:right-[0px] w-[650px] h-[650px]"
+        />
+         <Image
+          src={"/Assets/Gradients/Ellipse 24.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute z-0  lg: hidden lg:left-[0px] lg:top-[6869px] md:right-[0px] md:top-[6735px]  sm:top-[7135px] sm:left-[142px]w-[731px] h-[731px]"
+        />
+         <Image
+          src={"/Assets/Gradients/Ellipse 25.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute z-0 lg:hidden xl:hidden md:left-[-145px] md:top-[6869px] sm:top-[6869px] sm:left-[-385px] w-[487px] h-[487px]"
+        />
+         <Image
+          src={"/Assets/Gradients/Ellipse 26.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute z-0 lg:hidden xl:hidden md:left-[-243px] md:top-[5598px]  sm:top-[5598px] sm:left-[-483px] w-[869px] h-[869px]"
+        />
+         <Image
+          src={"/Assets/Gradients/Ellipse 27.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute  z-0 lg:hidden xl:hidden  md:right-[0px] md:top-[7966px] sm:top-[7866px] sm:right-[0px] w-[650px] h-[650px]"
+        />
+         <Image
+          src={"/Assets/Gradients/Ellipse 28.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute  z-0 lg:hidden xl:hidden md:left-[-243px] md:top-[7766px]  sm:top-[8191px] sm:left-[-483px] w-[869px] h-[869px]"
+        />
+         <Image
+          src={"/Assets/Gradients/Ellipse 29.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute  z-0 lg:hidden xl:hidden lg:left-[0px] lg:top-[6869px] md:left-[-280px] md:top-[8903px] sm:top-[9211px] sm:left-[-520px] w-[906px] h-[906px]"
+        />
+         <Image
+          src={"/Assets/Gradients/Ellipse 30.png"}
+          alt={""}
+          width={720}
+          height={600}
+          className=" absolute z-0   lg:hidden xl:hidden lg:left-[0px] lg:top-[6869px] md:left-[382px] md:top-[6735px] sm:hidden w-[731px] h-[731px]"
         />
         {/* <Image src={"/Assets/Gradients/Vector 233 (1).png"} alt={""} width={720} height={600}  className=" absolute right-0 top-[841px] w-[1063.44873046875px] h-[266.67626953125px]"/> */}
       </body>

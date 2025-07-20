@@ -5,7 +5,7 @@ import Span_Heading from "../Component/Elements/Span_Heading";
 import Multiple_Span_Heading from "../Component/Elements/Multiple _Span";
 import Sec3_Component from "../Component/Cards/Info_Card";
 import { Archivo } from "next/font/google";
-
+import Image from "next/image";
 import Sec4_Component from "../Component/Cards/Map_Card";
 
 import Footer from "../Component/Cards/Footer";
@@ -14,6 +14,7 @@ import HeaderSec from "../Component/Cards/HeaderSec";
 import NavBar from "../Component/Cards/NavBar";
 import SmCard from "../Component/Cards/Info_card_small";
 import FAQItem from "../Component/Cards/Question_Card";
+
 
 
 
@@ -28,20 +29,20 @@ export default function Home() {
       <head></head>
       <body className={archivo.className}>
         <div
-          className={` z-10 w-[100%]   MainTab bg-white  flex flex-col  justify-center`}
+          className={` w-[100%]   MainTab bg-white  flex flex-col  justify-center overflow-hidden`}
         >
-          <div>
+          <div className="relative z-50">
             <NavBar />
             <HeaderSec />
-          </div>
-
+         
+          </div> 
           <div className=" z-10 lg:ml-[79px] lg:mt-[88px] sm:px-[16px] xl:ml-[192px] ">
             <div
               className="flex flex-wrap lg:flex-row lg:gap-[32px] sm:flex-col 
              lg:justify-start sm:justify-center md:flex-col md:justify-around xl:justify-center  "
             >
               <div className="flex xl:max-w-[792px] xl:gap-[24px] xl:mt-[50px] lg:justify-start lg:max-w-[624px] md:mt-[64px] md:gap-[32px] sm:flex-col sm:mt-[11px]  sm:gap-[32px] ">
-                <div className="sm:items-center sm:justify-center lg:justify-start sm:flex gap-[8px]   ">
+                <div className="sm:items-center sm:justify-center lg:justify-start sm:flex gap-[8px]   z-10 ">
                   <button className=" flex  bg-[#F8FAFC]  text-center  hover:bg-black transition duration-300  rounded-[12px]    px-[12px] py-[10px] text-[#262626] text-[14px] leading-[150%] font-[Archivo] font-[500px] hover:text-white  hover:scale-120 cursor-pointer group]:">
                     <LoadingIcon className={""} />
                     RAD Studio 11.2 out now
@@ -70,7 +71,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex lg:justify-start md:flex-row sm:flex-col sm:justify-center sm:gap-[16px] ">
+                <div className="flex  z-10 lg:justify-start md:flex-row sm:flex-col sm:justify-center sm:gap-[16px] ">
                   <button className="bg-[#262626]  text-white   rounded-[12px] px-[28px] py-[14px]  hover:bg-white hover:text-[black] hover:rounded-[10px] hover:scale-110  border-3  hover:border-black  transition duration-300 cursor-pointer ">
                     Free Trial
                   </button>
@@ -112,12 +113,13 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="   flex lg:mt-[96px] md:mt-[54px]  sm:mt-[33px]  md:justify-center sm:justify-center">
+              <div className="   relative flex lg:mt-[96px] md:mt-[54px]  sm:mt-[33px]  md:justify-center sm:justify-center">
                 <img
                   src="/Assets/Tree.svg"
                   alt="My Icon"
                   className=" sm:mx-[16px] sm:w-[343px] sm:h-[285px] md:w-[516px] md:h-[430px] lg:w-[624px] lg:h-[520px] xl:w-[720px] xl:h-[600px]"
                 />
+                
               </div>
 
               <div className=" flex md:max-w-[696px] mx-auto lg-mt-[86px] md:mt-[64px] md:flex-row md:justify-center sm:flex-col  sm:gap-[24px] sm:mt-[48px] xl:hidden lg:hidden md:flex  sm:flex ">
@@ -227,10 +229,11 @@ export default function Home() {
               }
             />
           </div>
-          <Card />
-          <SmCard className={" z-10 sm:flex md:flex lg:hidden xl:hidden"} />
-          <div className=" flex flex-col sm:gap-[80px]  md:gap-[96px] xl:gap-[128px] xl:mt-[196px] lg:mt-[173px] md:mt-[129px]  sm:mt-[80px] ">
-            <div className=" flex  flex-col justify-center md:gap-[64px] sm:gap-[30px]">
+          <div><Card /></div>
+          <div><SmCard className={" z-10 sm:flex md:flex lg:hidden xl:hidden"} />
+          </div> 
+          <div className=" flex flex-col   sm:gap-[80px]  md:gap-[96px] xl:gap-[128px] xl:mt-[196px] lg:mt-[173px] md:mt-[129px]  sm:mt-[80px] ">
+            <div className=" flex  flex-col  xl:gap-[80px] lg:gap-[105px] md:gap-[64px] sm:gap-[30px]">
               <Multiple_Span_Heading
                 Span_Text={"Embarcadero Blog"}
                 IconPath={"./Assets/Arrow.svg"}
@@ -241,15 +244,15 @@ export default function Home() {
                   " absolute lg:right-[-70px] lg:top-0 xl:right-[-70px] xl:top-5 sm:hidden md:hidden lg:flex"
                 }
               />{" "}
-              <div>
-                <Sec3_Component />
-              </div>
+           
+               <div className="flex justify-center "><Sec3_Component /></div> 
+            
             </div>
 
-            <div>
-              {" "}
-              <Sec4_Component />
-            </div>
+          
+              
+             <div><Sec4_Component /></div> 
+           
             <div className=" flex flex-col  mx-auto sm:gap-[64px] md:gap-[64px] ">
               <Multiple_Span_Heading
                 Icon_Class={

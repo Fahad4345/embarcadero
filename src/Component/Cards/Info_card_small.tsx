@@ -68,7 +68,7 @@ export default function Card({className}:{className:string}) {
           key={key}
           className="flex sm:flex-col gap-[32px]"
         >
-          {/* Text section */}
+     
           <div className="flex flex-col sm:gap-[20px] mt-[96px] ">
 
           <div className="flex justify-center">
@@ -103,7 +103,6 @@ export default function Card({className}:{className:string}) {
             </div>
           
 
-          {/* Image section */}
           <div className="">
             <Image
               src={content.Image}

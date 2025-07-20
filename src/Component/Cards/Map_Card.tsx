@@ -5,7 +5,7 @@ import Span_Heading from "../Elements/Span_Heading";
 
 export default function Sec4_Component() {
   return (
-    <div className=" z-10 flex sm:items-center xl:gap-[20px]   justify-center xl:mt-[128px] xl:ml-[192px] lg:ml-[80px] lg:mt-[132px] lg:flex-row  sm:flex-col  sm:gap-[48px]    ">
+    <div className=" z-10 flex sm:items-center xl:gap-[20px]    xl:justify-center xl:mt-[128px] xl:ml-[192px] lg:ml-[80px] lg:mt-[132px] lg:flex-row  sm:flex-col  sm:gap-[48px]    ">
       <div className="   sm:px-[16px] sm:gap-[32px]  ">
     <div className=" flex flex-col sm:gap-[8px]  xl:w-[550px] lg:w-[512px] ">
       <div className="flex sm:justify-center lg:justify-start " >
@@ -36,7 +36,7 @@ export default function Sec4_Component() {
         <div className=" z-10 flex sm:flex-col  lg:justify-start md:justify-center md:flex-row mt-[32px] gap-[8px]">
           
             <input
-              className=" text-[#525252] text-[16px] leading-[150%] md:w-[386px]  font-[400]  sm:text-center  md:text-start border-[#D4D4D4] border-1 rounded-[8px]  px-[20px] py-[12px] "
+              className=" text-[#525252] text-[16px] leading-[150%] md:w-[386px] z-10 font-[400]  sm:text-center  md:text-start border-[#D4D4D4] border-1 rounded-[8px]  px-[20px] py-[12px] "
               type="text"
               value="Your Email"
               

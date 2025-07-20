@@ -1,20 +1,21 @@
+
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Icons from "./Icon_Component";
 
-export default function Dropdown( {className}:{className?:string}) {
+export default function Dropdown({ className }: { className?: string }) {
   const [is1Open, setIs1Open] = useState(false);
   const [is2Open, setIs2Open] = useState(false);
   const [is3Open, setIs3Open] = useState(false);
 
-  const toggle1Dropdown = () => setIs1Open(!is1Open);
-  const toggle2Dropdown = () => setIs2Open(!is2Open);
-  const toggle3Dropdown = () => setIs3Open(!is3Open);
   const menuRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setIs1Open(false);
+        setIs2Open(false);
+        setIs3Open(false);
       }
     }
 
@@ -25,30 +26,23 @@ export default function Dropdown( {className}:{className?:string}) {
   }, []);
 
   return (
-    <div className={`"flex gap-[24px] mt-[7px] ${className}`}>
-      <div style={{ position: "relative", display: "inline-block" }}>
-        <button
-          onClick={toggle1Dropdown}
-          className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex  hover:scale-120 transition duration-300 cursor-pointer "
-        >
+    <div className={`flex gap-[24px] mt-[7px] ${className}`} ref={menuRef}>
+  
+      <div
+        className="relative inline-block"
+        onMouseEnter={() => setIs1Open(true)}
+        onMouseLeave={() => setIs1Open(false)}
+      >
+        <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
           Products
           <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
         </button>
 
         {is1Open && (
-          <ul
-            style={{
-              position: "absolute",
-              top: "100%",
-              left: 0,
-              background: "#fff",
-              border: "1px solid #ccc",
-              borderRadius: "10px",
-              listStyle: "none",
-              margin: 0,
-            }}
-          >
-            <div className="w-[900px] p-[24px] flex " ref={menuRef}>
+          
+           
+          <ul>
+            <div className="  w-[900px] p-[24px] flex  bg-white   absolute top-{100%] left-0 rounded-[10px]" ref={menuRef}>
               <div>
                 <div>
                   <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
@@ -129,18 +123,20 @@ export default function Dropdown( {className}:{className?:string}) {
           </ul>
         )}
       </div>
-      <div style={{ position: "relative", display: "inline-block" }}>
-        <button
-          onClick={toggle2Dropdown}
-          className="text-[#262626] font-[400]  gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer "
-          
-        >
+
+   
+      <div
+        className="relative inline-block"
+        onMouseEnter={() => setIs2Open(true)}
+        onMouseLeave={() => setIs2Open(false)}
+      >
+        <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
           Free Tools
           <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
         </button>
 
         {is2Open && (
-          <ul
+           <ul
             style={{
               position: "absolute",
               top: "100%",
@@ -153,7 +149,7 @@ export default function Dropdown( {className}:{className?:string}) {
               padding: "5px 0",
             }}
           >
-            <div className=" p-[24px]  rounded-[16px]  w-[350] gap-[32] flex ">
+            <div className=" p-[24px]  rounded-[16px]  w-[350] gap-[32] flex "ref={menuRef}>
               <div>
                 <div className=" gap-[24px]">
                   <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
@@ -212,29 +208,25 @@ export default function Dropdown( {className}:{className?:string}) {
           </ul>
         )}
       </div>
-      <button
-        onClick={() => {}}
-        className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex  hover:scale-120 transition duration-300 cursor-pointer"
-        style={{
-          cursor: "pointer",
-        }}
-      >
+
+   
+      <button className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
         Blogs
       </button>
-      <div style={{ position: "relative", display: "inline-block" }}>
-        <button
-          onClick={toggle3Dropdown}
-          className="text-[#262626] font-[400]  gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex  hover:scale-120 transition duration-300 cursor-pointer"
-          style={{
-            cursor: "pointer",
-          }}
-        >
+
+   
+      <div
+        className="relative inline-block"
+        onMouseEnter={() => setIs3Open(true)}
+        onMouseLeave={() => setIs3Open(false)}
+      >
+        <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
           Resources
           <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
         </button>
 
         {is3Open && (
-          <ul
+<ul
             style={{
               position: "absolute",
               top: "100%",
@@ -246,7 +238,7 @@ export default function Dropdown( {className}:{className?:string}) {
               margin: 0,
             }}
           >
-            <div className="flex p-[24px] gap-[24px] rounded-[16px] w-[1000px]">
+            <div className="flex p-[24px] gap-[24px] rounded-[16px] w-[1000px]"ref={menuRef}>
               <div>
                 <div className=" gap-[24px]">
                   <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
@@ -373,20 +365,15 @@ export default function Dropdown( {className}:{className?:string}) {
               </div>
             </div>
           </ul>
+          
         )}
       </div>
-      <button
-        onClick={() => {}}
-        className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex  hover:scale-120 transition duration-300 cursor-pointer"
-       
-      >
+
+  
+      <button className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
         Getit
       </button>
-      <button
-        onClick={() => {}}
-        className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex  hover:scale-120 transition duration-300 cursor-pointer "
-      
-      >
+      <button className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
         New Tools
       </button>
     </div>
