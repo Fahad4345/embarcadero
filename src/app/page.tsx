@@ -5,7 +5,7 @@ import Span_Heading from "../Component/Elements/Span_Heading";
 import Multiple_Span_Heading from "../Component/Elements/Multiple _Span";
 import Sec3_Component from "../Component/Cards/Info_Card";
 import { Archivo } from "next/font/google";
-import Image from "next/image";
+
 import Sec4_Component from "../Component/Cards/Map_Card";
 
 import Footer from "../Component/Cards/Footer";
