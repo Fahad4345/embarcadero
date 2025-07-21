@@ -44,8 +44,8 @@ export default function Card({className}:{className:string}) {
     option4: {
       Image: "/Assets/Blocks.svg",
       IconPath: "/Assets/Interbase.svg",
-      heading_version: "11.2",
-      heading_span: "InterBase 2020",
+      heading_version: "Update 3",
+      heading_span: "InterBase  2020",
       text: "InterBase® is a full-featured, encryptable, scalable, embeddable and multi-platform relational SQL database with commercial-grade data security, disaster recovery and change synchronization.",
       button1text: "Start a Free Trial",
       button2text: "View Details",

@@ -13,33 +13,19 @@ const FAQItem = ({
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    // <div className=" flex   border-[#D4D4D4] border-[1px]  p-[24px] rounded-[16px] border-dashed  gap-[16px]">
-    //   <div className="flex flex-col ">
-    //   <p className=" text-[#525252]   font-[Archivo] text-[20px]  w-[816px] leading-[120%] Tracking-[-1px] font-[500]   ">
-    //     {question}
-    //   </p>
-
-    //     <button
-    //       className="text-[#4F46E5] text-[20px] "
-    //       onClick={() => setIsOpen(!isOpen)}
-    //       >
-    //       {isOpen ? "-" : "+"}
-    //     </button>
-    //         </div>
-    //     {isOpen && <div className=" text-gray-600 ">{answer}</div>}
-    // </div>
-    <div className=" border-[#D4D4D4] border-[1px]  p-[24px] rounded-[16px] border-dashed on hover:border-[#4F46E5] hover:border-1 gap-[16px] cursor-pointer">
-    <div className=" flex flex-row items-center" onClick={() => setIsOpen(!isOpen)}>
+   
+    <div className="   border-[#D4D4D4] border-[1px] z-50  bg-white p-[24px] rounded-[16px] border-dashed on hover:border-[#4F46E5]  cursor-pointer">
+    <div className=" flex flex-row items-center gap-[16px]" onClick={() => setIsOpen(!isOpen)}>
       
-         <p className=" text-[#525252]  text-start font-[Archivo] text-[20px]  sm:w-[259px] md:w-[648px] lg:w-[758px]  leading-[120%] Tracking-[-1px] font-[500]   ">
+         <div className="  xl:w-[732px] lg:w-[758px] md:w-[612px] sm:w-[259px]"> <p className=" text-[#525252]  text-start font-[Archivo] md:text-[20px] sm:text-[18px]  leading-[120%] Tracking-[-1px] font-[500]   ">
         {question}
-      </p>
+      </p></div>
       
         <p
-          className="text-[#4F46E5] text-[40px] "
+          className="text-[#4F46E5] text-[25px] "
           
           >
-          {isOpen ? "-" : "+"}
+          {isOpen ? (<Icons IconPath={"/Assets/Minus.svg"} className=" w-[20px] h-[20px]"/>) : (<Icons IconPath={"/Assets/plus.svg"}  className="w-[20px] h-[20px]"/>)}
         </p>
     </div>
  
@@ -75,7 +61,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <div className=" relative ">
+    <div className=" relative  bg-white">
     
     
     <div className=" z-50 relative flex  flex-col gap-[24px] ">

@@ -14,14 +14,18 @@ export default function Button({
 }) {
   return (
    
-      <button className={className}>
+      
+     <div className="group  transition duration-300 cursor-pointer">
+            <button className={className}>
         {Button_text}
         {IconPath == null ? (
           <div></div>
         ) : (
-          <Icons className={IconClass} IconPath={IconPath ?? ""} width={28} height={28} />
+            <Icons className={`{IconClass}  duration-300 group-hover:translate-x-4`} IconPath={IconPath ?? ""} width={28} height={28} />
         )}
-      </button>
+    </button>
+            <span className="block max-w-0 group-hover:max-w-[125px] transition-all duration-500 h-0.5 bg-[#00FF00]"></span>
+          </div>
  
   );
 }

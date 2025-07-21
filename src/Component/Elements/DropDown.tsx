@@ -1,4 +1,6 @@
 
+
+
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Icons from "./Icon_Component";
@@ -27,101 +29,67 @@ export default function Dropdown({ className }: { className?: string }) {
 
   return (
     <div className={`flex gap-[24px] mt-[7px] ${className}`} ref={menuRef}>
-  
+ 
       <div
         className="relative inline-block"
         onMouseEnter={() => setIs1Open(true)}
         onMouseLeave={() => setIs1Open(false)}
       >
-        <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
+        <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Products
           <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
         </button>
 
-        {is1Open && (
-          
-           
-          <ul>
-            <div className="  w-[900px] p-[24px] flex  bg-white   absolute top-{100%] left-0 rounded-[10px]" ref={menuRef}>
-              <div>
-                <div>
-                  <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
-                    Development Tools
-                  </h1>
-                  <div className=" gap-[8px]">
-                    <div className="p-[16px] space-y-[8px]">
-                      <h2 className="font-[600] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        RAD Studio
-                      </h2>
-                      <p className="font-[400] text-[16px] leading-[150%] font-[Archivo] text-[#262626]">
-                        RAD Studio® is the ultimate IDE for building
-                        multi-platform high-performance native applications in
-                        Delphi® and modern C++ with powerful visual design tools
-                        and integrated toolchains.
-                      </p>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[600] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Delphi
-                      </h2>
-                      <p className="font-[400] text-[16px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Delphi® is the world most advanced integrated IDE for
-                        rapidly developing native high-performance
-                        multi-platform applications using powerful visual design
-                        tools and features developers love.
-                      </p>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[600] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        C++ Builder
-                      </h2>
-                      <p className="font-[400] text-[16px] leading-[150%] font-[Archivo] text-[#262626]">
-                        C++Builder® is an advanced integrated IDE for modern
-                        C++, with robust features empowering blazingly fast,
-                        stunning responsive native applications for Windows and
-                        iOS.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+        <div
+          className={`
+            absolute left-0  w-[900px] p-[24px] flex bg-white rounded-[10px] shadow transition-all duration-300 ease-in-out
+            ${is1Open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}
+          `}
+        >
+          <div>
+            <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
+              Development Tools
+            </h1>
+            <div className="gap-[8px]">
+              <div className="p-[16px] space-y-[8px]">
+                <h2 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">RAD Studio</h2>
+                <p className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
+RAD Studio® is the ultimate IDE for building multi-platform high-performance native applications in Delphi® and modern C++ with powerful visual design tools and integrated toolchains.
+                </p>
               </div>
-              <div>
-                <div className="">
-                  <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
-                    Embedded SQL Database
-                  </h1>
-
-                  <div className="p-[16px] space-y-[8px]">
-                    <h2 className="font-[600] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                      InterBase
-                    </h2>
-                    <p className="font-[400] text-[16px] leading-[150%] font-[Archivo] text-[#262626]">
-                      Ultrafast, scalable, embeddable SQL database with
-                      commercial-grade data security, disaster recovery and
-                      change synchronization
-                    </p>
-                  </div>
-                </div>
-                <div className=" mt-[48px]">
-                  <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
-                    Restful MEAP Platform
-                  </h1>
-
-                  <div className="p-[16px] space-y-[8px]">
-                    <h2 className="font-[600] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                      RAD Server
-                    </h2>
-                    <p className="font-[400] text-[16px] leading-[150%] font-[Archivo] text-[#262626]">
-                      Turn-key application server that provides a robust out of
-                      the box back-end platform on which to build and deploy
-                      Delphi and C++Builder application services.
-                    </p>
-                  </div>
-                </div>
+              <div className="p-[16px] space-y-[8px]">
+                <h2 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">Delphi</h2>
+                <p className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
+                  Delphi® is the world's most advanced integrated IDE for rapidly developing native high-performance multi-platform applications using powerful visual design tools and features developers love.
+             </p>
+              </div>
+              <div className="p-[16px] space-y-[8px]">
+                <h2 className="font-[600]  text-[#262626] font-[Archivo] cursor-pointer text-[20px]">C++ Builder</h2>
+                <p className="font-[400]  text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
+                 C++Builder® is an advanced integrated IDE for modern C++, with robust features empowering blazingly fast, stunning responsive native applications for Windows and iOS.
+                </p>
               </div>
             </div>
-          </ul>
-        )}
+          </div>
+
+          <div>
+            <h1 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[24px]">Embedded SQL Database</h1>
+            <div className="p-[16px] space-y-[8px]">
+              <h2 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">InterBase</h2>
+              <p className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
+              Ultrafast, scalable, embeddable SQL database with commercial-grade data security, disaster recovery and change synchronization
+              </p>
+            </div>
+
+            <h1 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[24px] mt-[48px]">Restful MEAP Platform</h1>
+            <div className="p-[16px] space-y-[8px]">
+              <h2 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">RAD Server</h2>
+              <p className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
+             Turn-key application server that provides a robust "out of the box" back-end platform on which to build and deploy Delphi and C++Builder application services.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
    
@@ -130,250 +98,96 @@ export default function Dropdown({ className }: { className?: string }) {
         onMouseEnter={() => setIs2Open(true)}
         onMouseLeave={() => setIs2Open(false)}
       >
-        <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
+        <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Free Tools
           <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
         </button>
 
-        {is2Open && (
-           <ul
-            style={{
-              position: "absolute",
-              top: "100%",
-              left: 0,
-              background: "#fff",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
-              listStyle: "none",
-              margin: 0,
-              padding: "5px 0",
-            }}
-          >
-            <div className=" p-[24px]  rounded-[16px]  w-[350] gap-[32] flex "ref={menuRef}>
-              <div>
-                <div className=" gap-[24px]">
-                  <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
-                    Development Tools
-                  </h1>
-                  <div className=" gap-[12px]">
-                    <div className="p-[16px] space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        C++ Compiler
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        C++ Builder Community Ed.
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Rest Debugger
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        InterBase Developer Edition
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        FMX Stencils
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Dev-C++
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        PyScripter
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        CPP Check
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Python Libraries
-                      </h2>
-                    </div>
-                  </div>
-                </div>
+        <div
+          className={`
+            absolute left-0  w-[350px] p-[24px] rounded-[16px] gap-[24px] bg-white shadow transition-all duration-300 ease-in-out
+            ${is2Open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}
+          `}
+        >
+          <h1 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[24px]">Development Tools</h1>
+          <div className=" gap-[12px]">
+            {[
+              "C++ Compiler",
+              "C++ Builder Community Ed.",
+              "Rest Debugger",
+              "InterBase Developer Edition",
+              "FMX Stencils",
+              "Dev-C++",
+              "PyScripter",
+              "CPP Check",
+              "Python Libraries",
+            ].map((tool) => (
+              <div key={tool} className="px-[16px] py-[12px] ">
+                <h2 className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">{tool}</h2>
               </div>
-            </div>
-          </ul>
-        )}
+            ))}
+          </div>
+        </div>
       </div>
 
-   
-      <button className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
+ 
+      <button className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
         Blogs
       </button>
 
-   
       <div
         className="relative inline-block"
         onMouseEnter={() => setIs3Open(true)}
         onMouseLeave={() => setIs3Open(false)}
       >
-        <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
+        <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Resources
           <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
         </button>
 
-        {is3Open && (
-<ul
-            style={{
-              position: "absolute",
-              top: "100%",
-              left: -400,
-              background: "#fff",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
-              listStyle: "none",
-              margin: 0,
-            }}
-          >
-            <div className="flex p-[24px] gap-[24px] rounded-[16px] w-[1000px]"ref={menuRef}>
-              <div>
-                <div className=" gap-[24px]">
-                  <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
-                    Learn
-                  </h1>
-                  <div className=" gap-[12px]">
-                    <div className="p-[16px] space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Videos
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Blogs
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        White papers
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Solutions
-                      </h2>
-                    </div>
+        <div
+          className={`
+            absolute left-[-400px]  w-[1000px] p-[24px] flex gap-[32px] rounded-[16px] bg-white shadow transition-all duration-300 ease-in-out
+            ${is3Open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}
+          `}
+        >
+      
+          {[
+            {
+              title: "Learn",
+              items: ["Videos", "Blogs", "White papers", "Solutions"],
+            },
+            {
+              title: "Engage",
+              items: ["Events", "Webinars", "Success Stories", "For Educators"],
+            },
+            {
+              title: "Partners",
+              items: ["Partners", "MVP Programs", "Web App Development", "Embarcadero Academy"],
+            },
+            {
+              title: "Support",
+              items: ["Migration and Upgrade Center", "Product Documentation", "Support", "Previous Versions", "FAQs"],
+            },
+          ].map((col) => (
+            <div key={col.title} className=" gap-[24px]">
+              <h1 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[24px]">{col.title}</h1>
+              <div className="gap-[12px]">
+                {col.items.map((item) => (
+                  <div key={item} className="px-[16px] py-[12px]">
+                    <h2 className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">{item}</h2>
                   </div>
-                </div>
-              </div>
-
-              <div>
-                <div className=" gap-[24px]">
-                  <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
-                    Engags
-                  </h1>
-                  <div className=" gap-[12px]">
-                    <div className="p-[16px] space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Events
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Webinars
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Sucess Stories
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        For Educators
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div className=" gap-[24px]">
-                  <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
-                    Partners
-                  </h1>
-                  <div className=" gap-[12px]">
-                    <div className="p-[16px] space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Partners
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        MVP Programs
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Web App Development
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Embarcadero Academy
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div>
-                <div className=" gap-[24px]">
-                  <h1 className="font-[600] text-[24px] leading-[150%] font-[Archivo] text-[#262626]">
-                    Support
-                  </h1>
-                  <div className=" gap-[12px]">
-                    <div className="p-[16px] space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Migration and Upgrade Center
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Product Documention
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Support
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        Previous Versions
-                      </h2>
-                    </div>
-                    <div className="p-[16px]  space-y-[8px]">
-                      <h2 className="font-[400] text-[20px] leading-[150%] font-[Archivo] text-[#262626]">
-                        FAQs
-                      </h2>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
-          </ul>
-          
-        )}
+          ))}
+        </div>
       </div>
 
-  
-      <button className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
+      <button className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
         Getit
       </button>
-      <button className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex hover:scale-120 transition duration-300 cursor-pointer">
+      <button className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
         New Tools
       </button>
     </div>

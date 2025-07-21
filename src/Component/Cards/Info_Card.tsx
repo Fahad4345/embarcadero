@@ -21,7 +21,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -37,7 +37,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -52,7 +52,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "   font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "   font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -73,7 +73,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            " font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            " font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -89,7 +89,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            " font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            " font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -105,7 +105,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -135,7 +135,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            " font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            " font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -151,7 +151,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -168,7 +168,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -183,7 +183,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -200,7 +200,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -216,7 +216,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "   font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline cursor-pointer"
+            "   font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300   cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -238,13 +238,13 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            " font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            " font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
           IconClass=""
         />
-      </div>
+      </div>  <div className="    border-t-2 border-[#D4D4D4] border-dashed lg:w-[1280px]   sm:w-[343px] md:w-[695px] xl:w-[1462px]  "></div>
        <div className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
@@ -254,13 +254,13 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
           IconClass=""
         />
-        </div>
+        </div>  <div className="    border-t-2 border-[#D4D4D4] border-dashed lg:w-[1280px] sm:w-[343px] md:w-[695px] xl:w-[1462px]  "></div>
         <div className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
@@ -270,7 +270,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
@@ -278,7 +278,7 @@ export default function Sec3_Component() {
         />
       </div>
 
-
+  <div className="    border-t-2 border-[#D4D4D4] border-dashed lg:w-[1280px] sm:w-[343px] md:w-[695px] xl:w-[1462px]  "></div>
            <div className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
@@ -288,13 +288,13 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
           IconClass=""
         />
-      </div>
+      </div>  <div className="    border-t-2 border-[#D4D4D4] border-dashed lg:w-[1280px] sm:w-[343px]  md:w-[695px] xl:w-[1462px]  "></div>
       <div className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
@@ -304,13 +304,13 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}
           IconClass=""
         />
-      </div>
+      </div>  <div className="    border-t-2 border-[#D4D4D4] border-dashed lg:w-[1280px] sm: w-[343px] md:w-[695px] xl:w-[1462px]  "></div>
     <div className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
@@ -320,7 +320,7 @@ export default function Sec3_Component() {
         </h1>
         <Buttons
           className={
-            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300  hover:underline   cursor-pointer"
+            "  font-[Archivo]   font-[500] text-[18px] mt-[16px] ml-[6px] flex justify-center text-[#262626]  leading-[28px] transition duration-300     cursor-pointer"
           }
           Button_text={"Read More "}
           IconPath={"./Assets/RightArrow.svg"}

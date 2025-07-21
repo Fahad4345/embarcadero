@@ -1,10 +1,12 @@
+"use client";
 import Icons from "../Component/Elements/Icon_Component";
 import LoadingIcon from "../Component/Elements/SvgIcon";
 import Card from "../Component/Cards/Radio_Card";
 import Span_Heading from "../Component/Elements/Span_Heading";
 import Multiple_Span_Heading from "../Component/Elements/Multiple _Span";
 import Sec3_Component from "../Component/Cards/Info_Card";
-import { Archivo } from "next/font/google";
+import { Archivo, IBM_Plex_Mono } from "next/font/google";
+
 
 import Sec4_Component from "../Component/Cards/Map_Card";
 
@@ -22,6 +24,10 @@ import FAQItem from "../Component/Cards/Question_Card";
 const archivo = Archivo({
   subsets: ["latin"],
 });
+const iBM_Plex_Mono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: "600"
+});
 
 export default function Home() {
   return (
@@ -36,22 +42,23 @@ export default function Home() {
             <HeaderSec />
          
           </div> 
-          <div className=" z-10 lg:ml-[79px] lg:mt-[88px] sm:px-[16px] xl:ml-[192px] ">
+         
+          <div className=" z-10 lg:ml-[79px] lg:mt-[88px] sm:px-[16px] xl:ml-[192px] sm:mt-[11px] md:mt-[64px] flex flex-col items-center ">
             <div
               className="flex flex-wrap lg:flex-row lg:gap-[32px] sm:flex-col 
-             lg:justify-start sm:justify-center md:flex-col md:justify-around xl:justify-center  "
+             lg:justify-start sm:justify-center md:flex-col md:justify-around xl:justify-start  "
             >
-              <div className="flex xl:max-w-[792px] xl:gap-[24px] xl:mt-[50px] lg:justify-start lg:max-w-[624px] md:mt-[64px] md:gap-[32px] sm:flex-col sm:mt-[11px]  sm:gap-[32px] ">
-                <div className="sm:items-center sm:justify-center lg:justify-start sm:flex gap-[8px]   z-10 ">
-                  <button className=" flex  bg-[#F8FAFC]  text-center  hover:bg-black transition duration-300  rounded-[12px]    px-[12px] py-[10px] text-[#262626] text-[14px] leading-[150%] font-[Archivo] font-[500px] hover:text-white  hover:scale-120 cursor-pointer group]:">
+              <div className="flex xl:max-w-[752px] xl:gap-[24px] lg:gap-[16px] lg:justify-start lg:max-w-[624px]  md:gap-[32px] sm:flex-col   sm:gap-[32px] ">
+                
+
+                <div className="sm:items-center lg:items-start  sm:justify-center sm:flex-col sm:gap-[32px] lg:gap-[32px] flex ">
+                  {" "}<div className="sm:items-center sm:justify-center lg:justify-start sm:flex gap-[8px]    z-10 ">
+                  <button className=" flex    bg-[#F8FAFC]  border-[0.75px] border-[#E5E5E5] gap-[8px] text-center  hover:bg-black transition duration-300  rounded-[12px]    px-[12px] py-[10px] text-[#262626] text-[14px] leading-[150%] font-[Archivo] font-[500px] hover:text-white  hover:scale-120 cursor-pointer  group]:">
                     <LoadingIcon className={""} />
                     RAD Studio 11.2 out now
                   </button>
-                </div>
-
-                <div className="sm:items-center lg:items-start  sm:justify-center sm:flex-col sm:gap-[16px] flex ">
-                  {" "}
-                  <p className="text-[#262626] mt-[33px] uppercase  xl:leading-[100%] xl:text-[80px] lg:text-[60px] lg:leading-[60px]  md:leading-[48px] md:text-[48px]  sm:text-[36px]   sm:leading-[40px]  font-[Archivo]    Tracking-[-2px]   font-black ">
+                  </div>
+                   <div className=" flex flex-col  sm:gap-[12px] "><p className="text-[#262626]  uppercase  xl:leading-[100%] xl:text-[80px] lg:text-[60px] lg:leading-[60px]  md:leading-[48px] md:text-[48px]  sm:text-[36px]   sm:leading-[40px]  font-[Archivo]    Tracking-[-2px]   font-[900] ">
                     ONE CODEBASE
                   </p>
                   <Span_Heading
@@ -60,31 +67,33 @@ export default function Home() {
                     }
                     Span_Text={" All PLATFORMS"}
                     Regular_Text={""}
-                  />
-                  <div className="  lg:justify-start sm:justify-center sm:gap-[16px]  sm:flex-col gap-[32px] ">
+                  /></div>
+                  
+                
+                </div>
+                   <div className=" flex flex-col  xl:max-w-[615px] xl:gap-[32px] lg: gap-[32px]">  <div className="  lg:justify-start sm:justify-center sm:gap-[16px]  sm:flex-col gap-[32px] ">
                     <p className="text-[#525252]  xl:leading-[150%] sm:leading-[28px]  sm:text-center lg:text-start text-[18px]  font-[Archivo] font-[400px] ">
                       Get to market 5x faster with a community full of
                       Technology Partners, MVPs, trainers, authors and
                       developers with the Original Universal Framework for
                       Enterprise App Development
                     </p>
-                  </div>
                 </div>
-
-                <div className="flex  z-10 lg:justify-start md:flex-row sm:flex-col sm:justify-center sm:gap-[16px] ">
-                  <button className="bg-[#262626]  text-white   rounded-[12px] px-[28px] py-[14px]  hover:bg-white hover:text-[black] hover:rounded-[10px] hover:scale-110  border-3  hover:border-black  transition duration-300 cursor-pointer ">
+                 <div className="flex  z-10 lg:justify-start md:flex-row sm:flex-col sm:justify-center sm:gap-[16px] ">
+                  <button className="bg-[#262626]  text-white   rounded-[12px] px-[28px] py-[14px]  hover:bg-white hover:text-[black] hover:rounded-[10px]    border-1  hover:border-black  transition duration-300 cursor-pointer font-[500] text-[18px]  leading-[28px] font-[Archivo] ">
                     Free Trial
                   </button>
-                  <button className="rounded-[12px] border-[#262626]   md:w-auto  text-[#262626] border-1 px-[28px] py-[14px] transition duration-300 hover:scale-110  hover:bg-[#262626]  hover:text-white cursor-pointer">
+                  <button className="rounded-[12px] border-[#262626]   md:w-auto  text-[#262626] border-1 px-[28px] py-[14px] transition duration-300  hover:bg-[#262626]  hover:text-white cursor-pointer font-[500] text-[18px]  leading-[28px] font-[Archivo]">
                     Buy Now
                   </button>
-                </div>
-                <div className=" flex lg-mt-[86px] md:mt-[64px] md:flex-row  sm:flex-col sm:justify-center sm:gap-[24px] sm:mt-[48px] sm:hidden md:hidden lg:flex xl:flex">
+                </div></div>
+               
+                <div className="  lg:w-[752px] flex lg-mt-[86px] md:mt-[64px] md:flex-row  sm:flex-col sm:justify-center sm:gap-[24px] sm:mt-[48px] sm:hidden md:hidden lg:flex xl:flex">
                   <div className=" flex  sm:flex-col gap-[4px] ">
                     <h1 className="text-black font-[IBM_Plex_Mono] lg:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] ">
                       90
                     </h1>
-                    <p className="text-[#374151] sm:text-center  text-[16px] uppercase leading-[150%] font-[400] ">
+                    <p className="text-[#374151] sm:text-center md:text-start font-[Archivo]  text-[16px] uppercase leading-[150%] font-[400] ">
                       Of the fortune 100
                     </p>
                   </div>
@@ -95,7 +104,7 @@ export default function Home() {
                     <h1 className="text-black sm:text-center lg:text-start font-[IBM_Plex_Mono] sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
                       3M+
                     </h1>
-                    <p className="text-[#374151] text-[16px] sm:text-center   uppercase leading-[150%] font-[400] ">
+                    <p className="text-[#374151] text-[16px] sm:text-center   font-[Archivo] uppercase leading-[150%] font-[400] ">
                       Developer community
                     </p>
                   </div>
@@ -103,7 +112,7 @@ export default function Home() {
                   <div className="w-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
 
                   <div className=" flex  sm:flex-col gap-[4px] ">
-                    <h1 className="text-black lg:text-start font-[IBM_Plex_Mono] sm:text-center  sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
+                    <h1 className="text-black lg:text-start font-[IBM_Plex_Mono] sm:text-center   sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
                       30+
                     </h1>
                     <p className="text-[#374151]  text-[16px] uppercase sm:text-center   leading-[150%] font-[400] ">
@@ -113,7 +122,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="   relative flex lg:mt-[96px] md:mt-[54px]  sm:mt-[33px]  md:justify-center sm:justify-center">
+              <div className="   flex md:justify-center sm:justify-center">
                 <img
                   src="/Assets/Tree.svg"
                   alt="My Icon"
@@ -123,33 +132,33 @@ export default function Home() {
               </div>
 
               <div className=" flex md:max-w-[696px] mx-auto lg-mt-[86px] md:mt-[64px] md:flex-row md:justify-center sm:flex-col  sm:gap-[24px] sm:mt-[48px] xl:hidden lg:hidden md:flex  sm:flex ">
-                <div className=" flex  sm:flex-col gap-[4px]  ">
-                  <h1 className="text-black font-[IBM_Plex_Mono] lg:text-start md:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] ">
+                <div className=" flex  sm:flex-col gap-[12px]  ">
+                  <h1 className="text-[#000000] font-[IBM_Plex_Mono] lg:text-start md:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] ">
                     90
                   </h1>
-                  <p className="text-[#374151] sm:text-center lg:text-start  text-[16px] uppercase leading-[150%] font-[400] ">
+                  <p className="text-[#374151] sm:text-center lg:text-start  font-[Archivo] text-[16px] uppercase leading-[150%] font-[400] ">
                     Of the fortune 100
                   </p>
                 </div>
 
                 <div className="w-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
 
-                <div className=" flex  sm:flex-col gap-[4px] ">
+                <div className=" flex  sm:flex-col gap-[12px] ">
                   <h1 className="text-black sm:text-center  md:text-start font-[IBM_Plex_Mono] sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
                     3M+
                   </h1>
-                  <p className="text-[#374151] text-[16px] sm:text-center   uppercase leading-[150%] font-[400] ">
+                  <p className="text-[#374151] text-[16px] sm:text-center  font-[Archivo]  uppercase leading-[150%] font-[400] ">
                     Developer community
                   </p>
                 </div>
 
                 <div className="w-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
 
-                <div className=" flex  sm:flex-col gap-[4px] ">
+                <div className=" flex  sm:flex-col gap-[12px] ">
                   <h1 className="text-black font-[IBM_Plex_Mono] sm:text-center lg:text-start  md:text-start sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
                     30+
                   </h1>
-                  <p className="text-[#374151]  text-[16px] uppercase sm:text-center   leading-[150%] font-[400] ">
+                  <p className="text-[#374151]  text-[16px] uppercase sm:text-center  font-[Archivo]  leading-[150%] font-[400] ">
                     Years in the business
                   </p>
                 </div>
@@ -217,19 +226,19 @@ export default function Home() {
           <div className=" sm:mx-[16px] lg:mt-[206px] xl:mt-[196px] ">
             {" "}
             <Multiple_Span_Heading
-              Span_Text={" Over Three Million Developers "}
+              Span_Text={" Over Three Million  "}
               IconPath={"/Assets/line.svg"}
               Text_1={"Trusted by"}
-              Text_2={"World Wide"}
+              Text_2={" Developers World Wide"}
               className={
-                "  flex relative  justify-center text-center xl:mt-[196px] md:mt-[96px] sm:mt-[80px] lg:gap-[41px]"
+                "  flex justify-center text-center xl:mt-[196px] md:mt-[96px] sm:mt-[80px] "
               }
               Icon_Class={
-                " sm:hidden md:hidden lg:flex absolute  lg:top-4 lg:left-[-75px] xl:top-7 xl:left-[-75px]"
+                " sm:hidden md:hidden lg:flex absolute  lg:top-4 lg:left-[-100px] xl:top-8 xl:left-[-92px]"
               }
             />
           </div>
-          <div><Card /></div>
+          <div className=" flex justify-center"><Card /></div>
           <div><SmCard className={" z-10 sm:flex md:flex lg:hidden xl:hidden"} />
           </div> 
           <div className=" flex flex-col   sm:gap-[80px]  md:gap-[96px] xl:gap-[128px] xl:mt-[196px] lg:mt-[173px] md:mt-[129px]  sm:mt-[80px] ">
@@ -241,24 +250,24 @@ export default function Home() {
                 Text_2={""}
                 className={" flex  relative text-center justify-center "}
                 Icon_Class={
-                  " absolute lg:right-[-70px] lg:top-0 xl:right-[-70px] xl:top-5 sm:hidden md:hidden lg:flex"
+                  " absolute lg:right-[-90px] lg:top-0 xl:right-[-100px] xl:top-5 sm:hidden md:hidden lg:flex"
                 }
               />{" "}
            
-               <div className="flex justify-center "><Sec3_Component /></div> 
+               <div className="flex justify-center  "><Sec3_Component /></div> 
             
             </div>
 
           
               
-             <div><Sec4_Component /></div> 
+             <div className=""><Sec4_Component /></div> 
            
-            <div className=" flex flex-col  mx-auto sm:gap-[64px] md:gap-[64px] ">
+            <div className=" flex flex-col  mx-auto sm:gap-[64px] md:gap-[64px] xl:w-[816px] lg:w-[842px] md:w-[696px] sm:w-[343px] ">
               <Multiple_Span_Heading
                 Icon_Class={
-                  "sm:hidden md:hidden lg:flex absolute lg:top-5 lg:left-[-120px] xl:top-7 xl:left-[-120px]"
+                  "sm:hidden md:hidden lg:flex absolute lg:top-5 lg:left-[-120px] xl:top-8 xl:left-[-120px]"
                 }
-                className={"flex  relative justify-center"}
+                className={"flex  relative justify-center sm:text-center"}
                 Text_1={"Frequently Asked "}
                 Span_Text={"Questions"}
                 Text_2={""}
@@ -270,6 +279,18 @@ export default function Home() {
             <div className=" flex justify-center">
               <Footer />
             </div>
+          </div>
+          <div className="group  transition duration-300 cursor-pointer">
+            <p className="font-[satoshi] font-[500] text-[12px] leading-[1.5] tracking-[0]   text-[#00FF00] ">
+              <button
+                type="button"
+                className="cursor-pointer"
+                onClick={()=> {}}
+              >
+                Browse
+              </button>
+            </p>
+            <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#00FF00]"></span>
           </div>
         </div>
       </body>

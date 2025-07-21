@@ -167,18 +167,13 @@ export default function HeaderSec() {
           )}
         </div>
       </div>):(<div className="flex justify-center gap-[24px] ">
-        <div className="  flex  flex-row lg:gap-[8px] sm:gap-[24px]"><Button
-          className="bg-transparent pt-[10px] text-black sm:hidden md:flex font-[Archivo] font-[500] text-[14px] leading-[22px] cursor-pointer"
-          Button_text={"Sign In"}
-        />
-        <Button
-          className="md:px-[16px] md:py-[8px] rounded-[10px] border-black font-[Archivo] sm:hidden md:flex text-black border-1 lg:px-[20px] lg:py-[8px] bg-[white] transition duration-300 hover:bg-[#262626] hover:text-white hover:scale-110 cursor-pointer"
-          Button_text={"Buy Now"}
-        />
-        <Button
-          className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] bg-[#262626] text-white font-[Archivo] hover:bg-white hover:text-[black] hover:rounded-[10px] border-3 hover:border-black transition duration-300 hover:scale-110 cursor-pointer"
-          Button_text={"Free Trial"}
-        /></div>
+          <div className="  flex  flex-row lg:gap-[8px] sm:gap-[24px]">
+            <button  className="bg-transparent  flex  items-center gap-[8px] rounded-[8px] text-black sm:hidden md:flex font-[Archivo] font-[500] text-[14px] leading-[22px] cursor-pointer">Sign In</button>
+           <button className="md:px-[16px] md:py-[8px] rounded-[10px] border-[#262626] font-[Archivo] sm:hidden md:flex text-[#262626]  font-[500] text-[14px] leading-[22px] border-1 lg:px-[20px] lg:py-[8px] bg-[white] transition duration-300 hover:bg-[#262626] hover:text-white  cursor-pointer"
+         >Buy Now</button>
+       <button  className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#262626] text-white font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-white hover:text-[black] border-1 hover:border-black transition duration-300 cursor-pointer"
+         > Free Trial</button>
+       </div>
         
 
         <div className=" xl:hidden lg:hidden md:flex mt-[7px] ">
@@ -246,8 +241,8 @@ export default function HeaderSec() {
       
   
       {isOpen && (
-        <>
-          <div className="fixed inset-0  "></div>
+       
+        
 
           <div
             ref={menuRef}
@@ -290,7 +285,7 @@ export default function HeaderSec() {
                 <div key={index} className="relative">
                   <button
                     onClick={() => toggleDropdown(index)}
-                    className="text-[#262626] w-full flex justify-between items-center font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] hover:scale-105 transition duration-300 cursor-pointer"
+                    className="text-[#262626] w-full flex justify-between items-center font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%]  transition  hover:text-amber-500 duration-300 cursor-pointer"
                   >
                     <div>{item.label}</div>
                     {item.DropDownItem && item.DropDownItem.length > 0 && (
@@ -318,9 +313,23 @@ export default function HeaderSec() {
                   )}
                 </div>
               ))}
-            </div>
+          </div>   <div className="  flex  flex-col gap-[16px] ">
+            <button  className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#171717] text-white font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-white hover:text-[black] border-1 hover:border-black transition duration-300 cursor-pointer"
+            > Free Trial</button>
+             <button className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-white text-[#171717] font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#171717] hover:text-white border-1 hover:border-black transition duration-300 cursor-pointer"
+           >Buy Now</button>
+       
+              <button className= "md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-transparent text-[#262626] font-[Archivo] font-[500] text-[14px] leading-[22px] transition duration-300 cursor-pointer hover:underline"
+          >Sign In</button>
+          
+          
+     
+   
           </div>
-        </>
+       
+          </div>
+        
+  
       )}
     </div>
   );

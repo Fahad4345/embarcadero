@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased  w-[100%] `}
       >
         {children}
- <Image
+ {/* <Image
                           src={"/Assets/BackBox.svg"}
                           alt={""}
                           width={536}
@@ -184,7 +184,7 @@ export default function RootLayout({
           width={720}
           height={600}
           className=" absolute z-0   lg:hidden xl:hidden lg:left-[0px] lg:top-[6869px] md:left-[382px] md:top-[6735px] sm:hidden w-[731px] h-[731px]"
-        />
+        /> */}
         {/* <Image src={"/Assets/Gradients/Vector 233 (1).png"} alt={""} width={720} height={600}  className=" absolute right-0 top-[841px] w-[1063.44873046875px] h-[266.67626953125px]"/> */}
       </body>
     </html>
