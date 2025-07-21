@@ -12,7 +12,7 @@ import Footer from "../Component/Cards/Footer";
 
 import HeaderSec from "../Component/Cards/HeaderSec";
 import NavBar from "../Component/Cards/NavBar";
-import SmCard from "../Component/Cards/Info_card_small";
+import SmCard from "../Component/Cards/Radio_card_sm";
 import FAQItem from "../Component/Cards/Question_Card";
 
 

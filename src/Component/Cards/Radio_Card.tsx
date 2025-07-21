@@ -69,10 +69,10 @@ export default function Card() {
   };
 
   return (
-    <div className=" z-10 xl:justify-center flex xl:ml-[192px] lg:mt-[128px]  lg:h-[455px]  lg:gap-[85px] xl:gap-[128px] lg:mx-[81px] sm:hidden md:hidden lg:flex items-center">
+    <div className=" xl:justify-center flex xl:ml-[192px] lg:mt-[128px]  lg:h-[455px]  lg:gap-[85px] xl:gap-[128px] lg:mx-[81px] sm:hidden md:hidden lg:flex items-center">
       <div className="   flex  xl:py-[167.42px] ">
         <ul className=" flex flex-col gap-[24px]">
-          <li className="flex items-center gap-[16px]">
+          <li  className="flex items-center gap-[16px] z-10 ">
             <input
             id="1"
               className="w-[12px] h-[12px] border-none cursor-pointer"
@@ -92,7 +92,7 @@ export default function Card() {
               Rad Studio
             </label>
           </li>
-          <li className="flex items-center gap-[24px]">
+          <li className="flex items-center z-10  gap-[24px]">
         
             <input
             id="2"
@@ -112,7 +112,7 @@ export default function Card() {
               Delphi
             </label>
           </li>
-          <li className="flex items-center gap-[24px]">
+          <li className="flex items-center z-10  gap-[24px]">
             <input
             id="3"
               className="w-[12px] h-[12px] border-none cursor-pointer"
@@ -132,7 +132,7 @@ export default function Card() {
               C++ Builder
             </label>
           </li>
-          <li className="flex items-center gap-[24px]">
+          <li className="flex items-center z-10  gap-[24px]">
             <input
              id="4"
               className="w-[12px] h-[12px] border-none cursor-pointer"
@@ -152,7 +152,7 @@ export default function Card() {
               InterBase
             </label>
           </li>
-          <li className="flex items-center gap-[24px]">
+          <li className="flex items-center  z-10 gap-[24px]">
             <input
             id="5"
               className="w-[12px] h-[12px] border-none cursor-pointer"
