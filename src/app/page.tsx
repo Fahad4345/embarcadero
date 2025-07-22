@@ -183,7 +183,7 @@ export default function Home() {
 
               <div className=" flex md:max-w-[696px] mx-auto lg-mt-[86px] md:mt-[64px] md:flex-row md:justify-center sm:flex-col  sm:gap-[24px] sm:mt-[48px] xl:hidden lg:hidden md:flex  sm:flex ">
                 <div className=" flex  sm:flex-col gap-[12px]  ">
-                  <h1 className={`text-[#000000] ${IBM_Plex_Mono} lg:text-start md:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] `}>
+                  <h1 className={`text-[#000000] ${iBM_Plex_Mono} lg:text-start md:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] `}>
                     90
                   </h1>
                   <p className="text-[#374151] sm:text-center lg:text-start  font-[Archivo] text-[16px] uppercase leading-[150%] font-[400] ">
@@ -205,7 +205,7 @@ export default function Home() {
                 <div className="w-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
 
                 <div className=" flex  sm:flex-col gap-[12px] ">
-                  <h1 className={`text-black ${IBM_Plex_Mono} sm:text-center lg:text-start  md:text-start sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] `}>
+                  <h1 className={`text-black ${iBM_Plex_Mono} sm:text-center lg:text-start  md:text-start sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] `}>
                     30+
                   </h1>
                   <p className="text-[#374151]  text-[16px] uppercase sm:text-center  font-[Archivo]  leading-[150%] font-[400] ">
