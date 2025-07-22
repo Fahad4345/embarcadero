@@ -31,13 +31,14 @@ export default function Dropdown({ className }: { className?: string }) {
     <div className={`flex gap-[24px] mt-[7px] ${className}`} ref={menuRef}>
  
       <div
-        className="relative inline-block"
+        className="relative z-50 inline-block"
         onMouseEnter={() => setIs1Open(true)}
         onMouseLeave={() => setIs1Open(false)}
       >
         <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Products
-          <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
+          { is1Open ?(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} />):(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16}  className="rotate-180"/>)}
+         
         </button>
 
         <div
@@ -60,13 +61,13 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
               <div className="p-[16px] space-y-[8px]">
                 <h2 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">Delphi</h2>
                 <p className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
-                  Delphi® is the world's most advanced integrated IDE for rapidly developing native high-performance multi-platform applications using powerful visual design tools and features developers love.
+                  Delphi  is the world s most advanced integrated IDE for rapidly developing native high-performance multi-platform applications using powerful visual design tools and features developers love.
              </p>
               </div>
               <div className="p-[16px] space-y-[8px]">
                 <h2 className="font-[600]  text-[#262626] font-[Archivo] cursor-pointer text-[20px]">C++ Builder</h2>
                 <p className="font-[400]  text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
-                 C++Builder® is an advanced integrated IDE for modern C++, with robust features empowering blazingly fast, stunning responsive native applications for Windows and iOS.
+                 C++Builder  is an advanced integrated IDE for modern C++, with robust features empowering blazingly fast, stunning responsive native applications for Windows and iOS.
                 </p>
               </div>
             </div>
@@ -85,7 +86,7 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
             <div className="p-[16px] space-y-[8px]">
               <h2 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">RAD Server</h2>
               <p className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
-             Turn-key application server that provides a robust "out of the box" back-end platform on which to build and deploy Delphi and C++Builder application services.
+             Turn-key application server that provides a robust  out of the box  back-end platform on which to build and deploy Delphi and C++Builder application services.
               </p>
             </div>
           </div>
@@ -94,13 +95,13 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
 
    
       <div
-        className="relative inline-block"
+        className="relative z-50 inline-block"
         onMouseEnter={() => setIs2Open(true)}
         onMouseLeave={() => setIs2Open(false)}
       >
         <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Free Tools
-          <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
+          { is2Open ?(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} />):(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16}  className="rotate-180"/>)}
         </button>
 
         <div
@@ -136,13 +137,13 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
       </button>
 
       <div
-        className="relative inline-block"
+        className="relative z-50 inline-block"
         onMouseEnter={() => setIs3Open(true)}
         onMouseLeave={() => setIs3Open(false)}
       >
         <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Resources
-          <Icons IconPath={"/Assets/DownArrow.svg"} width={16} height={16} />
+           { is3Open ?(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} />):(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16}  className="rotate-180"/>)}
         </button>
 
         <div

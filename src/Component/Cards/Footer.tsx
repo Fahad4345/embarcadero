@@ -5,13 +5,13 @@ import Image from "next/image";
 export default function Footer() {
   return (
     
-      <div className=" z-10 xl:mt-[128px]  xl:px-[80px] xl:py-[48px] lg:px-[80px] lg:py-[48px] sm:px-[16px] sm:gap-y-[40px]  md:gap-y-[48px] sm:py-[32px]  md:px-[24px] md:py-[40px] bg-[#FFFFFF99]">
-        <div className="flex sm:flex-col  xl:flex-row lg:flex-col xl:gap-[32px] sm:gap-[40px]  md:gap-[48px]">
-        <div className=" flex justify-start xl:w-[447] "><Image src={"/Assets/logo.svg"} alt={""} width={138} height={40}className="w-[138px] h-[35px]"/>
+      <div className="  xl:mt-[128px]  xl:px-[80px] xl:py-[48px] lg:px-[80px] lg:py-[48px] sm:px-[16px]    bg-[#FFFFFF99] sm:gap-[32px]  md:gap-[40px]  flex flex-col">
+        <div className="flex sm:flex-col  xl:flex-row lg:flex-col xl:gap-[32px] lg:gap-[48px] ">
+        <div className=" flex justify-start   xl:w-[447] "><Image src={"/Assets/logo.svg"} alt={""} width={138} height={40}className="w-[138px] h-[35px]"/>
           </div>
             
           
-          <div className="z-10 flex xl:justify-between md:justify-center flex-wrap  sm:hidden md:hidden lg:flex lg:gap-[70.8px] sm:gap-[20px] md:gap-[48px] ">
+          <div className="z-10 flex xl:justify-between md:justify-center flex-wrap  sm:hidden md:hidden lg:flex lg:gap-[32px]  ">
             <div className="  flex flex-col ] gap-[26px]">
               <h1 className="font-[700]  text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
                 Products
@@ -139,7 +139,7 @@ export default function Footer() {
 
      
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  md:gap-[48px] sm:gap-[40px] xl:hidden lg:hidden sm:mt-[32px] md:mt-[40px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  md:gap-[48px] sm:gap-[40px] xl:hidden lg:hidden ">
 
   <div>
     <div className="flex flex-col gap-[26px]">

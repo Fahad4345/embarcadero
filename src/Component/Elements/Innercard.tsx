@@ -39,7 +39,7 @@ export default function Innercard({
             </div>
           </div>
           
-          <div className="flex  gap-[8px] ">
+          <div className="flex  sm:gap-[8px] md:gap-[12px] ">
             <button className="bg-[#262626]  text-[16px] text-white leading-[24px] rounded-[10px] font-[Archivo] px-[24px] py-[10px]  font-[500px]  hover:bg-white hover:text-[black] hover:rounded-[10px] border-1  hover:border-black  transition duration-300 cursor-pointer">
               {button1text}
             </button>

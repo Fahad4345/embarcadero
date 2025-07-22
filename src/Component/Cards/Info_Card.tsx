@@ -7,8 +7,8 @@ import Buttons from "./Button"
 
 export default function Sec3_Component() {
   return (
-   <div className="z-10    flex justify-start     " >
- <div className="flex  flex-col   md:hidden xl:flex lg:flex sm:hidden  gap-[80px]    ">
+   <div className=" flex justify-start     " >
+ <div className="flex z-30 flex-col   md:hidden xl:flex lg:flex sm:hidden  gap-[80px]  xl:w-[1536px]   ">
      <div className=" flex  gap-[32px] xl:w-[1462px] lg:w-[1280px] ">
       
       

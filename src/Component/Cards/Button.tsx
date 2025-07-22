@@ -3,7 +3,7 @@ import Icons from "../Elements/Icon_Component";
 
 export default function Button({
   className,
-  IconClass,
+
   Button_text,
   IconPath,
 }: {

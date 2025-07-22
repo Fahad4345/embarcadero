@@ -1,13 +1,12 @@
 ### Embarcadero :
 Update : 
 Integrated  :
--  Added  Bg Gradient for 1920
--  Added  function for Menu bar
--   Fixed some responsiveness
+-  Added menu bar for 744 ,375
+-   Make changes in screen according to figma 
+-   
 Next : 
-- Some remaining Gradient in bacKground body
+- Gradients
 
 
-
-Loom : (https://www.loom.com/share/62c9da217856456ebda9610732cad3a9?sid=581926e1-338e-49ee-b95a-680760ae073c)
-Preview : (https://embarcadero-xi.vercel.app/)
+Loom : (https://www.loom.com/share/8aa37f96548d4d31ad06bfac76347240?sid=7bf3e099-953d-4280-a35f-db0e215d2f79)
+Preview : (Not deployed due to some errors)
