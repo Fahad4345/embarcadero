@@ -1,12 +1,12 @@
 ### Embarcadero :
 Update : 
 Integrated  :
--  Gradient added
+-  Gradient  Completed
 -  Make changes in screen according to figma 
--  Added Up arrow on drop down on hover 
+-   Added rotation on drop down hover  arrow button
 Next : 
 -  Some fixes left
 
 
-Loom : (https://www.loom.com/share/728e4b9da0114c808711776842523c61?sid=2251a01a-ac8e-4f73-bf09-a9e5d24fc70f)
+Loom : (https://www.loom.com/share/408c678eceed4040b9186eb0b39516e5?sid=cf846288-8bb2-448f-aaa1-586f8ff900d7)
 Preview : (https://embarcadero-xi.vercel.app/)

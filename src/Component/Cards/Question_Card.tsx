@@ -15,8 +15,8 @@ const FAQItem = ({
 
   return (
    
-    <div className="   border-[#D4D4D4] border-[1px] z-50  bg-white p-[24px] rounded-[16px] border-dashed on hover:border-[#4F46E5]  cursor-pointer">
-    <div className=" flex flex-row items-center gap-[16px]" onClick={() => setIsOpen(!isOpen)}>
+    <div className="   border-[#D4D4D4] border-[1px] z-50  bg-white p-[24px] rounded-[16px] border-dashed on hover:border-[#4F46E5]  cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+    <div className=" flex flex-row items-center gap-[16px]" >
       
          <div className="  xl:w-[732px] lg:w-[758px] md:w-[612px] sm:w-[259px]"> <p className=" text-[#525252]  text-start font-[Archivo] md:text-[20px] sm:text-[18px]  leading-[120%] Tracking-[-1px] font-[500]   ">
         {question}
@@ -30,7 +30,7 @@ const FAQItem = ({
         </p>
     </div>
  
-    <p> {isOpen && <div className=" text-gray-600 ">{answer}</div>}</p>
+    <p> {isOpen && <div className=" text-gray-600  mt-[10px] font-[Archivo]">{answer}</div>}</p>
 </div>
 
   );
@@ -41,23 +41,23 @@ export default function FAQSection() {
   const faqs = [
     {
       question: "How can I get support / Unable to get support",
-      answer: "xyz",
+      answer: "A frequently asked questions list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps",
     },
     {
       question: "How can I renew my license?",
-      answer: "xyz",
+      answer: "A frequently asked questions list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps",
     },
     {
       question: "How can I download/purchase a previous version",
-      answer: "xyz",
+      answer: "A frequently asked questions list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps",
     },
     {
       question: "How can I start building software applications",
-      answer: "xyz",
+      answer: "A frequently asked questions list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps",
     },
     {
       question: "Is Delphi dead?",
-      answer: "xyz",
+      answer: "A frequently asked questions list is often used in articles, websites, email lists, and online forums where common questions tend to recur, for example through posts or queries by new users related to common knowledge gaps",
     },
   ];
 
