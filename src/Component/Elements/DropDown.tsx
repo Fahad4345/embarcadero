@@ -37,7 +37,7 @@ export default function Dropdown({ className }: { className?: string }) {
       >
         <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Products
-          { is1Open ?(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} />):(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16}  className="rotate-180"/>)}
+          <Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} className={`  transition-all duration-500  ${is1Open ? "rotate-[0deg] ":" rotate-[180deg]"  }`}  />
          
         </button>
 
@@ -101,7 +101,7 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
       >
         <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Free Tools
-          { is2Open ?(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} />):(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16}  className="rotate-180"/>)}
+       <Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} className={`  transition-all duration-500  ${is2Open ? "rotate-[0deg] ":" rotate-[180deg]"  }`}  />
         </button>
 
         <div
@@ -143,7 +143,7 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
       >
         <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Resources
-           { is3Open ?(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} />):(<Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16}  className="rotate-180"/>)}
+         <Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} className={`  transition-all duration-500  ${is3Open ? "rotate-[0deg] ":" rotate-[180deg]"  }`}  />
         </button>
 
         <div

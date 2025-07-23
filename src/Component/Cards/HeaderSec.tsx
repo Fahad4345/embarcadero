@@ -87,7 +87,7 @@ export default function HeaderSec() {
   }, []);
 
   return (
-    <div className="xl:px-[196px] z-10 xl:py-[16px] lg:px-[80px] lg:py-[16px] md:px-[24px] md:py-[16px] sm:py-[12px] sm:px-[16px] flex  justify-between mx-auto max-w-[1920px] w-full
+    <div className="xl:px-[196px] z-10  bg-white xl:py-[16px] lg:px-[80px] lg:py-[16px] md:px-[24px] md:py-[16px] sm:py-[12px] sm:px-[16px] flex  justify-between mx-auto max-w-[1920px] w-full
     ">
 
 

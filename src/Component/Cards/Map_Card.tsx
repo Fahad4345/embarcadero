@@ -5,7 +5,7 @@ import Span_Heading from "../Elements/Span_Heading";
 
 export default function Sec4_Component() {
   return (
-    <div className="  flex   z-10 w-full   bg-white  xl:justify-center xl:mt-[128px] lg:mt-[132px] lg:flex-row  sm:flex-col      ">
+    <div className="  flex   z-50 w-full   bg-white  xl:justify-center xl:mt-[128px] lg:mt-[132px] lg:flex-row  sm:flex-col      ">
       <div className="   flex  flex-col    mx-auto sm:px-[16px]  md:px-[0px] gap-[32px]  ">
     <div className=" flex flex-col sm:gap-[8px]    xl:w-[647px] lg:w-[514px] md:w-[696px] sm:w-[370px] ">
       <div className="flex sm:justify-center lg:justify-start " >
