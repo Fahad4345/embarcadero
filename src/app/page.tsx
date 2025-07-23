@@ -32,13 +32,11 @@ const iBM_Plex_Mono = IBM_Plex_Mono({
 
 export default function Home() {
   return (
-    <html>
-      <head></head>
-      <body className={archivo.className}>
+
         <div
-          className={` w-[100%]   MainTab bg-white   flex flex-col   overflow-hidden`}
+          className={`  w-100% MainTab bg-white   flex flex-col   overflow-hidden ${archivo.className}`}
         >
-          <div className="relative ">
+          <div className="relative flex flex-col">
             <NavBar />
             <HeaderSec />
              <Image
@@ -57,7 +55,7 @@ export default function Home() {
                     />
          
           </div> 
-          <div className="  z-30 flex flex-col items-center"> <div className="   relative lg:ml-[79px] lg:mt-[88px] sm:px-[16px] lg:px-[0px] xl:ml-[192px] sm:mt-[11px] md:mt-[64px] flex flex-col   items-start max-w-[1750px]">
+          <div className="   flex flex-col items-center"> <div className="   relative lg:ml-[79px] lg:mt-[88px] sm:px-[16px] lg:px-[0px] xl:ml-[192px] sm:mt-[11px] md:mt-[64px] flex flex-col   items-start max-w-[1750px]">
             <div
               className="flex flex-wrap lg:flex-row xl:gap-x-[63px]  lg:gap-x-[32px] md:gap-y-[54px] sm:gap-y-[33.63px] sm:flex-col 
              lg:justify-start sm:justify-center md:flex-col  xl:justify-start"
@@ -67,7 +65,7 @@ export default function Home() {
 
                 <div className="sm:items-center lg:items-start  sm:justify-center sm:flex-col sm:gap-[32px] lg:gap-[32px] flex ">
                   {" "}<div className="  sm:items-center sm:justify-center lg:justify-start sm:flex gap-[8px]">
-                  <button className=" flex   bg-[#F8FAFC]  border-[0.75px] border-[#E5E5E5] gap-[8px] text-center  hover:bg-black transition duration-300  rounded-[12px]    px-[12px] py-[10px] text-[#262626] text-[14px] leading-[150%] font-[Archivo] font-[500px] hover:text-white  hover:scale-120 cursor-pointer  group]:">
+                  <button className=" flex z-30  bg-[#F8FAFC]  border-[0.75px] border-[#E5E5E5] gap-[8px] text-center  hover:bg-[#262626] hover:opacity-[.90] transition duration-300  rounded-[12px]    px-[12px] py-[10px] text-[#262626] text-[14px] leading-[150%] font-[Archivo] font-[500px] hover:text-white  hover:scale-120 cursor-pointer  group]:">
                     <LoadingIcon className={""} />
                     RAD Studio 11.2 out now
                   </button>
@@ -94,17 +92,17 @@ export default function Home() {
                     </p>
                 </div>
                  <div className="flex  z-10 lg:justify-start md:flex-row sm:flex-col sm:justify-center sm:gap-[16px] ">
-                  <button className="bg-[#262626]  text-white   rounded-[12px] px-[28px] py-[14px]  hover:bg-white hover:text-[black] hover:rounded-[10px]    border-1  hover:border-black  transition duration-300 cursor-pointer font-[500] text-[18px]  leading-[28px] font-[Archivo] ">
+                  <button className="bg-[#262626]  text-white  z-30  rounded-[12px] px-[28px] py-[14px]  hover:bg-[#262626]/90   border-1 border-black  transition duration-300 cursor-pointer font-[500] text-[18px]  leading-[28px] font-[Archivo] ">
                     Free Trial
                   </button>
-                  <button className="rounded-[12px] border-[#262626]   md:w-auto  text-[#262626] border-1 px-[28px] py-[14px] transition duration-300  hover:bg-[#262626]  hover:text-white cursor-pointer font-[500] text-[18px]  leading-[28px] font-[Archivo]">
+                  <button className="rounded-[12px] border-[#262626]  z-30  md:w-auto  text-[#262626] border-1 px-[28px] py-[14px] transition duration-300  hover:bg-[#262626] hover:text-white cursor-pointer font-[500] text-[18px]  leading-[28px] font-[Archivo]">
                     Buy Now
                   </button>
                 </div></div>
                
-                <div className=" xl:w-[750px] lg:w-[675px] flex lg-mt-[86px] md:mt-[64px] md:flex-row  sm:flex-col   xl:gap-[0px] lg:gap-[32px] sm:gap-[24px] sm:mt-[48px] sm:hidden md:hidden lg:flex xl:flex">
+                <div className={` z-10  xl:w-[750px] lg:w-[699px] flex lg-mt-[86px] md:mt-[64px] md:flex-row  sm:flex-col   xl:gap-[0px] lg:gap-[32px] sm:gap-[24px] sm:mt-[48px] sm:hidden md:hidden lg:flex xl:flex`}>
                   <div className=" flex  sm:flex-col gap-[4px] ">
-                    <h1 className="text-black font-[IBM_Plex_Mono] lg:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] ">
+                    <h1 className={`text-black ${iBM_Plex_Mono.className} lg:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] `}>
                       90
                     </h1>
                     <p className="text-[#374151] sm:text-center md:text-start font-[Archivo]  text-[16px] uppercase leading-[150%] font-[400] ">
@@ -118,7 +116,7 @@ export default function Home() {
                     <h1 className="text-black sm:text-center lg:text-start font-[IBM_Plex_Mono] sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
                       3M+
                     </h1>
-                    <p className="text-[#374151] text-[16px] sm:text-center   font-[Archivo] uppercase leading-[150%] font-[400] ">
+                    <p className="text-[#374151] text-[16px] sm:text-center lg:text-start   font-[Archivo] uppercase leading-[150%] font-[400] ">
                       Developer community
                     </p>
                   </div>
@@ -129,7 +127,7 @@ export default function Home() {
                     <h1 className="text-black lg:text-start font-[IBM_Plex_Mono] sm:text-center   sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] ">
                       30+
                     </h1>
-                    <p className="text-[#374151]  text-[16px] uppercase sm:text-center   leading-[150%] font-[400] ">
+                    <p className="text-[#374151]  text-[16px] uppercase sm:text-center lg:text-start   leading-[150%] font-[400] ">
                       Years in the business
                     </p>
                   </div>
@@ -158,32 +156,32 @@ export default function Home() {
                 
               </div>
 
-              <div className="     z-10 relative flex md:justify-center sm:justify-center">
+              <div className=" relative flex md:justify-center sm:justify-center">
                 <img
                   src="/Assets/Tree.svg"
                   alt="My Icon"
-                  className=" sm:mx-[16px]  md:mx-[0px] sm:w-[343px] sm:h-[285px] md:w-[516px] md:h-[430px] lg:w-[624px] lg:h-[520px] xl:w-[720px] xl:h-[600px]"
+                  className=" sm:mx-[16px]    z-0 md:mx-[0px] sm:w-[343px] sm:h-[285px] md:w-[516px] md:h-[430px] lg:w-[624px] lg:h-[520px] xl:w-[720px] xl:h-[600px]"
                 />
                 <Image
                                           src={"/Assets/LGBackBox.svg"}
                                           alt={""}
                                           width={536.64}
                                           height={605}
-                                          className=" absolute  z-0 sm:hidden md:hidden xl:hidden lg:flex  lg:left-[330px]  lg:top-[100px]"
+                                          className=" absolute  z-0 sm:hidden md:hidden xl:hidden lg:flex  lg:left-[300px]  lg:top-[100px] w-[536px] h-[605px]"
                 /> 
                     <Image
                                           src={"/Assets/XLBackBox.png"}
                                           alt={""}
                                           width={536.64}
                                           height={605}
-                                          className=" absolute  z-0 sm:hidden md:hidden  lg:hidden  xl:flex  xl:left-[400px] xl:top-[100px]"
+                                          className=" absolute  z-0 sm:hidden md:hidden  lg: hidden  xl:flex  xl:left-[400px] xl:top-[100px]"
                                         /> 
                        
               </div>
 
-              <div className=" flex md:max-w-[696px] mx-auto lg-mt-[86px] md:mt-[64px] md:flex-row md:justify-center sm:flex-col  sm:gap-[24px] sm:mt-[48px] xl:hidden lg:hidden md:flex  sm:flex ">
+              <div className={`flex     md:max-w-[696px] mx-auto lg-mt-[86px] md:mt-[64px] md:flex-row md:justify-center sm:flex-col  sm:gap-[24px] sm:mt-[48px] xl:hidden lg:hidden md:flex  sm:flex `}>
                 <div className=" flex  sm:flex-col gap-[12px]  ">
-                  <h1 className={`text-[#000000] ${iBM_Plex_Mono} lg:text-start md:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] `}>
+                  <h1 className={`text-[#000000]  font-[IBM_PLEX_MONO] lg:text-start md:text-start sm:text-center sm:text-[28px] Titlecase leading-[120%]  font-[600] `}>
                     90
                   </h1>
                   <p className="text-[#374151] sm:text-center lg:text-start  font-[Archivo] text-[16px] uppercase leading-[150%] font-[400] ">
@@ -194,7 +192,7 @@ export default function Home() {
                 <div className="w-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
 
                 <div className=" flex  sm:flex-col gap-[12px] ">
-                  <h1 className={`text-black sm:text-center  md:text-start ${iBM_Plex_Mono} sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] `}>
+                  <h1 className={`text-black sm:text-center  md:text-start font-[IBM_PLEX_MONO] sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] `}>
                     3M+
                   </h1>
                   <p className="text-[#374151] text-[16px] sm:text-center  font-[Archivo]  uppercase leading-[150%] font-[400] ">
@@ -205,7 +203,7 @@ export default function Home() {
                 <div className="w-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
 
                 <div className=" flex  sm:flex-col gap-[12px] ">
-                  <h1 className={`text-black ${iBM_Plex_Mono} sm:text-center lg:text-start  md:text-start sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] `}>
+                  <h1 className={`text-black font-[IBM_PLEX_MONO] sm:text-center lg:text-start  md:text-start sm:text-[28px] xl:text-[30px] Titlecase leading-[120%]  font-[600] `}>
                     30+
                   </h1>
                   <p className="text-[#374151]  text-[16px] uppercase sm:text-center  font-[Archivo]  leading-[150%] font-[400] ">
@@ -277,14 +275,14 @@ export default function Home() {
                           alt={""}
                           width={869}
                           height={869}
-                          className=" absolute xl:left-[900px]  z-0 xl:top-[400px] lg:left-[900px] lg:top-[400px] md:left-[0px] lg:flex  md:hidden sm:hidden md:top-[300px]  sm:top-[400px] sm:left-[0px] w-[869px] h-[869px] overflow-hidden"
+                          className=" absolute xl:left-[900px]  z-0 xl:top-[400px] lg:left-[550px] lg:top-[300px] md:left-[0px] lg:flex  md:hidden sm:hidden md:top-[300px]  sm:top-[400px] sm:left-[0px] w-[869px] h-[869px] overflow-hidden"
                         />
                         <Image
                           src={"/Assets/Gradients/Ellipse 14 (2).png"}
                           alt={""}
                           width={869}
                           height={869}
-                          className=" absolute xl:left-[900px] z-0 xl:top-[400px] lg:left-[900px] lg:top-[400px]  md:left-[0px] md:top-[300px] sm:top-[400px] sm:left-[200px] w-[869px] h-[869px]"
+                          className=" absolute xl:left-[900px] z-0 xl:top-[400px] lg:left-[550px] lg:top-[300px]  md:left-[0px] md:top-[300px] sm:top-[400px] sm:left-[200px] w-[869px] h-[869px]"
                         />
                      
           </div>
@@ -307,7 +305,7 @@ export default function Home() {
             <div className="  "><SmCard className={"  z-10 sm:mt-[40px] flex justify-center sm:flex md:flex lg:hidden xl:hidden"} /></div>
          
           <div className="  flex flex-col   sm:gap-[80px]  md:gap-[96px] xl:gap-[128px] xl:mt-[196px] lg:mt-[173px] md:mt-[129px]  sm:mt-[80px] ">
-            <div className=" flex    z-30 relative flex-col  xl:gap-[80px] lg:gap-[105px] md:gap-[64px] sm:gap-[30px]">
+            <div className=" flex    relative flex-col  xl:gap-[80px] lg:gap-[105px] md:gap-[64px] sm:gap-[30px]">
               <Multiple_Span_Heading
                 Span_Text={"Embarcadero Blog"}
                 IconPath={"./Assets/Arrow.svg"}
@@ -319,12 +317,12 @@ export default function Home() {
                 }
               />{" "}
            
-                <div className="flex justify-center  relative z-30 "><Sec3_Component /><Image
+                <div className="flex justify-center  relative "><Sec3_Component /><Image
                           src={"/Assets/Gradients/Ellipse 17.png"}
                           alt={""}
                           width={650}
                           height={650}
-                          className=" absolute xl:left-[1150px]  xl:top-[350px] lg:left-[700px] lg:top-[350px]  md:left-[1150px] md:top-[350px]  sm:left-[0px] sm:top-[-600px] w-[650px] h-[650px]"
+                          className=" absolute xl:left-[1150px] z-0 xl:top-[350px] lg:left-[700px] lg:top-[350px]  md:left-[1150px] md:top-[350px]  sm:left-[0px] sm:top-[-600px] w-[650px] h-[650px]"
                         /></div> 
                 
             
@@ -370,7 +368,6 @@ export default function Home() {
          
           
         </div>
-      </body>
-    </html>
+ 
   );
 }

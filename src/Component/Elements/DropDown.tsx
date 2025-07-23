@@ -28,10 +28,10 @@ export default function Dropdown({ className }: { className?: string }) {
   }, []);
 
   return (
-    <div className={`flex gap-[24px] mt-[7px] ${className}`} ref={menuRef}>
+    <div className={`   z-50 flex gap-[24px] mt-[7px] ${className}`} ref={menuRef}>
  
       <div
-        className="relative z-50 inline-block"
+        className="relative  inline-block"
         onMouseEnter={() => setIs1Open(true)}
         onMouseLeave={() => setIs1Open(false)}
       >
@@ -95,7 +95,7 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
 
    
       <div
-        className="relative z-50 inline-block"
+        className="relative inline-block"
         onMouseEnter={() => setIs2Open(true)}
         onMouseLeave={() => setIs2Open(false)}
       >
@@ -137,7 +137,7 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
       </button>
 
       <div
-        className="relative z-50 inline-block"
+        className="relative inline-block"
         onMouseEnter={() => setIs3Open(true)}
         onMouseLeave={() => setIs3Open(false)}
       >

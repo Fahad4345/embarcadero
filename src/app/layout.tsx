@@ -40,13 +40,7 @@ export default function RootLayout({
           height={600}
           className=" absolute xl:left-[-279px] z-0 xl:top-[1691px] lg:left-[-280px] lg:top-[1691px] md:left-[-280px] md:top-[1691px] sm:top-[1691px] sm:left-[-520px] w-[906px] h-[906px]"
         />
-        <Image
-          src={"/Assets/Gradients/Ellipse 17.png"}
-          alt={""}
-          width={650}
-          height={650}
-          className=" absolute xl:right-[0px]  z-0 xl:top-[1899px] lg:left-[0px] lg:top-[1899px]  md:left-[689px] md:top-[1765px] sm:left-[0px] sm:top-[7565px] sm:hidden w-[650px] h-[650px]"
-        />
+      
          <Image
           src={"/Assets/Gradients/Ellipse 16.png"}
           alt={""}
@@ -122,14 +116,14 @@ export default function RootLayout({
           alt={""}
           width={720}
           height={600}
-          className=" absolute  z-0 lg:hidden xl:hidden lg:left-[0px] lg:top-[6869px] md:left-[-280px] md:top-[9103px] sm:top-[9211px] sm:left-[-520px] w-[906px] h-[906px]"
+          className=" absolute  z-0 lg:hidden xl:hidden lg:left-[0px] lg:top-[6869px] md:left-[0px]  md:top-[9103px] sm:top-[9211px] sm:left-[-520px] w-[906px] h-[906px]"
         />
          <Image
           src={"/Assets/Gradients/Ellipse 30.png"}
           alt={""}
           width={720}
           height={600}
-          className=" absolute z-0   lg:hidden xl:hidden lg:left-[0px] lg:top-[6869px] md:left-[382px] md:top-[6735px] sm:hidden w-[731px] h-[731px]"
+          className=" absolute   sm:flex  md:flex lg:hidden xl:hidden lg:left-[0px] lg:top-[6869px] md:left-[0px] md:top-[6735px] sm:left-[0px] sm:top-[6535px]  w-[731px] h-[731px]"
         />
       {/* <Image src={"/Assets/Gradients/Vector 233 (1).png"} alt={""} width={720} height={600}  className=" absolute right-0 top-[841px] w-[1063.44873046875px] h-[266.67626953125px]"/>  */}
       </body>

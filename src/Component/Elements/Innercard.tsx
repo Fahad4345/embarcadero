@@ -40,10 +40,10 @@ export default function Innercard({
           </div>
           
           <div className="flex  sm:gap-[8px] md:gap-[12px] ">
-            <button className="bg-[#262626]  text-[16px] text-white leading-[24px] rounded-[10px] font-[Archivo] px-[24px] py-[10px]  font-[500px]  hover:bg-white hover:text-[black] hover:rounded-[10px] border-1  hover:border-black  transition duration-300 cursor-pointer">
+          <button className="bg-[#262626]  text-[16px] text-white leading-[24px] rounded-[10px] font-[Archivo] px-[24px] py-[10px]  font-[500px]    border-1  border-[#262626]  transition duration-300 hover:bg-[#262626]/90 cursor-pointer">
               {button1text}
             </button>
-            <button className="rounded-[10px]  text-[16px] border-[#262626] text-[#262626] border-1 leading-[24px] font-[Archivo] px-[24px] py-[10px]  font-[500px]  bg-[white] transition duration-300  hover:bg-[#262626]  hover:text-white    cursor-pointer">
+            <button className="rounded-[10px]  text-[16px] border-[#262626] text-[#262626] border-1 leading-[24px] font-[Archivo] px-[24px] py-[10px]  font-[500px]  bg-[white] transition duration-300  hover:bg-[#262626]    hover:text-white    cursor-pointer">
               {button2text}
             </button>
         

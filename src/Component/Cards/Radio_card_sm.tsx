@@ -62,7 +62,7 @@ export default function Card({className}:{className:string}) {
   };
 
   return (
-    <div className={` flex flex-col   sm: mx-[16px] gap-[96px] md:my-[64px] sm:my-[0px] ${className}` }>
+    <div className={` flex flex-col    sm: mx-[16px] gap-[96px] md:my-[64px] sm:my-[0px] ${className}` }>
       {Object.entries(textContent).map(([key, content]) => (
         <div
           key={key}
@@ -71,13 +71,13 @@ export default function Card({className}:{className:string}) {
      
           <div className="  flex flex-col gap-[20px] ">
 
-          <div className="flex justify-center">
+          <div className=" flex justify-center">
             <Image
               src={content.IconPath}
               alt="Icon"
               width={64}
               height={64}
-              className=" transition duration-300   hover:scale-120  cursor-pointer"
+              className=" transition duration-300   z-10 hover:scale-120  cursor-pointer"
             />
 
             
@@ -93,11 +93,11 @@ export default function Card({className}:{className:string}) {
 
            
             
-            <div className="flex  z-10 sm:flex-col md:flex-row justify-center gap-[12px]">
-              <button  className="bg-[#171717]  text-white  border-1   border-[#262626] rounded-[10px] py-[12px] px-[24px]  transition duration-300  hover:bg-[white]  hover:text-black cursor-pointer ">
+            <div className="flex   sm:flex-col md:flex-row justify-center gap-[12px]">
+              <button  className="bg-[#262626] z-10  text-white  border-1   border-[#262626] rounded-[10px] py-[12px] px-[24px]  transition duration-300  hover:bg-[#262626]/90  cursor-pointer ">
                 {content.button1text}
               </button>
-              <button  className="rounded-[10px] border-[#262626]   text-[#262626] border-1 px-[24px] py-[12px]  hover:bg-[#262626]  hover:text-white transition duration-300     cursor-pointer ">
+              <button  className="rounded-[10px] z-10 border-[#262626]   text-[#262626] border-1 px-[24px] py-[12px]  hover:bg-[#262626]   hover:text-white transition duration-300     cursor-pointer ">
                 {content.button2text}
               </button>
             </div>

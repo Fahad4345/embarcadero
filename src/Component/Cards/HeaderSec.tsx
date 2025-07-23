@@ -87,7 +87,8 @@ export default function HeaderSec() {
   }, []);
 
   return (
-    <div className="xl:px-[196px] z-10 xl:py-[16px] lg:px-[80px] lg:py-[16px] md:px-[24px] md:py-[16px] sm:py-[12px] sm:px-[16px] flex justify-between">
+    <div className="xl:px-[196px] z-10 xl:py-[16px] lg:px-[80px] lg:py-[16px] md:px-[24px] md:py-[16px] sm:py-[12px] sm:px-[16px] flex  justify-between mx-auto max-w-[1920px] w-full
+    ">
 
 
 
@@ -169,9 +170,9 @@ export default function HeaderSec() {
       </div>):(<div className="flex justify-center gap-[24px] ">
           <div className="  flex  flex-row lg:gap-[8px] sm:gap-[24px]">
             <button  className="bg-transparent  flex  items-center gap-[8px] rounded-[8px] text-black sm:hidden md:flex font-[Archivo] font-[500] text-[14px] leading-[22px] cursor-pointer">Sign In</button>
-           <button className="md:px-[16px] md:py-[8px] rounded-[10px] border-[#262626] font-[Archivo] sm:hidden md:flex text-[#262626]  font-[500] text-[14px] leading-[22px] border-1 lg:px-[20px] lg:py-[8px] bg-[white] transition duration-300 hover:bg-[#262626] hover:text-white  cursor-pointer"
+           <button className="md:px-[16px] md:py-[8px] rounded-[10px] border-[#262626] font-[Archivo] sm:hidden md:flex text-[#262626]  font-[500] text-[14px] leading-[22px] border-1 lg:px-[20px] lg:py-[8px] bg-[white] transition duration-300 hover:bg-[#262626]  hover:text-white  cursor-pointer"
          >Buy Now</button>
-       <button  className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#262626] text-white font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-white hover:text-[black] border-1 hover:border-black transition duration-300 cursor-pointer"
+       <button  className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#262626] text-white font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#262626]/90 hover:border-black transition duration-300 cursor-pointer"
          > Free Trial</button>
        </div>
         
@@ -314,9 +315,9 @@ export default function HeaderSec() {
                 </div>
               ))}
           </div>   <div className="  flex  flex-col gap-[16px] ">
-            <button  className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#171717] text-white font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-white hover:text-[black] border-1 hover:border-black transition duration-300 cursor-pointer"
+            <button  className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#171717] text-white font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#171717]/90 hover:text-[black] border-1 border-black transition duration-300 cursor-pointer"
             > Free Trial</button>
-             <button className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-white text-[#171717] font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#171717] hover:text-white border-1 hover:border-black transition duration-300 cursor-pointer"
+             <button className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#171717] text-[#171717] font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#171717]/90 hover:text-black border-1 hover:border-black transition duration-300 cursor-pointer"
            >Buy Now</button>
        
               <button className= "md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-transparent text-[#262626] font-[Archivo] font-[500] text-[14px] leading-[22px] transition duration-300 cursor-pointer hover:underline"
