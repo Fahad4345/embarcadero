@@ -275,14 +275,14 @@ export default function Home() {
                           alt={""}
                           width={869}
                           height={869}
-                          className=" absolute xl:right-[0px]  z-0 xl:top-[400px] lg:right-[0px] lg:top-[300px] md:left-[0px] lg:flex  md:hidden sm:hidden md:top-[300px]  sm:top-[400px] sm:left-[0px] w-[869px] h-[869px] overflow-hidden"
+                          className=" absolute xl:left-[900px]  z-0 xl:top-[400px] lg:left-[550px] lg:top-[300px] md:left-[0px] lg:flex  md:hidden sm:hidden md:top-[300px]  sm:top-[400px] sm:left-[0px] w-[869px] h-[869px] overflow-hidden"
                         />
                         <Image
                           src={"/Assets/Gradients/Ellipse 14 (2).png"}
                           alt={""}
                           width={869}
                           height={869}
-                          className=" absolute xl:right-[0px] z-0 xl:top-[400px] lg:right-[0px] lg:top-[300px]  md:left-[0px] md:top-[300px] sm:top-[400px] sm:left-[200px] w-[869px] h-[869px]"
+                          className=" absolute xl:left-[900px] z-0 xl:top-[400px] lg:left-[550px] lg:top-[300px]  md:left-[0px] md:top-[300px] sm:top-[400px] sm:left-[200px] w-[869px] h-[869px]"
                         />
                      
           </div>
