@@ -36,7 +36,7 @@ export default function Card({className}:{className:string}) {
       Image: "/Assets/Cmd.svg",
       IconPath: "/Assets/C++.svg",
       heading_version: "11.2 ",
-      heading_span: "C++",
+      heading_span: "C++ Builder",
       text: "Advanced IDE for modern C++ with high-productivity libraries that enable developers to deliver blazingly fast native apps with great user experience on Windows and iOS.",
       button1text: "Start a Free Trial",
       button2text: "View Details",
@@ -62,7 +62,7 @@ export default function Card({className}:{className:string}) {
   };
 
   return (
-    <div className={` flex flex-col    sm: mx-[16px] gap-[96px] md:my-[64px] sm:my-[0px] ${className}` }>
+    <div className={` flex flex-col   sm: mx-[16px] gap-[96px] md:my-[64px] md:mx-[90px] sm:my-[0px] ${className}` }>
       {Object.entries(textContent).map(([key, content]) => (
         <div
           key={key}

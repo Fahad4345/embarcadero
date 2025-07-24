@@ -34,9 +34,10 @@ export default function Home() {
         <NavBar />
         <HeaderSec />
       </div>
-      <div className="   flex flex-col items-center">
+      <div className="   flex flex-col  ">
         {" "}
-        <div className="   relative lg:ml-[79px] lg:mt-[88px] sm:px-[16px] lg:px-[0px] xl:ml-[192px] sm:mt-[11px] md:mt-[64px] flex flex-col   items-start max-w-[1750px]">
+        <div className=" flex justify-center">
+                 <div className=" relative lg:ml-[79px] lg:mt-[88px] sm:px-[16px] lg:px-[0px] xl:ml-[192px] sm:mt-[11px] md:mt-[64px] flex flex-col   items-start max-w-[1750px]">
           <div
             className="flex flex-wrap lg:flex-row xl:gap-x-[63px]  lg:gap-x-[32px] md:gap-y-[54px] sm:gap-y-[33.63px] sm:flex-col 
              lg:justify-start sm:justify-center md:flex-col  xl:justify-start"
@@ -45,7 +46,7 @@ export default function Home() {
               <div className="sm:items-center lg:items-start  sm:justify-center sm:flex-col sm:gap-[32px] lg:gap-[32px] flex ">
                 {" "}
                 <div className="  sm:items-center sm:justify-center lg:justify-start sm:flex gap-[8px]">
-                  <button className=" flex z-30  bg-[#F8FAFC]  border-[0.75px] border-[#E5E5E5] gap-[8px] text-center  hover:bg-[#262626] hover:opacity-[.90] transition duration-300  rounded-[12px]    px-[12px] py-[10px] text-[#262626] text-[14px] leading-[150%] font-[Archivo] font-[500px] hover:text-white  hover:scale-120 cursor-pointer  group]:">
+                  <button className=" flex   bg-[#F8FAFC]  border-[0.75px] border-[#E5E5E5] gap-[8px] text-center  hover:bg-[#262626] hover:opacity-[.90] transition duration-300  rounded-[12px]    px-[12px] py-[10px] text-[#262626] text-[14px] leading-[150%] font-[Archivo] font-[500px] hover:text-white  hover:scale-120 cursor-pointer  group]:">
                     <LoadingIcon className={""} />
                     RAD Studio 11.2 out now
                   </button>
@@ -72,18 +73,18 @@ export default function Home() {
                     Original Universal Framework for Enterprise App Development
                   </p>
                 </div>
-                <div className="flex  z-10 lg:justify-start md:flex-row sm:flex-col sm:justify-center sm:gap-[16px] ">
-                  <button className="bg-[#262626]  text-white  z-30  rounded-[12px] px-[28px] py-[14px]  hover:bg-[#262626]/90   border-1 border-black  transition duration-300 cursor-pointer font-[500] text-[18px]  leading-[28px] font-[Archivo] ">
+                <div className="flex   lg:justify-start md:flex-row sm:flex-col sm:justify-center sm:gap-[16px] ">
+                  <button className="bg-[#262626]  text-white    rounded-[12px] px-[28px] py-[14px]  hover:bg-[#262626]/90   border-1 border-black  transition duration-300 cursor-pointer font-[500] text-[18px]  leading-[28px] font-[Archivo] ">
                     Free Trial
                   </button>
-                  <button className="rounded-[12px] border-[#262626]  z-30  md:w-auto  text-[#262626] border-1 px-[28px] py-[14px] transition duration-300  hover:bg-[#262626] hover:text-white cursor-pointer font-[500] text-[18px]  leading-[28px] font-[Archivo]">
+                  <button className="rounded-[12px] border-[#262626]    md:w-auto  text-[#262626] border-1 px-[28px] py-[14px] transition duration-300  hover:bg-[#262626] hover:text-white cursor-pointer font-[500] text-[18px]  leading-[28px] font-[Archivo]">
                     Buy Now
                   </button>
                 </div>
               </div>
 
               <div
-                className={` z-10  xl:w-[750px] lg:w-[699px] flex lg-mt-[86px] md:mt-[64px] md:flex-row  sm:flex-col   xl:gap-[0px] lg:gap-[32px] sm:gap-[24px] sm:mt-[48px] sm:hidden md:hidden lg:flex xl:flex`}
+                className={`   xl:w-[750px] lg:w-[699px] flex xl:mt-[81px] lg:mt-[129px] md:mt-[64px] md:flex-row  sm:flex-col   xl:gap-[0px] lg:gap-[32px] sm:gap-[24px] sm:mt-[48px] sm:hidden md:hidden lg:flex xl:flex`}
               >
                 <div className=" flex  sm:flex-col gap-[4px] ">
                   <h1
@@ -124,12 +125,17 @@ export default function Home() {
  absolute
   w-[440px]
   h-[440px]
-  left-[-200px]
-  top-[520px]
-  bg-[#6366F1]/10
+  lg:left-[-138px]
+  lg:top-[520px]
+   sm:left-[-150px]
+  sm:top-[650px]
+   bg-[#6366F1]/10
+    [filter:blur(250px)]
+
   border
   border-white
-  [filter:blur(250px)]
+
+
   box-border
 "
               ></div>
@@ -138,38 +144,43 @@ export default function Home() {
   absolute
   w-[440px]
   h-[440px]
-  left-[-200px]
-  top-[520px]
+  lg:left-[-127px]
+  lg:top-[520px]
+  sm:left-[-150px]
+  sm:top-[650px]
   bg-[#6366F1]/10
+  [filter:blur(250px)]
   border
   border-white
-  [filter:blur(250px)]
   box-border
+ 
 "
-              ></div>
+                ></div>
+                <div className="absolute box-border w-[869px] h-[869px] sm:left-[150px] sm:top-[270px] lg:hidden xl:hidden sm:flex md:flex bg-[#F43F5E]/10 border border-white [filter:blur(250px)] "></div>
+                <div className="absolute box-border w-[869px] h-[869px] sm:left-[450px] sm:top-[270px] lg:hidden xl:hidden sm:hidden md:hidden bg-[#E11D48]/10 border border-white [filter:blur(250px)]"></div>
 
-            
+              <div className="absolute box-border w-[869px] h-[869px] lg:left-[-665px] lg:top-[520px]  bg-[#3B82F6] opacity-10 border border-white blur-[250px] rounded-full "></div>
             </div>
 
             <div className=" relative flex md:justify-center sm:justify-center">
               <img
                 src="/Assets/Tree.svg"
                 alt="My Icon"
-                className=" sm:mx-[16px]    z-0 md:mx-[0px] sm:w-[343px] sm:h-[285px] md:w-[516px] md:h-[430px] lg:w-[624px] lg:h-[520px] xl:w-[720px] xl:h-[600px]"
+                className=" sm:mx-[16px]     md:mx-[0px] sm:w-[343px] sm:h-[285px] md:w-[516px] md:h-[430px] lg:w-[624px] lg:h-[520px] xl:w-[720px] xl:h-[600px]"
               />
               <Image
                 src={"/Assets/LGBackBox.svg"}
                 alt={""}
                 width={536.64}
                 height={605}
-                className=" absolute  z-0 sm:hidden md:hidden xl:hidden lg:flex  lg:left-[300px]  lg:top-[100px] w-[536px] h-[605px]"
+                className=" absolute   sm:hidden md:hidden xl:hidden lg:flex  lg:left-[300px]  lg:top-[100px] w-[536px] h-[605px]"
               />
               <Image
                 src={"/Assets/XLBackBox.png"}
                 alt={""}
                 width={536.64}
                 height={605}
-                className=" absolute  z-0 sm:hidden md:hidden  lg: hidden  xl:flex  xl:left-[400px] xl:top-[100px]"
+                className=" absolute   sm:hidden md:hidden  lg: hidden  xl:flex  xl:left-[400px] xl:top-[100px]"
               />
             </div>
 
@@ -224,7 +235,7 @@ export default function Home() {
                 Rely on Software Built With Embarcadero Products
               </span>
             </div>
-            <div className=" z-30 flex flex-wrap w-full justify-center xl:justify-center md:justify-center sm:justify-center sm:gap-[62.42px] xl:gap-[64px]">
+            <div className="  flex flex-wrap  justify-start xl:justify-center md:justify-center sm:justify-center sm:gap-[62.42px] xl:gap-[64px]">
               <Icons
                 IconPath="/Assets/Airbnb.svg"
                 className="sm:w-[74.67px]  sm:h-[40px] md:w-[106.67px]  md:h-[40px]  transition duration-300  hover:scale-120  cursor-pointer"
@@ -271,47 +282,56 @@ export default function Home() {
               />
             </div>
           </div>
-                  <div
+          <div
             className="
   absolute
    min-w-[869px]
    max-h-[869px]
   min-h-[869px]
-  left-[900px]
-  top-[400px]
+  lg:left-[900px]
+  lg:top-[400px]
+    sm: right-[-590px]
+     sm:top-[270px]
   bg-[#F43F5E]/10
   border
+
   border-white
   [filter:blur(250px)]
   box-border
+  sm:hidden md:hidden lg:flex
 "
           ></div>
-                   <div
+
+          <div
             className="
   absolute
    min-w-[869px]
    max-h-[869px]
   min-h-[869px]
-  left-[900px]
-  top-[400px]
-  bg-[#F43F5E]/10
+  lg:left-[900px]
+   lg:top-[400px]
+    sm: right-[-590px]
+     sm:top-[270px]
+       bg-[#F43F5E]/10
+      [filter:blur(250px)]
+      sm:hidden md:hidden lg:flex
+  
   border
   border-white
-  [filter:blur(250px)]
+
   box-border
 "
           ></div>
-          
-          {/* <div className="min-w-[765px] absolute z-0 top-[-156px] left-[-156px] max-w-[765px] rounded-[100%] blur-[500px] min-h-[765px] bg-[#3B82F6]"></div> */}
 
           <div
             className=" absolute
   w-[765px]
   h-[765px]
-  left-[-155px]
-  top-[-156px]
-  bg-[#3B82F6]/10
+  lg:left-[-155px]
+  lg:top-[-156px]
+ bg-[#3B82F6]/10
   [filter:blur(250px)]
+  sm:hidden md:hidden lg:flex
 "
           ></div>
 
@@ -320,17 +340,20 @@ export default function Home() {
   absolute
   w-[432px]
   h-[432px]
-  left-[-144px]
-  top-[-156px]
+  lg:left-[-144px]
+  lg:top-[-156px]
   bg-[#DC2626]/10
   border
   border-white
   [filter:blur(250px)]
   box-border
+  sm:hidden md:hidden lg:flex
 "
           ></div>
         </div>
-        <div className="  z-30 sm:px-[16px] lg:mt-[206px] xl:mt-[196px] ">
+         </div>
+
+        <div className="   relative sm:px-[16px] lg:mt-[206px] xl:mt-[196px] ">
           {" "}
           <Multiple_Span_Heading
             Span_Text={" Over Three Million  "}
@@ -344,21 +367,24 @@ export default function Home() {
               " sm:hidden md:hidden lg:flex absolute  lg:top-4 lg:left-[-100px] xl:top-8 xl:left-[-92px]"
             }
           />
+          <div className="absolute box-border w-[906px] h-[906px] lg:hidden xl:hidden sm:flex md:flex sm:left-[-250px] sm:top-[150px]  bg-cyan-500 opacity-10 border border-white [filter:blur(250px)]"></div>
         </div>
-        <div className=" flex relative  justify-center ">
+        <div className=" flex relative  mx-auto  justify-center ">
           <Card />
           <div
             className="
   absolute
   w-[906px]
   h-[906px]
-  left-[-279px]
-  top-[240px]
+  lg:left-[-279px]
+  lg:top-[240px]
+   sm:left-[-200px]
+  sm:top-[-50px]
    bg-[#06B6D4]/10
   border
   border-white
   [filter:blur(250px)]
- 
+ sm:hidden md:hidden lg:flex
   box-border
 "
           ></div>
@@ -367,26 +393,34 @@ export default function Home() {
   absolute
   w-[644px]
   h-[644px]
-  right-[-300px]
-  top-[435px]
+  lg:right-[-300px]
+  lg:top-[435px]
  
    bg-[#6366F1]/10
   border
   border-white
   [filter:blur(250px)]
-
+sm:hidden md:hidden lg:flex
   box-border
 "
           ></div>
         </div>
-        <div className="  ">
+        <div className="  relative">
           <SmCard
             className={
-              "  z-10 sm:mt-[40px] flex justify-center sm:flex md:flex lg:hidden xl:hidden"
+              "   sm:mt-[40px] flex justify-center sm:flex md:flex lg:hidden xl:hidden"
             }
           />
+          <div className="absolute box-border w-[650px] h-[650px] sm:right-[-500px] sm:top-[860px] lg:hidden xl:hidden sm:flex md:flex  bg-[#DC2626] opacity-10 border border-white blur-[250px] rounded-full "></div>
+          <div className="absolute box-border w-[497px] h-[497px] sm:left-[-140px] sm:top-[2450px] lg:hidden xl:hidden sm:flex md:flex   bg-[#6366F1] opacity-10 border border-white blur-[250px] rounded-full"></div>
+          <div className="absolute box-border w-[731px] h-[731px] lg:hidden xl:hidden sm:flex md:flex sm:right-[-370px] sm:top-[2300px] bg-[#06B6D4] opacity-10 border border-white blur-[250px] rounded-full"></div>
+          <div className="absolute box-border w-[731px] h-[731px]  lg:hidden xl:hidden sm:flex md:flex sm:left-[-52px] sm:top-[1950px]  bg-[#06B6D4] opacity-10 border border-white blur-[250px] rounded-full"></div>
+          <div className="absolute box-border w-[497px] h-[497px] lg:hidden xl:hidden sm:flex md:flex  sm:right-[-280px] sm:top-[3540px] bg-[#6366F1] opacity-10 border border-white blur-[250px] rounded-full"></div>
+          <div className="absolute box-border w-[731px] h-[731px]  lg:hidden xl:hidden sm:flex md:flex  sm:left-[0px] sm:top-[3200px] bg-[#06B6D4] opacity-10 border border-white blur-[250px] rounded-full"></div>
+          <div className="absolute box-border w-[650px] h-[650px]  sm:right-[-330px] sm:top-[3300px]  lg:hidden xl:hidden sm:flex md:flex  bg-[#DC2626] opacity-10 border border-white blur-[250px] rounded-full"></div>
+          <div className="absolute box-border w-[869px] h-[869px]  lg:hidden xl:hidden sm:flex md:flex  sm:left-[-243px] sm:top-[3330px] bg-[#E11D48] opacity-10 border border-white blur-[250px] rounded-full"></div>
         </div>
-        <div className="  flex flex-col   sm:gap-[80px]  md:gap-[96px] xl:gap-[128px] xl:mt-[196px] lg:mt-[173px] md:mt-[129px]  sm:mt-[80px] ">
+        <div className="  flex flex-col  xl:mt-[196px] lg:mt-[173px] md:mt-[129px]  sm:mt-[80px] ">
           <div className=" flex    relative flex-col  xl:gap-[80px] lg:gap-[105px] md:gap-[64px] sm:gap-[30px]">
             <Multiple_Span_Heading
               Span_Text={"Embarcadero Blog"}
@@ -398,31 +432,17 @@ export default function Home() {
                 " absolute lg:right-[-90px] lg:top-0 xl:right-[-100px] xl:top-5 sm:hidden md:hidden lg:flex"
               }
             />{" "}
-            <div className="flex justify-center  relative ">
-              <Sec3_Component />
-              <div
-                className="
-  absolute
-  w-[650px]
-  h-[650px]
-  right-[0px]
-  top-[430px]
-   bg-[#DC2626]/10
-  [filter:blur(250px)]
-  border
-  border-white
-
-  box-border
-"
-              ></div>
-            </div>
+                         
+         <div className="flex    z-50 justify-center  relative ">
+               <div className=" flex "><Sec3_Component /></div>
+             </div>
           </div>
-
-          <div className=" ">
+ <div className=" flex justify-center  z-50 bg-[#FFFFFF66] mt-[128px]">      
             <Sec4_Component />
-          </div>
-
-          <div className="   flex flex-col relative mx-auto sm:gap-[40px] md:gap-[48px] xl:w-[816px] lg:w-[842px] md:w-[696px] sm:w-[343px] ">
+          
+</div>
+      
+          <div className="   flex flex-col relative mx-auto sm:gap-[40px] md:gap-[48px] lg:gap-[80px] md:mt-[96px] sm:mt-[80px] lg:mt-[128px] xl:w-[816px] lg:w-[842px] md:w-[696px] sm:w-[343px] ">
             <Multiple_Span_Heading
               Icon_Class={
                 "sm:hidden md:hidden lg:flex absolute lg:top-5 lg:left-[-120px] xl:top-8 xl:left-[-120px]"
@@ -436,15 +456,15 @@ export default function Home() {
             <FAQItem />
             <div
               className="
-            
+       
   absolute
   w-[497px]
   h-[497px]
-  left-[-700px]
-  top-[-30px]
+  lg:left-[-700px]
+  lg:top-[-30px]
     bg-[#6366F1]/10
      [filter:blur(250px)]
-
+sm:hidden md:hidden lg:flex
   border
   border-white
   
@@ -453,26 +473,30 @@ export default function Home() {
             ></div>
             <div
               className="
+          
   absolute
   w-[731px]
   h-[731px]
-   right-[-585px]
-  top-[0px]
+   lg:right-[-585px]
+  lg:top-[0px]
    [filter:blur(250px)]
    bg-[#06B6D4]/10
   border
   border-white
+  sm:hidden md:hidden lg:flex
 
 "
             ></div>
             <div
               className="
+     z-0
   absolute
   w-[678px]
   h-[678px]
-  left-[-604px]
-  top-[-425px]
-   
+  lg:left-[-604px]
+  lg:top-[-425px]
+   bg-[#666F1]/10
+   sm:hidden md:hidden lg:flex
 [filter:blur(250px)]
   border
   border-white
@@ -480,39 +504,48 @@ export default function Home() {
   box-border
 "
             ></div>
+            <div className=" z-0 absolute box-border w-[650px] h-[650px]  lg:hidden xl:hidden sm:flex md:flex  sm: right-[-345px] sm:top-[-130px] bg-[#DC2626] opacity-10 border border-white blur-[250px] rounded-full"></div>
+            <div className="z-0  absolute box-border w-[869px] h-[869px]  lg:hidden xl:hidden sm:flex md:flex  sm:left-[-243px] sm:top-[-340px] bg-[#E11D48] opacity-10 border border-white blur-[250px] rounded-full"></div>
           </div>
-          <div className="  relative flex justify-center">
-            <Footer />
-            <div
-              className="
+          <div className=" flex items-center relative justify-center xl:mt-[128px] lg:mt-[133px] md:mt-[96px] sm:mt-[80px]">
+            <div className="   relative flex justify-center items-center">
+              <Footer />
+              <div
+                className="
   absolute
   w-[497px]
   h-[497px]
-  right-[85px]
-bottom-[-375px]
+  lg:right-[85px]
+  lg:bottom-[-375px]
 [filter:blur(250px)]
   bg-[#6366F1]/10
   border
   border-white
-  
+   sm:hidden md:hidden lg:flex 
   box-border
+  
 "
-            ></div>
-            <div
-              className="
+              ></div>
+              <div
+                className="
+               
   absolute
   w-[731px]
   h-[731px]
-  left-[-400px]
-  top-[100px]
+  lg:left-[-400px]
+  lg:top-[-100px]
   [filter:blur(250px)]
   border
   border-white
-  bg-[#06B6D4]/10
-  
+  bg-[#06B6D4]/40
+  sm:hidden md:hidden lg:flex
   box-border
+  -z-10
+
 "
-            ></div>
+              ></div>{" "}
+              <div className="absolute box-border  w-[906px] h-[906px]   lg:hidden xl:hidden sm:flex md:flex sm:left-[-280px] sm:top-[93px]  bg-[#06B6D4] opacity-10 border border-white blur-[250px] rounded-full"></div>
+            </div>
           </div>
         </div>
       </div>

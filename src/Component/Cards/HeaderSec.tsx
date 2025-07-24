@@ -87,17 +87,18 @@ export default function HeaderSec() {
   }, []);
 
   return (
-    <div className="xl:px-[196px] z-10  bg-white xl:py-[16px] lg:px-[80px] lg:py-[16px] md:px-[24px] md:py-[16px] sm:py-[12px] sm:px-[16px] flex  justify-between mx-auto max-w-[1920px] w-full
+     <div className=" z-10 bg-white w-full flex justify-center">
+<div className="xl:px-[196px]  xl:py-[16px] lg:px-[80px] lg:py-[16px] md:px-[24px] md:py-[16px] sm:py-[12px] sm:px-[16px] flex  justify-between   w-full items-center max-w-[1920px]
     ">
 
 
 
 
 
-
+ 
       <Icons
         IconPath={"/Assets/logo.svg"}
-        className="sm:w-[138.67px] sm:h-[24px] transition duration-300 hover:scale-110 cursor-pointer"
+        className="sm:w-[138.67px] sm:h-[24px] transition duration-300 hover:scale-110 cursor-pointer   "
       />
 
       <div>
@@ -333,5 +334,7 @@ export default function HeaderSec() {
   
       )}
     </div>
+     </div>
+    
   );
 }

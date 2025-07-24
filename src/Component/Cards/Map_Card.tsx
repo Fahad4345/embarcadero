@@ -5,8 +5,9 @@ import Span_Heading from "../Elements/Span_Heading";
 
 export default function Sec4_Component() {
   return (
-    <div className="  flex   z-50 w-full   bg-white  xl:justify-center xl:mt-[128px] lg:mt-[132px] lg:flex-row  sm:flex-col      ">
-      <div className="   flex  flex-col    mx-auto sm:px-[16px]  md:px-[0px] gap-[32px]  ">
+    <div className="  flex   lg:min-h-[640px] xl:items-center lg:items-center lg:flex-row  sm:flex-col      ">
+      <div className=" flex  lg:flex-row  md:flex-col sm:flex-col justify-start">
+        <div className="   flex  flex-col    sm:px-[16px]  md:px-[0px] gap-[32px]  ">
     <div className=" flex flex-col sm:gap-[8px]    xl:w-[647px] lg:w-[514px] md:w-[696px] sm:w-[370px] ">
       <div className="flex sm:justify-center lg:justify-start " >
        <Span_Heading
@@ -51,10 +52,11 @@ export default function Sec4_Component() {
 
 
 
-      <div className=" xl:ml-[20px] lg:ml-[32px] mx-auto xl:mt-[0px] lg:mt-[0px] md:mt-[52px] sm:mt-[48px]">
+      <div className=" xl:ml-[20px] lg:ml-[32px]  xl:mt-[0px] lg:mt-[0px] md:mt-[52px] sm:mt-[48px]">
         {" "}
         <img src="./Assets/Map.svg" alt="My Icon"  className="xl:w-[882px] xl:h-[438px] lg:w-[733.60px] lg:h-[341.52px] md:w-[696px] md:h-[323.97px] sm:w-[343px] sm:h-[209px] "/>
       </div>
+       </div>
     </div>
   );
 }
