@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     
-      <div className="     sm:gap-[32px]  md:gap-[40px]  flex flex-col">
+      <div className="     sm:gap-[32px]  md:gap-[40px]  flex flex-col sm:mb-[32px]">
         <div className="flex sm:flex-col  xl:flex-row lg:flex-col xl:gap-[32px] lg:gap-[48px] ">
         <div className=" flex justify-start  lg:mt-[0px] md:mt-[40px] sm:mt-[32px] xl:w-[447px] "><Image src={"/Assets/logo.svg"} alt={""} width={138} height={40}className="w-[138px] h-[35px]"/>
           </div>
@@ -141,7 +141,7 @@ export default function Footer() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  md:gap-[48px] sm:gap-[40px] xl:hidden lg:hidden ">
 
-  <div>
+  <div className="  flex flex-col gap-[40px]">
     <div className="flex flex-col gap-[26px]">
       <h1 className="font-bold text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
         Products
@@ -151,7 +151,15 @@ export default function Footer() {
       <p className="font-normal text-[#4B5563] text-[16px] leading-[16px] font-[Archivo] transition duration-300 cursor-pointer hover:scale-105">C++BUILDER®</p>
       <p className="font-normal text-[#4B5563] text-[16px] leading-[16px] font-[Archivo] transition duration-300 cursor-pointer hover:scale-105">INTERBASE®</p>
       <p className="font-normal text-[#4B5563] text-[16px] leading-[16px] font-[Archivo] transition duration-300 cursor-pointer hover:scale-105">RAD SERVER™</p>
+          </div>
+           <div className="max-h-[60px]">
+    <div className="flex flex-col gap-[26px] ">
+      <h1 className="font-bold text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
+        Community
+      </h1>
+      <p className="font-normal text-[#4B5563] text-[16px] leading-[16px] font-[Archivo] transition duration-300 cursor-pointer hover:scale-105">Blogs</p>
     </div>
+  </div>
   </div>
 
 
@@ -168,7 +176,9 @@ export default function Footer() {
       <p className="font-normal text-[#4B5563] text-[16px] leading-[16px] font-[Archivo] transition duration-300 cursor-pointer hover:scale-105">FMX STENCILS</p>
       <p className="font-normal text-[#4B5563] text-[16px] leading-[16px] font-[Archivo] transition duration-300 cursor-pointer hover:scale-105">DEV-C++</p>
     </div>
-  </div>
+        </div>
+
+        
 
 
   <div>
@@ -188,14 +198,7 @@ export default function Footer() {
   </div>
 
 
-  <div>
-    <div className="flex flex-col gap-[26px]">
-      <h1 className="font-bold text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
-        Community
-      </h1>
-      <p className="font-normal text-[#4B5563] text-[16px] leading-[16px] font-[Archivo] transition duration-300 cursor-pointer hover:scale-105">Blogs</p>
-    </div>
-  </div>
+ 
 
  <div>
     <div className="flex flex-col gap-[26px]">

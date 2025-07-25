@@ -181,7 +181,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="w-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
+                <div className=" w-[64px] border-[1px] h-[1px] mx-auto bg-[#D1D5DB]"></div>
 
                 <div className=" flex  sm:flex-col gap-[12px] ">
                   <h1
@@ -194,7 +194,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="w-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
+                <div className="w-[64px]  h-[1px] border-[1px] mx-auto bg-[#D1D5DB]"></div>
 
                 <div className=" flex  sm:flex-col gap-[12px] ">
                   <h1
@@ -218,7 +218,7 @@ export default function Home() {
                   Rely on Software Built With Embarcadero Products
                 </span>
               </div>
-              <div className="  flex flex-wrap  justify-start xl:justify-center md:justify-center sm:justify-center sm:gap-[62.42px] xl:gap-[64px]">
+              <div className="  flex flex-wrap  justify-start xl:justify-between md:justify-between sm:justify-between sm:gap-[62.42px] xl:gap-[64px]">
                 <Icons
                   IconPath="/Assets/Airbnb.svg"
                   className="sm:w-[74.67px] z-10  sm:h-[40px] md:w-[106.67px]  md:h-[40px]  transition duration-300  hover:scale-120  cursor-pointer"
@@ -249,8 +249,7 @@ export default function Home() {
                 />
                 <Icons
                   IconPath="/Assets/Google.svg"
-                  width={94}
-                  height={40}
+                 
                   className="sm:w-[79.33px] z-10  sm:h-[40px] md:w-[94.17px]  md:h-[40px]  transition duration-300  hover:scale-120  cursor-pointer"
                 />
                 <Icons
@@ -259,9 +258,29 @@ export default function Home() {
                 />{" "}
                 <Icons
                   IconPath="/Assets/Sonos.svg"
-                  width={95}
-                  height={40}
+                
                   className="sm:w-[67.08px] z-10  sm:h-[40px]  md:w-[95.83px]  md:h-[40px]  lg:hidden xl:flex transition duration-300  hover:scale-120  cursor-pointer"
+                />
+                <Icons
+                  IconPath="/Assets/Hotjar.svg"
+               
+                  className="sm:w-[65.92px] z-10  sm:h-[28px]  md:w-[94.17px]  md:h-[40px]  sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
+                /><Icons
+                  IconPath="/Assets/Squarespace.svg"
+                
+                  className="sm:w-[128.33px] z-10  sm:h-[28px]  md:w-[182.75px]  md:h-[26.45px]  sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
+                /><Icons
+                  IconPath="/Assets/Clearbit.svg"
+                
+                  className="sm:w-[87.5px] z-10  sm:h-[28px]  md:w-[125px]  md:h-[40px]   sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
+                /><Icons
+                  IconPath="/Assets/Contentfull.svg"
+                  
+                  className="sm:w-[95.08px] z-10  sm:h-[28px]  md:w-[135.83px]  md:h-[40px]  sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
+                /><Icons
+                  IconPath="/Assets/Insta.svg"
+                
+                  className="sm:w-[72.92px] z-10  sm:h-[28px]  md:w-[104.17px]  md:h-[40px]   sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
                 />
               </div>
             </div>

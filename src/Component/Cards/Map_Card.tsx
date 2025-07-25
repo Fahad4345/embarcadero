@@ -34,7 +34,7 @@ export default function Sec4_Component() {
         </div>
     
     </div>
-        <div className=" z-10 flex sm:flex-col  lg:justify-start md:justify-center sm:item-center md:flex-row gap-[8px] sm:px-[16px] md:px-[0px]  lg:px-[80px] lg:py-[48px]">
+        <div className=" z-10 flex sm:flex-col  lg:justify-start md:justify-center sm:item-center md:flex-row gap-[8px] sm:px-[16px] md:px-[0px]  ">
           
             <input
               className=" text-[#525252] text-[16px] leading-[150%]    max-w-[386px] w-full z-10 font-[400]  sm:text-center  md:text-start border-[#D4D4D4] border-1 rounded-[8px]  px-[20px] py-[12px] "
