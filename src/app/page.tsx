@@ -283,7 +283,7 @@ export default function Home() {
           {" "}
           <Multiple_Span_Heading
             Span_Text={" Over Three Million  "}
-            IconPath={"/Assets/line.svg"}
+            IconPath={"/Assets/Line.svg"}
             Text_1={"Trusted by"}
             Text_2={" Developers World Wide"}
             className={
