@@ -5,14 +5,14 @@ import Image from "next/image";
 export default function Footer() {
   return (
     
-      <div className="   z-10 xl:px-[80px] xl:py-[48px] lg:px-[80px] lg:py-[48px] sm:px-[16px]   sm:gap-[32px]  md:gap-[40px]  flex flex-col">
+      <div className="     sm:gap-[32px]  md:gap-[40px]  flex flex-col">
         <div className="flex sm:flex-col  xl:flex-row lg:flex-col xl:gap-[32px] lg:gap-[48px] ">
-        <div className=" flex justify-start   xl:w-[447] "><Image src={"/Assets/logo.svg"} alt={""} width={138} height={40}className="w-[138px] h-[35px]"/>
+        <div className=" flex justify-start  lg:mt-[0px] md:mt-[40px] sm:mt-[32px] xl:w-[447px] "><Image src={"/Assets/logo.svg"} alt={""} width={138} height={40}className="w-[138px] h-[35px]"/>
           </div>
             
           
-          <div className="z-10 flex xl:justify-between md:justify-center flex-wrap  sm:hidden md:hidden lg:flex lg:gap-[32px]  ">
-            <div className="  flex flex-col ] gap-[26px]">
+          <div className=" flex lg:gap-[70.2px]  md:justify-center flex-wrap  sm:hidden md:hidden lg:flex  ">
+            <div className="  flex flex-col  gap-[26px]">
               <h1 className="font-[700]  text-[#1F2937] text-[20px] leading-[20px] font-[Archivo]">
                 Products
               </h1>
@@ -222,14 +222,14 @@ export default function Footer() {
     </div>
   </div>
 </div>
-         <div className="flex md:justify-between xl:mt-[81px] md:flex-row sm:flex-col-reverse sm:item-center  sm:mt-[32px] sm:gap-[16px] md:gap-[32px]">
+         <div className="flex md:justify-between  md:flex-row sm:flex-col-reverse sm:item-center   sm:gap-[16px] md:gap-[32px]">
         
           <div className="z-10"><p className=" z-10 font-[400] sm:text-center text-[#4B5563] text-[14px] xl:leading-[14px] sm:leading-[22px] font-[Archivo]transition duration-300 cursor-pointer hover:scale-105">
             2022 Embarcadero Inc. All Rights Reserved
           </p>
           </div>
         
-          <div className=" z-10 flex gap-[24px] sm:justify-center">
+          <div className="  flex gap-[24px] sm:justify-center">
             <Icons IconPath={"/Assets/Twitter.svg"} width={24} height={24} className="transition duration-300 cursor-pointer hover:scale-130"/>
             <Icons IconPath={"/Assets/FaceBook.svg"} width={24} height={24} className="transition duration-300 cursor-pointer hover:scale-130"/>
             <Icons IconPath={"/Assets/Internet.svg"} width={24} height={24}className="transition duration-300 cursor-pointer hover:scale-130" />

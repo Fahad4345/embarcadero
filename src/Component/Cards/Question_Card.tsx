@@ -15,7 +15,8 @@ const FAQItem = ({
 
   return (
    
-    <div className="   border-[#D4D4D4] border-[1px] z-50  bg-white p-[24px] rounded-[16px] border-dashed on hover:border-[#4F46E5]  cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+    <div className="   border-[#D4D4D4] border-[1px] z-50 bg-white/20    ]
+  backdrop-blur-[36px] p-[24px] rounded-[16px] border-dashed on hover:border-[#4F46E5]  cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
     <div className=" flex flex-row items-center gap-[16px]" >
       
          <div className="  xl:w-[732px] lg:w-[758px] md:w-[612px] sm:w-[259px]"> <p className=" text-[#525252]  text-start font-[Archivo] md:text-[20px] sm:text-[18px]  leading-[120%] Tracking-[-1px] font-[500]   ">

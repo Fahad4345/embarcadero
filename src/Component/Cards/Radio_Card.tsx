@@ -136,7 +136,7 @@ export default function Card() {
               htmlFor="3"
                
               onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
+              className={`text-[#525252]   shrink-0 Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
                 selectedOption === "option3" ? "font-[600]" : "font-[300]"
               }`}
             >

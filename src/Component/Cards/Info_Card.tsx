@@ -328,9 +328,7 @@ export default function Sec3_Component() {
         />
       </div>
 
-</div>   <div className="  absolute box-border w-[731px] h-[731px] lg:hidden xl:hidden sm:flex md:flex  sm:left-[385px] sm:top-[385px]  bg-[#06B6D4] opacity-10 border border-white blur-[250px] rounded-full"></div>
-              <div className="  absolute box-border w-[497px] h-[497px]  lg:hidden xl:hidden sm:flex md:flex sm:left-[-145px] sm:top-[510px]  bg-[#6366F1] opacity-10 border border-white blur-[250px] rounded-full"></div>
-              <div className=" z-0    absolute  w-[650px] h-[650px] lg:right-[0px] lg:top-[430px] bg-[#DC2626]/10 [filter:blur(250px)]   border   border-white   box-border "></div>
+</div>   
           
 
           </div>
