@@ -20,9 +20,9 @@ export default function Multiple_Span_Heading({
     <h1 className={className}>
     
      
-     <span className=" relative  text-[#262626] xl:text-[48px] xl:font-[600]  xl:leading-[180%]  xl:tracking-[-1px]  max-lg:text-[48px] max-lg:font-[600]  max-lg:leading-[120%]  max-lg:tracking-[-1px] max-md:text-[36px] text-center max-md:font-[600]  max-md:leading-[140%]  max-md:tracking-[-1px]  max-sm:text-center max-sm:text-[30px] max-sm:font-[600]  max-sm:leading-[140%]  max-sm:tracking-[-1px]">
+     <span className=" relative  text-[#262626] xl:text-[48px] xl:font-[600]  xl:leading-[180%]  xl:tracking-[-1px]  lg:text-[48px] lg:font-[600] lg:leading-[120%]  max-lg:tracking-[-1px]md:text-[36px] text-center md:font-[600]  md:leading-[140%]  md:tracking-[-1px]  sm:text-center sm:text-[30px] msm:font-[600]  msm:leading-[140%]  sm:tracking-[-1px]">
         {Text_1}{" "}
-        <span className=" xl:text-[48px] xl:font-[600]  xl:leading-[180%]  xl:tracking-[-1px]  max-lg:text-[48px] max-lg:font-[600]  max-lg:leading-[120%]  max-lg:tracking-[-1px] max-md:text-[36px] text-center max-md:font-[600]  max-md:leading-[140%]  max-md:tracking-[-1px]  max-sm:text-center max-sm:text-[30px] max-sm:font-[600]  max-sm:leading-[140%]  max-sm:tracking-[-1px] bg-clip-text text-transparent bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD]">
+        <span className=" xl:text-[48px] xl:font-[600]  xl:leading-[180%]  xl:tracking-[-1px]  lg:text-[48px] lg:font-[600]  lg:leading-[120%]  lg:tracking-[-1px] md:text-[36px] text-center md:font-[600]  md:leading-[140%]  md:tracking-[-1px]  sm:text-center sm:text-[30px] sm:font-[600]  sm:leading-[140%]  sm:tracking-[-1px] bg-clip-text text-transparent bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD]">
           {Span_Text}
         </span>{" "}
         <span className="text-black">{Text_2}</span>   
