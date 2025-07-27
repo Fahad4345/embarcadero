@@ -69,10 +69,10 @@ export default function Card() {
   };
 
   return (
-    <div className=" z-10 xl:justify-start flex xl:ml-[192px] lg:mt-[128px]  lg:h-[455px]  lg:gap-[85px] xl:gap-[128px] lg:mx-[81px] sm:hidden md:hidden lg:flex items-center">
-      <div className="   flex  xl:py-[167.42px] ">
+    <div className=" z-10 xl:justify-start flex xl:ml-[192px] lg:mt-[128px]  lg:gap-[85px] xl:gap-[128px] lg:mx-[81px] sm:hidden md:hidden lg:flex items-center">
+      <div className="    flex min-w-[140px] xl:py-[167.42px] ">
         <ul className=" flex flex-col gap-[24px]">
-          <li className="flex items-center gap-[24px]">
+          <li className="flex   items-center gap-[16px]">
             <input
             id="1"
               className="w-[12px] h-[12px] border-none  appearance-none
@@ -97,7 +97,7 @@ export default function Card() {
               Rad Studio
             </label>
           </li>
-          <li className="flex items-center gap-[24px]">
+          <li className="flex items-center gap-[16px]">
         
             <input
             id="2"
@@ -120,7 +120,7 @@ export default function Card() {
               Delphi
             </label>
           </li>
-          <li className="flex items-center gap-[24px]">
+          <li className="flex items-center gap-[16px]">
             <input
             id="3"
               className="w-[12px] h-[12px] border-none cursor-pointer  appearance-none
@@ -136,14 +136,14 @@ export default function Card() {
               htmlFor="3"
                
               onClick={()=>handleOptionChange}
-              className={`text-[#525252]   shrink-0 Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
                 selectedOption === "option3" ? "font-[600]" : "font-[300]"
               }`}
             >
               C++ Builder
             </label>
           </li>
-          <li className="flex items-center gap-[24px]">
+          <li className="flex items-center gap-[16px]">
             <input
              id="4"
               className="w-[12px] h-[12px] border-none cursor-pointer  appearance-none
@@ -163,10 +163,15 @@ export default function Card() {
                 selectedOption === "option4" ? "font-[600]" : "font-[300]"
               }`}
             >
+
+
+
+
+
               InterBase
             </label>
           </li>
-          <li className="flex items-center gap-[24px]">
+          <li className="flex items-center gap-[16px]">
             <input
             id="5"
               className="w-[12px] h-[12px] border-none cursor-pointer  appearance-none

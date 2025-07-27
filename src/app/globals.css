@@ -11,10 +11,10 @@
 }
 
 @theme {
-  --breakpoint-sm: 375px;
-  --breakpoint-md: 744px;
-  --breakpoint-lg: 1440px;
-  --breakpoint-xl: 1920px;
+  --breakpoint-sm: 320px;
+  --breakpoint-md: 481px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1440px;
   --breakpoint-2xl: 100rem;
   --breakpoint-3xl: 120rem;
 }
