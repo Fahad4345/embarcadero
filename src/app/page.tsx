@@ -413,8 +413,8 @@ export default function Home() {
 
 
           </div>
-          <div className=" flex justify-center bg-[#FFFFFF99]  relative  xl:mt-[128px] lg:mt-[133px] md:mt-[96px] sm:mt-[80px] lg:px-[80px] lg:py-[48px]  ">
-            <div className="    relative flex justify-center items-center">
+          <div className="  flex  justify-center relative  xl:mt-[128px] lg:mt-[133px] md:mt-[96px] sm:mt-[80px] lg:px-[80px] lg:py-[48px]  ">
+            <div className="   relative flex justify-center items-center">
               <Footer />
               {/* eclipse29 */}
               <div className="   box-border absolute w-[906px] h-[906px]  lg:hidden xl:hidden sm:flex md:flex sm:left-[-520px] sm:top-[-220px] md:left-[-280px] md:top-[90px] bg-cyan-500 opacity-10 border border-white blur-[250px]"></div>

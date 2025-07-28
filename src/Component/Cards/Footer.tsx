@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     
-      <div className="     sm:gap-[32px]  md:gap-[40px]  flex flex-col sm:pb-[32px] lg:px-[0px] sm:px-[16px]">
+      <div className="   z-50 bg-[#FFFFFF99]   sm:gap-[32px]  md:gap-[40px]  flex flex-col sm:pb-[32px] lg:px-[0px] sm:px-[16px]">
         <div className="flex sm:flex-col  xl:flex-row lg:flex-col xl:gap-[32px] lg:gap-[48px]  ">
         <div className=" flex justify-start  lg:mt-[0px] md:mt-[40px] sm:mt-[32px] xl:w-[447px] "><Image src={"/Assets/logo.svg"} alt={""} width={138} height={40}className="w-[138px] h-[35px]"/>
           </div>
