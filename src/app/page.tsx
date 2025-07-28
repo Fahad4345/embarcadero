@@ -65,13 +65,13 @@ export default function Home() {
                       RAD Studio 11.2 out now
                     </button>
                   </div>
-                  <div className=" flex flex-col  sm:gap-[12px] ">
+                  <div className=" flex flex-col sm:min-w-[343px]  w-100%  sm:gap-[12px] ">
                     <p className="text-[#262626]  uppercase  xl:leading-[100%] xl:text-[80px] lg:text-[60px] lg:leading-[60px]  md:leading-[48px] md:text-[48px]  sm:text-[36px]   sm:leading-[40px]  font-[Archivo]    Tracking-[-2px]   font-[900] ">
                       ONE CODEBASE
                     </p>
                     <Span_Heading
                       className={
-                        " flex uppercase text-[80px]  xl:leading-[120%] xl:text-[80px] lg:text-[60px] lg:leading-[60px] md:leading-[48px]  md:text-[48px] sm:text-[36px]   sm:leading-[40px]   font-[Archivo]   Tracking-[-2px] bg-clip-text text-transparent bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] font-black"
+                        " flex uppercase text-[80px]   sm:text-center xl:leading-[120%] xl:text-[80px] lg:text-[60px] lg:leading-[60px] md:leading-[48px]  md:text-[48px] sm:text-[36px]   sm:leading-[40px]   font-[Archivo]   Tracking-[-2px] bg-clip-text text-transparent bg-gradient-to-r from-[#FE3B76] via-[#AF29CE] to-[#2931DD] font-black"
                       }
                       Span_Text={" All PLATFORMS"}
                       Regular_Text={""}
@@ -325,7 +325,7 @@ export default function Home() {
               " sm:hidden md:hidden lg:hidden absolute  lg:top-4 lg:left-[-100px] xl:top-8 xl:left-[-92px]"
             }
           />
-          <Image src="Assets/Line.svg" width={62.47} height={108.1} alt={""} className="absolute xl:top-[33px] xl:left-[320px] lg:top-[18px] lg:left-[70px] sm: hidden md:hidden lg:flex" />
+          <Image src="Assets/Line.svg" width={62.47} height={108.1} alt={""}  className="absolute xl:top-[33px] xl:left-[320px] lg:top-[18px] lg:left-[70px] sm: hidden md:hidden lg:flex"  />
           <div className="absolute box-border w-[906px] h-[906px] lg:hidden xl:hidden sm:flex md:flex md:left-[-250px] md:top-[150px] sm:left-[-520px] sm:top-[-100px]  bg-cyan-500 opacity-10 border border-white [filter:blur(250px)]"></div>
         </div>
         <div className=" flex relative  mx-auto  justify-center ">
@@ -418,11 +418,12 @@ export default function Home() {
           </div>
 
           {/* eclipse29 */}
-          <div className=" -z-20 box-border absolute w-[906px] h-[906px]  lg:hidden xl:hidden sm:flex md:flex sm:left-[-520px] sm:top-[-220px] md:left-[-280px] md:top-[90px] bg-cyan-500 opacity-10 border border-white blur-[250px]"></div>
+          
           <div className="  flex  z-10  bg-[#FFFFFF99]   justify-center relative  xl:mt-[128px] lg:mt-[133px] md:mt-[96px] sm:mt-[80px] lg:px-[80px] lg:py-[48px]  ">
+        
             <div className=" relative flex justify-center items-center">
 
-
+    <div className=" -z-20 box-border absolute w-[906px] h-[906px]  lg:hidden xl:hidden sm: hidden md:flex sm:left-[-520px] sm:top-[-220px] md:left-[-280px] md:top-[90px] bg-cyan-500 opacity-10 border border-white blur-[250px]"></div>
 
               <Footer />
               <div className="-z-10 absolute w-[497px] h-[497px] lg:right-[85px] lg:bottom-[-375px] [filter:blur(250px)] bg-[#6366F1]/10 border border-white sm:hidden md:hidden lg:flex box-border"></div>
