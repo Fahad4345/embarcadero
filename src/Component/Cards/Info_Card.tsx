@@ -8,11 +8,11 @@ import Buttons from "./Button"
 export default function Sec3_Component() {
   return (
    <div className=" flex justify-start    relative  " >
- <div className="flex z-30 flex-col   md:hidden xl:flex lg:flex sm:hidden  gap-[80px]  xl:w-[1536px]   ">
-     <div className=" flex  gap-[32px] xl:w-[1462px] lg:w-[1280px] ">
+ <div className="flex z-30 flex-col   md:hidden xl:flex lg:flex sm:hidden  gap-[80px]  px-[20px]  ">
+     <div className=" flex   gap-[32px] ">
       
       
-       <div className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
+       <div className="  lg:gap-[16px] sm:max-w-[343px] md:max-w-[331.5px] lg:max-w-[405.33px] xl:max-w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>
@@ -28,7 +28,7 @@ export default function Sec3_Component() {
           IconClass=""
         />
       </div>
-       <div className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
+       <div className="  lg:gap-[16px] sm:max-w-[343px] md:max-w-[331.5px] lg:max-w-[405.33px] xl:max-w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>
@@ -43,7 +43,7 @@ export default function Sec3_Component() {
           IconPath={"./Assets/RightArrow.svg"}
           IconClass=""
         />
-      </div>  <div   className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
+      </div>  <div   className="  lg:gap-[16px] sm:max-w-[343px] md:max-w-[331.5px] lg:max-w-[405.33px] xl:max-w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>
@@ -62,9 +62,9 @@ export default function Sec3_Component() {
   
 
       </div>
-      <div className="    border-t-2 border-[#D4D4D4] border-dashed lg:w-[1280px] xl:w-[1462px]  "></div>
-      <div className=" flex gap-[32px] lg:w-[1280px] xl:w-[1462px]">
-        <div className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
+      <div className="    border-t-2 border-[#D4D4D4] border-dashed  "></div>
+      <div className=" flex  justify-between gap-[32px]">
+        <div className="  lg:gap-[16px] sm:max-w-[343px] md:max-w-[331.5px] lg:max-w-[405.33px] xl:max-w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>
@@ -80,7 +80,7 @@ export default function Sec3_Component() {
           IconClass=""
         />
       </div>
-      <div className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
+      <div className="  lg:gap-[16px] sm:max-w-[343px] md:max-w-[331.5px] lg:max-w-[405.33px] xl:max-w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>
@@ -96,7 +96,7 @@ export default function Sec3_Component() {
           IconClass=""
         />
       </div>
-    <div className="  lg:gap-[16px] sm:w-[343px] md:w-[331.5px] lg:w-[405.33px] xl:w-[466.5px] ">
+    <div className="  lg:gap-[16px] sm:max-w-[343px] md:max-w-[331.5px] lg:max-w-[405.33px] xl:max-w-[466.5px] ">
         <p className="text-[#525252] sm:font-[400]  lg:text-[20px] sm:text-[18px] leading-[150%] font-[Archivo]">
           Learning & Development
         </p>

@@ -34,27 +34,27 @@ export default function Home() {
         <NavBar />
         <HeaderSec />
         <Image
-                  src={"/Assets/SmBackBox.svg"}
-                  alt={""}
-                  width={720}
-                  height={605}
-                  className="  opacity-50 absolute   md:hidden xl:hidden lg:hidden sm:flex  sm:left-[23px]  sm:top-[36px] w-[536px] h-[605px]"
+          src={"/Assets/SmBackBox.svg"}
+          alt={""}
+          width={720}
+          height={605}
+          className="  opacity-50 absolute   md:hidden xl:hidden lg:hidden sm:flex  sm:left-[23px]  sm:top-[36px] w-[536px] h-[605px]"
         />
         <Image
-                  src={"/Assets/MdBackBox.svg"}
-                  alt={""}
-                  width={720}
-                  height={605}
-                  className="  absolute opacity-50  md:flex xl:hidden lg:hidden sm:hidden  sm:left-[265px]  sm:top-[60px] w-[536px] h-[605px]"
-                />
+          src={"/Assets/MdBackBox.svg"}
+          alt={""}
+          width={720}
+          height={605}
+          className="  absolute opacity-50  md:flex xl:hidden lg:hidden sm:hidden  sm:left-[265px]  sm:top-[60px] w-[536px] h-[605px]"
+        />
       </div>
       <div className="   flex flex-col  ">
         {" "}
-        <div className=" flex justify-center">
-          <div className=" relative lg:ml-[79px] lg:mt-[88px] sm:px-[16px] lg:px-[0px] xl:ml-[192px] sm:mt-[11px] md:mt-[64px] flex flex-col   items-start max-w-[1750px]">
+        <div className=" flex  justify-center  p-[20px]">
+          <div className=" relative   lg:mt-[88px] sm:px-[16px] lg:px-[0px]  sm:mt-[11px] md:mt-[64px] flex flex-col  items-center  mx-auto max-w-[1536px]">
             <div
               className="flex  lg:flex-row xl:gap-x-[63px]  lg:gap-x-[32px] md:gap-y-[54px] sm:gap-y-[33.63px] sm:flex-col 
-             lg:justify-start sm:justify-center md:flex-col  xl:justify-start"
+             sm:justify-center md:flex-col "
             >
               <div className="flex  relative xl:max-w-[752px] xl:gap-[24px] lg:gap-[16px] lg:justify-start lg:max-w-[624px]  md:gap-[32px] sm:flex-col   sm:gap-[32px] ">
                 <div className="sm:items-center lg:items-start  sm:justify-center sm:flex-col sm:gap-[32px] lg:gap-[32px] flex ">
@@ -119,7 +119,7 @@ export default function Home() {
                     </h1>
                     <p className="text-[#374151] text-[16px] lg:text-start   font-[Archivo] uppercase leading-[150%] font-[400] ">
                       Developer community
-                    </p>  
+                    </p>
                   </div>
 
                   <div className="w-[2px]  mx-auto bg-[#D1D5DB]"></div>
@@ -134,17 +134,17 @@ export default function Home() {
                   </div>
                 </div>
                 {/* Eclipse13 */}
-              <div className="absolute w-[440px] h-[440px]  xl:left-[-315px] xl:top-[520px] lg:left-[-205px] lg:top-[520px] md:left-[-150px] md:top-[650px] sm:left-[-368px] sm:top-[650px] bg-[#6366F1]/20 [filter:blur(250px)] border border-white box-border md:hidden sm:hidden lg:flex xl:flex "></div>
-                {/* Eclipse13 */} 
+                <div className="absolute w-[440px] h-[440px]  xl:left-[-315px] xl:top-[520px] lg:left-[-205px] lg:top-[520px] md:left-[-150px] md:top-[650px] sm:left-[-368px] sm:top-[650px] bg-[#6366F1]/20 [filter:blur(250px)] border border-white box-border md:hidden sm:hidden lg:flex xl:flex "></div>
+                {/* Eclipse13 */}
                 <div className="absolute w-[440px] h-[440px] xl:left-[-320px] xl:top-[550px] lg:left-[-200px] lg:top-[500px]  md:left-[-150px] md:top-[650px] sm:left-[-379px] sm:top-[650px] bg-[#6366F1]/20 [filter:blur(250px)] border border-white box-border  md:hidden sm:hidden lg:flex xl:flex"></div>
                 {/* {eclipse14} */}
                 <div className="absolute box-border w-[869px] h-[869px] md:left-[150px] md:top-[270px]   lg:hidden xl:hidden sm: hidden md:flex bg-[#F43F5E]/10 border border-white [filter:blur(250px)] "></div>
                 {/* eclipse14 */}
                 <div className="absolute box-border w-[869px] h-[869px] md:left-[450px] md:top-[270px] sm:left-[205px] sm:top-[270px] lg:hidden xl:hidden sm:flex md: flex bg-[#E11D48]/10 border border-white [filter:blur(250px)]"></div>
-                 {/* eclipse23 */} 
+                {/* eclipse23 */}
                 <div className="absolute box-border w-[869px] h-[869px] md:left-[-500px] md:top-[500px]  sm:left-[-740px] sm:top-[550px] bg-[#3B82F6]/10 opacity-10 border border-white blur-[250px] rounded-full  lg:hidden xl:hidden sm:flex md:flex "></div>
 
-                 {/* Eclipse23 */} 
+                {/* Eclipse23 */}
                 <div className="absolute box-border w-[869px] h-[869px] xl:left-[-665px] xl:top-[460px]  lg:left-[-565px] lg:top-[400px] bg-[#3B82F6]/10 border border-white blur-[250px] rounded-full  sm:hidden md:hidden lg:flex xl:flex "></div>
               </div>
 
@@ -154,7 +154,7 @@ export default function Home() {
                   alt="My Icon"
                   className=" sm:mx-[16px]     md:mx-[0px] sm:w-[343px] sm:h-[285px] md:w-[516px] md:h-[430px] lg:w-[624px] lg:h-[520px] xl:w-[720px] xl:h-[600px]"
                 />
-                
+
                 <Image
                   src={"/Assets/LGBackBox.svg"}
                   alt={""}
@@ -212,7 +212,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="lg:mt-[121px] md:justify-center lg:justify-start md:mt-[98px] flex sm:flex-wrap sm:gap-[32px] sm:mt-[86px] ">
+            <div className="lg:mt-[121px] md:justify-center lg:justify-start  md:mt-[98px] flex sm:flex-wrap sm:gap-[32px] sm:mt-[86px] ">
               <div className="flex justify-center w-full">
                 <span className="text-[#525252] xl:text-[24px] text-center  lg:text-[24px] md:text-[20px] sm:text-center sm:text[20px] sm:font-[400]   leading-[150%]  font-[500]">
                   The{" "}
@@ -222,7 +222,7 @@ export default function Home() {
                   Rely on Software Built With Embarcadero Products
                 </span>
               </div>
-              <div className="  flex lg:flex-row sm:flex-wrap  justify-start xl:justify-between md:justify-between sm:justify-between sm:gap-[32px] xl:gap-[64px]">
+              <div className="  flex lg:flex-row sm:flex-wrap   lg:justify-center  md:justify-around  sm:justify-around item-center   sm:gap-[32px] lg:gap-[64px]">
                 <Icons
                   IconPath="/Assets/Airbnb.svg"
                   className="sm:w-[74.67px] z-10  sm:h-[28px] md:w-[106.67px]  md:h-[40px]  transition duration-300  hover:scale-120  cursor-pointer"
@@ -237,55 +237,57 @@ export default function Home() {
                 />
                 <Icons
                   IconPath="/Assets/Gitlab.svg"
-                  className="sm:w-[79.33px] z-10  sm:h-[28px]  md:w-[113px]  md:h-[40px] lg:hidden  transition duration-300  hover:scale-120  cursor-pointer"
+                  className="sm:w-[79.33px] z-10  sm:h-[28px]  md:w-[113px]  md:h-[40px] lg:hidden  md:hidden sm:flex transition duration-300  hover:scale-120  cursor-pointer"
                 />
-                <Icons
-                  IconPath="/Assets/bruze.svg"
-                  className="sm:w-[53.67px] z-10  sm:h-[28px]  md:w-[76.67px]   md:h-[40px] lg:hidden xl:flex  transition duration-300  hover:scale-120  cursor-pointer"
-                />
+
                 <Icons
                   IconPath="/Assets/Rippling.svg"
                   className="sm:w-[99.17px] z-10   sm:h-[28px] lg:w-[141.67px]  lg:h-[40px] md:hidden lg:flex  transition duration-300  hover:scale-120  cursor-pointer "
                 />
-                  <Icons
-                  IconPath="/Assets/Hotjar.svg"
-               
-                  className="sm:w-[65.92px] z-10  sm:h-[28px]  md:w-[94.17px]  md:h-[40px]  sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
-                />
+
                 <Icons
                   IconPath="/Assets/Atlassian.svg"
                   className="sm:w-[103px] z-10  sm:h-[28px]  md:w-[148.33px]  md:h-[40px]  transition duration-300  hover:scale-120  cursor-pointer"
+                /><Icons
+                  IconPath="/Assets/Automatic.svg"
+                  className="sm:w-[135.92px] z-10  justify-items-center sm:h-[28px]  md:w-[194.17px]  md:h-[48px] xl: flex  lg:flex transition duration-300  hover:scale-120  cursor-pointer"
                 />
                 <Icons
                   IconPath="/Assets/Google.svg"
-                 
-                  className="sm:w-[79.33px] z-10  sm:h-[28px] md:w-[94.17px]  md:h-[40px]  transition duration-300  hover:scale-120  cursor-pointer"
+
+                  className="sm:w-[79.33px] z-10  sm:h-[28px] md:w-[94.17px]  md:h-[40px]   sm:hidden  xl:flex transition duration-300  hover:scale-120  cursor-pointer"
                 />
-                <Icons
-                  IconPath="/Assets/Automatic.svg"
-                  className="sm:w-[135.92px] z-10  sm:h-[28px]  md:w-[194.17px]  md:h-[48px]  transition duration-300  hover:scale-120  cursor-pointer"
-                />{" "}
+
                 <Icons
                   IconPath="/Assets/Sonos.svg"
-                
-                  className="sm:w-[67.08px] z-10  sm:h-[28px]  md:w-[95.83px]  md:h-[40px]  lg:hidden xl:flex transition duration-300  hover:scale-120  cursor-pointer"
+
+                  className="sm:w-[67.08px] z-10  sm:h-[28px]  md:w-[95.83px]  md:h-[40px]  lg:flex xl:flex transition duration-300  hover:scale-120  cursor-pointer"
+                />  <Icons
+                  IconPath="/Assets/bruze.svg"
+                  className="sm:w-[53.67px] z-10  sm:h-[28px]  md:w-[76.67px]   md:h-[40px] lg:hidden xl: hidden md:flex transition duration-300  hover:scale-120  cursor-pointer"
                 />
-              <Icons
-                  IconPath="/Assets/Squarespace.svg"
-                
-                  className="sm:w-[128.33px] z-10  sm:h-[28px]  md:w-[182.75px]  md:h-[26.45px]  sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
-                /><Icons
-                  IconPath="/Assets/Clearbit.svg"
-                
-                  className="sm:w-[87.5px] z-10  sm:h-[28px]  md:w-[125px]  md:h-[40px]   sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
-                /><Icons
-                  IconPath="/Assets/Contentfull.svg"
-                  
-                  className="sm:w-[95.08px] z-10  sm:h-[28px]  md:w-[135.83px]  md:h-[40px]  sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
-                /><Icons
+                <Icons
+                  IconPath="/Assets/Hotjar.svg"
+
+                  className="sm:w-[65.92px] z-10  sm:h-[28px]  md:w-[94.17px]  md:h-[40px]  sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
+                />
+                <Icons
                   IconPath="/Assets/Insta.svg"
-                
+
                   className="sm:w-[72.92px] z-10  sm:h-[28px]  md:w-[104.17px]  md:h-[40px]   sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
+                /> <Icons
+                  IconPath="/Assets/Clearbit.svg"
+
+                  className="sm:w-[87.5px] z-10  sm:h-[28px]  md:w-[125px]  md:h-[40px]   sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
+                /> <Icons
+                  IconPath="/Assets/Contentfull.svg"
+
+                  className="sm:w-[95.08px] z-10  sm:h-[28px]  md:w-[135.83px]  md:h-[40px]  sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
+                />
+                <Icons
+                  IconPath="/Assets/Squarespace.svg"
+
+                  className="sm:w-[128.33px] z-10  sm:h-[28px]  md:w-[183.33px]  md:h-[40px]  sm:flex md:flex lg:hidden xl:hidden transition duration-300  hover:scale-120  cursor-pointer"
                 />
               </div>
             </div>
@@ -293,11 +295,11 @@ export default function Home() {
             <div className="absolute min-w-[869px] max-h-[869px] min-h-[869px] lg:left-[900px] lg:top-[350px] sm:right-[-590px] sm:top-[270px] bg-[#F43F5E]/10 [filter:blur(250px)] sm:hidden md:hidden lg:flex border border-white box-border"></div>
             {/* Eclipse11 */}
             <div className="absolute w-[765px] h-[765px] xl:left-[-290px] xl:top-[-440px] lg:left-[-246px] lg:top-[-430px] bg-[#3B82F6]/10 [filter:blur(250px)] sm:hidden md:hidden lg:flex"></div>
-              {/* Eclipse11 */}
+            {/* Eclipse11 */}
             <div className="absolute w-[432px] h-[432px] xl:left-[-190px] xl:top-[-156px] lg:left-[-210px] lg:top-[-420px] bg-[#DC2626]/10 border border-white [filter:blur(250px)] box-border sm:hidden md:hidden lg:flex"></div>
-             {/* eclipse11 */} 
+            {/* eclipse11 */}
             <div className="absolute w-[765px] h-[765px]  lg:hidden xl:hidden sm:flex md:flex  md:left-[-156px] md:top-[-300px] sm:left-[-396px] sm:top-[-336px] bg-[#3B82F6]/10 [filter:blur(250px)]"></div>
-             {/* eclipse11 */} 
+            {/* eclipse11 */}
             <div className="absolute box-border w-[432px] lg:hidden xl:hidden sm:flex md:flex  h-[432px] md:left-[-145px] md:top-[-336px] sm:left-[-370px] sm:top-[-336px] bg-[#DC2626]/10 border border-white [filter:blur(250px)]"></div>
 
 
@@ -317,12 +319,13 @@ export default function Home() {
             Text_1={"Trusted by"}
             Text_2={" Developers World Wide"}
             className={
-              "  flex justify-center text-center   "
+              "  flex justify-center text-center  "
             }
             Icon_Class={
-              " sm:hidden md:hidden lg:flex absolute  lg:top-4 lg:left-[-100px] xl:top-8 xl:left-[-92px]"
+              " sm:hidden md:hidden lg:hidden absolute  lg:top-4 lg:left-[-100px] xl:top-8 xl:left-[-92px]"
             }
           />
+          <Image src="Assets/Line.svg" width={62.47} height={108.1} alt={""}  className="absolute xl:top-[33px] xl:left-[320px] lg:top-[18px] lg:left-[70px] sm: hidden md:hidden lg:flex"  />
           <div className="absolute box-border w-[906px] h-[906px] lg:hidden xl:hidden sm:flex md:flex md:left-[-250px] md:top-[150px] sm:left-[-520px] sm:top-[-100px]  bg-cyan-500 opacity-10 border border-white [filter:blur(250px)]"></div>
         </div>
         <div className=" flex relative  mx-auto  justify-center ">
@@ -376,16 +379,16 @@ export default function Home() {
               <div className="box-border absolute w-[497px] h-[497px] lg:hidden xl:hidden sm:flex md:flex md:left-[-145px] md:top-[520px] sm:left-[-385px] sm:top-[670px] bg-[#6366F1] opacity-10 border border-white blur-[250px]"></div>
               {/* eclipse26 */}
               <div className="box-border absolute w-[869px] h-[869px]  lg:hidden xl:hidden sm:flex md:flex  md:left-[-243px] md:top-[-750px] sm:left-[-483px] sm:top-[-630px] bg-rose-600 opacity-10 border border-white blur-[250px]"></div>
-                  {/* Eclipse17 */}
+              {/* Eclipse17 */}
               <div className="  box-border absolute w-[650px] h-[650px]  md:hidden sm:hidden xl:flex lg:flex xl:left-[1280px] xl:top-[300px] lg:left-[980px] lg:top-[430px] bg-[#DC2626]/10 border border-white [filter:blur(250px)]"></div>
 
             </div>
           </div>
           <div className=" flex justify-center z-50 lg:bg-[#FFFFFF66]  relative xl:mt-[128px] lg:mt-[132px] md:mt-[64px] sm:mt-[48px]">
             <Sec4_Component />
-            
-         
-           
+
+
+
 
           </div>
 
@@ -405,23 +408,26 @@ export default function Home() {
             <div className="box-border absolute w-[869px] h-[869px] lg:hidden xl:hidden sm:flex md:flex  sm:left-[-483px] sm:top-[-450px]  md:left-[-243px] md:top-[-280px] bg-rose-600 opacity-10 border border-white blur-[250px]"></div>
             {/*Eclipse18 */}
             <div className="absolute w-[497px] h-[497px] xl:left-[-700px] xl:top-[-30px]  lg:left-[-550px] lg:top-[-30px] bg-[#6366F1]/10 [filter:blur(250px)] sm:hidden md:hidden lg:flex border border-white box-border"></div>
-             {/*Eclipse19 */}
- 
+            {/*Eclipse19 */}
+
             <div className="absolute w-[731px] h-[731px] lg:right-[-585px] lg:top-[0px] [filter:blur(250px)] bg-[#06B6D4]/10 border border-white sm:hidden md:hidden lg:flex"></div>
-             {/*Eclipse20 */}
-           <div className="z-0 absolute w-[678px] h-[678px] lg:left-[-604px] lg:top-[-425px] bg-[#6366F1]/10 sm:hidden md:hidden lg:flex [filter:blur(250px)] border border-white box-border"></div>
+            {/*Eclipse20 */}
+            <div className="z-0 absolute w-[678px] h-[678px] lg:left-[-604px] lg:top-[-425px] bg-[#6366F1]/10 sm:hidden md:hidden lg:flex [filter:blur(250px)] border border-white box-border"></div>
 
 
           </div>
-          <div className="  flex  justify-center relative  xl:mt-[128px] lg:mt-[133px] md:mt-[96px] sm:mt-[80px] lg:px-[80px] lg:py-[48px]  ">
-            <div className="   relative flex justify-center items-center">
-              <Footer />
-              {/* eclipse29 */}
-              <div className="   box-border absolute w-[906px] h-[906px]  lg:hidden xl:hidden sm:flex md:flex sm:left-[-520px] sm:top-[-220px] md:left-[-280px] md:top-[90px] bg-cyan-500 opacity-10 border border-white blur-[250px]"></div>
 
+          {/* eclipse29 */}
+          <div className=" -z-20 box-border absolute w-[906px] h-[906px]  lg:hidden xl:hidden sm:flex md:flex sm:left-[-520px] sm:top-[-220px] md:left-[-280px] md:top-[90px] bg-cyan-500 opacity-10 border border-white blur-[250px]"></div>
+          <div className="  flex  z-10  bg-[#FFFFFF99]   justify-center relative  xl:mt-[128px] lg:mt-[133px] md:mt-[96px] sm:mt-[80px] lg:px-[80px] lg:py-[48px]  ">
+            <div className=" relative flex justify-center items-center">
+
+
+
+              <Footer />
               <div className=" absolute w-[497px] h-[497px] lg:right-[85px] lg:bottom-[-375px] [filter:blur(250px)] bg-[#6366F1]/10 border border-white sm:hidden md:hidden lg:flex box-border"></div>
 
-              <div className="-z-10 absolute w-[731px] h-[731px] lg:left-[-400px] lg:top-[-100px] [filter:blur(250px)] border border-white bg-[#06B6D4]/40 sm:hidden md:hidden lg:flex box-border "></div>
+              {/* <div className="-z-10 absolute w-[731px] h-[731px] lg:left-[-400px] lg:top-[-100px] [filter:blur(250px)] border border-white bg-[#06B6D4]/40 sm:hidden md:hidden lg:flex box-border "></div> */}
               {" "}
 
             </div>
