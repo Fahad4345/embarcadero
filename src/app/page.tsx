@@ -222,7 +222,7 @@ export default function Home() {
                   Rely on Software Built With Embarcadero Products
                 </span>
               </div>
-              <div className="  flex lg:flex-row sm:flex-wrap   lg:justify-center  md:justify-around  sm:justify-around item-center   sm:gap-[32px] lg:gap-[64px]">
+              <div className="  flex lg:flex-row sm:flex-wrap   lg:justify-center  md:justify-around  sm:justify-evenly item-center   sm:gap-[32px] lg:gap-[64px]">
                 <Icons
                   IconPath="/Assets/Airbnb.svg"
                   className="sm:w-[74.67px] z-10  sm:h-[28px] md:w-[106.67px]  md:h-[40px]  transition duration-300  hover:scale-120  cursor-pointer"
@@ -425,7 +425,7 @@ export default function Home() {
 
 
               <Footer />
-              <div className=" absolute w-[497px] h-[497px] lg:right-[85px] lg:bottom-[-375px] [filter:blur(250px)] bg-[#6366F1]/10 border border-white sm:hidden md:hidden lg:flex box-border"></div>
+              <div className="-z-10 absolute w-[497px] h-[497px] lg:right-[85px] lg:bottom-[-375px] [filter:blur(250px)] bg-[#6366F1]/10 border border-white sm:hidden md:hidden lg:flex box-border"></div>
 
               {/* <div className="-z-10 absolute w-[731px] h-[731px] lg:left-[-400px] lg:top-[-100px] [filter:blur(250px)] border border-white bg-[#06B6D4]/40 sm:hidden md:hidden lg:flex box-border "></div> */}
               {" "}
