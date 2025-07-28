@@ -29,7 +29,7 @@ export default function Dropdown({ className }: { className?: string }) {
 
   return (
     <div className={`   z-50 flex gap-[24px] mt-[7px] ${className}`} ref={menuRef}>
- 
+
       <div
         className="relative  inline-block"
         onMouseEnter={() => setIs1Open(true)}
@@ -37,8 +37,8 @@ export default function Dropdown({ className }: { className?: string }) {
       >
         <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Products
-          <Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} className={`  transition-all duration-500  ${is1Open ? "rotate-[0deg] ":" rotate-[180deg]"  }`}  />
-         
+          <Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} className={`  transition-all duration-500  ${is1Open ? "rotate-[0deg] " : " rotate-[180deg]"}`} />
+
         </button>
 
         <div
@@ -55,19 +55,19 @@ export default function Dropdown({ className }: { className?: string }) {
               <div className="p-[16px] space-y-[8px]">
                 <h2 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">RAD Studio</h2>
                 <p className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
-RAD Studio® is the ultimate IDE for building multi-platform high-performance native applications in Delphi® and modern C++ with powerful visual design tools and integrated toolchains.
+                  RAD Studio® is the ultimate IDE for building multi-platform high-performance native applications in Delphi® and modern C++ with powerful visual design tools and integrated toolchains.
                 </p>
               </div>
               <div className="p-[16px] space-y-[8px]">
                 <h2 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">Delphi</h2>
                 <p className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
                   Delphi  is the world s most advanced integrated IDE for rapidly developing native high-performance multi-platform applications using powerful visual design tools and features developers love.
-             </p>
+                </p>
               </div>
               <div className="p-[16px] space-y-[8px]">
                 <h2 className="font-[600]  text-[#262626] font-[Archivo] cursor-pointer text-[20px]">C++ Builder</h2>
                 <p className="font-[400]  text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
-                 C++Builder  is an advanced integrated IDE for modern C++, with robust features empowering blazingly fast, stunning responsive native applications for Windows and iOS.
+                  C++Builder  is an advanced integrated IDE for modern C++, with robust features empowering blazingly fast, stunning responsive native applications for Windows and iOS.
                 </p>
               </div>
             </div>
@@ -78,7 +78,7 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
             <div className="p-[16px] space-y-[8px]">
               <h2 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">InterBase</h2>
               <p className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
-              Ultrafast, scalable, embeddable SQL database with commercial-grade data security, disaster recovery and change synchronization
+                Ultrafast, scalable, embeddable SQL database with commercial-grade data security, disaster recovery and change synchronization
               </p>
             </div>
 
@@ -86,14 +86,14 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
             <div className="p-[16px] space-y-[8px]">
               <h2 className="font-[600] text-[#262626] font-[Archivo] cursor-pointer text-[20px]">RAD Server</h2>
               <p className="font-[400] text-[#262626] font-[Archivo] cursor-pointer text-[16px]">
-             Turn-key application server that provides a robust  out of the box  back-end platform on which to build and deploy Delphi and C++Builder application services.
+                Turn-key application server that provides a robust  out of the box  back-end platform on which to build and deploy Delphi and C++Builder application services.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-   
+
       <div
         className="relative inline-block"
         onMouseEnter={() => setIs2Open(true)}
@@ -101,7 +101,7 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
       >
         <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Free Tools
-       <Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} className={`  transition-all duration-500  ${is2Open ? "rotate-[0deg] ":" rotate-[180deg]"  }`}  />
+          <Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} className={`  transition-all duration-500  ${is2Open ? "rotate-[0deg] " : " rotate-[180deg]"}`} />
         </button>
 
         <div
@@ -131,7 +131,7 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
         </div>
       </div>
 
- 
+
       <button className="text-[#262626] font-[400] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
         Blogs
       </button>
@@ -143,7 +143,7 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
       >
         <button className="text-[#262626] font-[400] gap-[4px] font-[Archivo] text-[14px] leading-[150%] flex cursor-pointer">
           Resources
-         <Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} className={`  transition-all duration-500  ${is3Open ? "rotate-[0deg] ":" rotate-[180deg]"  }`}  />
+          <Icons IconPath={"/Assets/Uparrow.svg"} width={16} height={16} className={`  transition-all duration-500  ${is3Open ? "rotate-[0deg] " : " rotate-[180deg]"}`} />
         </button>
 
         <div
@@ -152,7 +152,7 @@ RAD Studio® is the ultimate IDE for building multi-platform high-performance na
             ${is3Open ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 -translate-y-2 pointer-events-none"}
           `}
         >
-      
+
           {[
             {
               title: "Learn",

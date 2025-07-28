@@ -51,7 +51,7 @@ export default function HeaderSec() {
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
-    setOpenIndexes([]); 
+    setOpenIndexes([]);
   };
 
   const toggleDropdown = (index: number) => {
@@ -60,7 +60,7 @@ export default function HeaderSec() {
     );
   };
 
-  
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -72,7 +72,7 @@ export default function HeaderSec() {
     };
   }, [isOpen]);
 
- 
+
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
       if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
@@ -87,170 +87,170 @@ export default function HeaderSec() {
   }, []);
 
   return (
-     <div className=" z-10 bg-white w-full flex justify-center">
-<div className="xl:px-[196px]  xl:py-[16px] lg:px-[80px] lg:py-[16px] md:px-[24px] md:py-[16px] sm:py-[12px] sm:px-[16px] flex  justify-between   w-full items-center max-w-[1920px]
+    <div className=" z-10 bg-white w-full flex justify-center">
+      <div className="xl:px-[196px]  xl:py-[16px] lg:px-[80px] lg:py-[16px] md:px-[24px] md:py-[16px] sm:py-[12px] sm:px-[16px] flex  justify-between   w-full items-center max-w-[1920px]
     ">
 
 
 
 
 
- 
-      <Icons
-        IconPath={"/Assets/logo.svg"}
-        className="sm:w-[138.67px] sm:h-[24px] transition duration-300 hover:scale-110 cursor-pointer   "
-      />
 
-      <div>
-        <Dropdown className="sm:hidden md:hidden lg:flex" />
-    </div>
-{isOpen ?(<div className="flex justify-center lg:gap-[8px] sm:gap-[24px]">
-        
+        <Icons
+          IconPath={"/Assets/logo.svg"}
+          className="sm:w-[138.67px] sm:h-[24px] transition duration-300 hover:scale-110 cursor-pointer   "
+        />
 
-        <div className="relative">
-      
-          {!isOpen ? (
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              onClick={toggleMenu}
-              className="cursor-pointer"
-            >
-              <path
-                d="M4 6H20"
-                stroke="#525252"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M4 12H20"
-                stroke="#525252"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M4 18H20"
-                stroke="#525252"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          ) : (
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              onClick={toggleMenu}
-              className="cursor-pointer"
-            >
-              <path
-                d="M16.9492 7.05078L7.04972 16.9503"
-                stroke="#2C3E50"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M7.05078 7.05078L16.9503 16.9503"
-                stroke="#2C3E50"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          )}
+        <div>
+          <Dropdown className="sm:hidden md:hidden lg:flex" />
         </div>
-      </div>):(<div className="flex justify-center gap-[24px] ">
+        {isOpen ? (<div className="flex justify-center lg:gap-[8px] sm:gap-[24px]">
+
+
+          <div className="relative">
+
+            {!isOpen ? (
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                onClick={toggleMenu}
+                className="cursor-pointer"
+              >
+                <path
+                  d="M4 6H20"
+                  stroke="#525252"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4 12H20"
+                  stroke="#525252"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4 18H20"
+                  stroke="#525252"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            ) : (
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                onClick={toggleMenu}
+                className="cursor-pointer"
+              >
+                <path
+                  d="M16.9492 7.05078L7.04972 16.9503"
+                  stroke="#2C3E50"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M7.05078 7.05078L16.9503 16.9503"
+                  stroke="#2C3E50"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            )}
+          </div>
+        </div>) : (<div className="flex justify-center gap-[24px] ">
           <div className="  flex  flex-row lg:gap-[8px] sm:gap-[24px]">
-            <button  className="bg-transparent  flex  items-center gap-[8px] rounded-[8px] text-black sm:hidden md:flex font-[Archivo] font-[500] text-[14px] leading-[22px] cursor-pointer">Sign In</button>
-           <button className="md:px-[16px] md:py-[8px] rounded-[10px] border-[#262626] font-[Archivo] sm:hidden md:flex text-[#262626]  font-[500] text-[14px] leading-[22px] border-1 lg:px-[20px] lg:py-[8px] bg-[white] transition duration-300 hover:bg-[#262626]  hover:text-white  cursor-pointer"
-         >Buy Now</button>
-       <button  className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#262626] text-white font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#262626]/90 hover:border-black transition duration-300 cursor-pointer"
-         > Free Trial</button>
-       </div>
-        
+            <button className="bg-transparent  flex  items-center gap-[8px] rounded-[8px] text-black sm:hidden md:flex font-[Archivo] font-[500] text-[14px] leading-[22px] cursor-pointer">Sign In</button>
+            <button className="md:px-[16px] md:py-[8px] rounded-[10px] border-[#262626] font-[Archivo] sm:hidden md:flex text-[#262626]  font-[500] text-[14px] leading-[22px] border-1 lg:px-[20px] lg:py-[8px] bg-[white] transition duration-300 hover:bg-[#262626]  hover:text-white  cursor-pointer"
+            >Buy Now</button>
+            <button className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#262626] text-white font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#262626]/90 hover:border-black transition duration-300 cursor-pointer"
+            > Free Trial</button>
+          </div>
 
-        <div className=" xl:hidden lg:hidden md:flex mt-[7px] ">
-       
-          {!isOpen ? (
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              onClick={toggleMenu}
-              className="cursor-pointer"
-            >
-              <path
-                d="M4 6H20"
-                stroke="#525252"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M4 12H20"
-                stroke="#525252"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M4 18H20"
-                stroke="#525252"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          ) : (
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              onClick={toggleMenu}
-              className="cursor-pointer"
-            >
-              <path
-                d="M16.9492 7.05078L7.04972 16.9503"
-                stroke="#2C3E50"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M7.05078 7.05078L16.9503 16.9503"
-                stroke="#2C3E50"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          )}
-        </div>
-      </div>)}
-      
-  
-      {isOpen && (
-       
-        
+
+          <div className=" xl:hidden lg:hidden md:flex mt-[7px] ">
+
+            {!isOpen ? (
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                onClick={toggleMenu}
+                className="cursor-pointer"
+              >
+                <path
+                  d="M4 6H20"
+                  stroke="#525252"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4 12H20"
+                  stroke="#525252"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M4 18H20"
+                  stroke="#525252"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            ) : (
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                onClick={toggleMenu}
+                className="cursor-pointer"
+              >
+                <path
+                  d="M16.9492 7.05078L7.04972 16.9503"
+                  stroke="#2C3E50"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M7.05078 7.05078L16.9503 16.9503"
+                  stroke="#2C3E50"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            )}
+          </div>
+        </div>)}
+
+
+        {isOpen && (
+
+
 
           <div
             ref={menuRef}
             className="fixed md:top-[120px] sm:top-[160px] right-0 z-50 md:w-[360px]  sm:w-full h-[calc(100vh-120px)] bg-white p-[24px] overflow-y-auto flex flex-col gap-[32px]"
           >
-         
+
             <div className="flex flex-col gap-[16px]">
               <div className="flex flex-wrap gap-[24px]">
                 <a
@@ -315,26 +315,26 @@ export default function HeaderSec() {
                   )}
                 </div>
               ))}
-          </div>   <div className="  flex  flex-col gap-[16px] ">
-            <button  className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#171717] text-white font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#171717]/90 hover:text-[black] border-1 border-black transition duration-300 cursor-pointer"
-            > Free Trial</button>
-             <button className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#171717] text-[#171717] font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#171717]/90 hover:text-black border-1 hover:border-black transition duration-300 cursor-pointer"
-           >Buy Now</button>
-       
-              <button className= "md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-transparent text-[#262626] font-[Archivo] font-[500] text-[14px] leading-[22px] transition duration-300 cursor-pointer hover:underline"
-          >Sign In</button>
-          
-          
-     
-   
+            </div>   <div className="  flex  flex-col gap-[16px] ">
+              <button className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#171717] text-white font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#171717]/90 hover:text-[black] border-1 border-black transition duration-300 cursor-pointer"
+              > Free Trial</button>
+              <button className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-[#171717] text-[#171717] font-[Archivo] font-[500] text-[14px] leading-[22px] hover:bg-[#171717]/90 hover:text-black border-1 hover:border-black transition duration-300 cursor-pointer"
+              >Buy Now</button>
+
+              <button className="md:px-[16px] md:py-[8px] sm:px-[16px] sm:py-[8px] sm:rounded-[8px] lg:rounded-[10px] bg-transparent text-[#262626] font-[Archivo] font-[500] text-[14px] leading-[22px] transition duration-300 cursor-pointer hover:underline"
+              >Sign In</button>
+
+
+
+
+            </div>
+
           </div>
-       
-          </div>
-        
-  
-      )}
+
+
+        )}
+      </div>
     </div>
-     </div>
-    
+
   );
 }

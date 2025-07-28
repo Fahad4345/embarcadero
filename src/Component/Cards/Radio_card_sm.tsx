@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import  React  from "react";
+import React from "react";
 
 type TextContent = {
   Image: string;
@@ -12,7 +12,7 @@ type TextContent = {
   button2text: string;
 };
 
-export default function Card({className}:{className:string}) {
+export default function Card({ className }: { className: string }) {
   const textContent: Record<string, TextContent> = {
     option1: {
       Image: "/Assets/Tree.svg",
@@ -62,46 +62,46 @@ export default function Card({className}:{className:string}) {
   };
 
   return (
-    <div className={` flex flex-col   sm: mx-[16px] gap-[96px] md:my-[64px] md:mx-[90px] sm:my-[0px] ${className}` }>
+    <div className={` flex flex-col   sm: mx-[16px] gap-[96px] md:my-[64px] md:mx-[90px] sm:my-[0px] ${className}`}>
       {Object.entries(textContent).map(([key, content]) => (
         <div
           key={key}
           className="flex sm:flex-col gap-[32px]"
         >
-     
+
           <div className="  flex flex-col gap-[20px] ">
 
-          <div className=" flex justify-center">
-            <Image
-              src={content.IconPath}
-              alt="Icon"
-              width={64}
-              height={64}
-              className=" transition duration-300   z-10 hover:scale-120  cursor-pointer"
-            />
+            <div className=" flex justify-center">
+              <Image
+                src={content.IconPath}
+                alt="Icon"
+                width={64}
+                height={64}
+                className=" transition duration-300   z-10 hover:scale-120  cursor-pointer"
+              />
 
-            
-          </div>
-          <div><div className="flex justify-center  gap-[12px]">
+
+            </div>
+            <div><div className="flex justify-center  gap-[12px]">
               <p className="text-[30px] font-[600] leading-[150%]  font-[Archivo] text-[#262626]">{content.heading_span}</p>
               <p className="text-[30px] font-[300] leading-[150%] text-[#262626] font-[Archivo]">{content.heading_version}</p>
             </div>
-            <div><p className="font-[Archivo] text-center text-[18px] font-[400] leading-[150%] text-[#525252]">{content.text}</p>
+              <div><p className="font-[Archivo] text-center text-[18px] font-[400] leading-[150%] text-[#525252]">{content.text}</p>
+              </div>
             </div>
-            </div>
-            </div>
+          </div>
 
-           
-            
-            <div className="flex   sm:flex-col md:flex-row justify-center gap-[12px]">
-              <button  className="bg-[#262626] z-10  text-white  border-1   border-[#262626] rounded-[10px] py-[12px] px-[24px]  transition duration-300  hover:bg-[#262626]/90  cursor-pointer ">
-                {content.button1text}
-              </button>
-              <button  className="rounded-[10px] z-10 border-[#262626]   text-[#262626] border-1 px-[24px] py-[12px]  hover:bg-[#262626]   hover:text-white transition duration-300     cursor-pointer ">
-                {content.button2text}
-              </button>
-            </div>
-          
+
+
+          <div className="flex   sm:flex-col md:flex-row justify-center gap-[12px]">
+            <button className="bg-[#262626] z-10  text-white  border-1   border-[#262626] rounded-[10px] py-[12px] px-[24px]  transition duration-300  hover:bg-[#262626]/90  cursor-pointer ">
+              {content.button1text}
+            </button>
+            <button className="rounded-[10px] z-10 border-[#262626]   text-[#262626] border-1 px-[24px] py-[12px]  hover:bg-[#262626]   hover:text-white transition duration-300     cursor-pointer ">
+              {content.button2text}
+            </button>
+          </div>
+
 
           <div className="">
             <Image

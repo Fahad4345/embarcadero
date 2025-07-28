@@ -325,7 +325,7 @@ export default function Home() {
               " sm:hidden md:hidden lg:hidden absolute  lg:top-4 lg:left-[-100px] xl:top-8 xl:left-[-92px]"
             }
           />
-          <Image src="Assets/Line.svg" width={62.47} height={108.1} alt={""}  className="absolute xl:top-[33px] xl:left-[320px] lg:top-[18px] lg:left-[70px] sm: hidden md:hidden lg:flex"  />
+          <Image src="Assets/Line.svg" width={62.47} height={108.1} alt={""} className="absolute xl:top-[33px] xl:left-[320px] lg:top-[18px] lg:left-[70px] sm: hidden md:hidden lg:flex" />
           <div className="absolute box-border w-[906px] h-[906px] lg:hidden xl:hidden sm:flex md:flex md:left-[-250px] md:top-[150px] sm:left-[-520px] sm:top-[-100px]  bg-cyan-500 opacity-10 border border-white [filter:blur(250px)]"></div>
         </div>
         <div className=" flex relative  mx-auto  justify-center ">

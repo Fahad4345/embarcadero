@@ -74,7 +74,7 @@ export default function Card() {
         <ul className=" flex flex-col gap-[24px]">
           <li className="flex   items-center gap-[16px]">
             <input
-            id="1"
+              id="1"
               className="w-[12px] h-[12px] border-none  appearance-none
     rounded-full
     bg-[#D4D4D4]
@@ -87,20 +87,19 @@ export default function Card() {
               onChange={handleOptionChange}
             />
             <label
-            htmlFor="1"
-            
-              onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
-                selectedOption === "option1" ? "font-[600]" : "font-[300]"
-              }`}
+              htmlFor="1"
+
+              onClick={() => handleOptionChange}
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${selectedOption === "option1" ? "font-[600]" : "font-[300]"
+                }`}
             >
               Rad Studio
             </label>
           </li>
           <li className="flex items-center gap-[16px]">
-        
+
             <input
-            id="2"
+              id="2"
               className="w-[12px] h-[12px] border-none cursor-pointer  appearance-none
     rounded-full
     bg-[#D4D4D4]
@@ -112,17 +111,16 @@ export default function Card() {
             />
             <label
               htmlFor="2"
-              onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
-                selectedOption === "option2" ? "font-[600]" : "font-[300]"
-              }`}
+              onClick={() => handleOptionChange}
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${selectedOption === "option2" ? "font-[600]" : "font-[300]"
+                }`}
             >
               Delphi
             </label>
           </li>
           <li className="flex items-center gap-[16px]">
             <input
-            id="3"
+              id="3"
               className="w-[12px] h-[12px] border-none cursor-pointer  appearance-none
     rounded-full
     bg-[#D4D4D4]
@@ -134,18 +132,17 @@ export default function Card() {
             />
             <label
               htmlFor="3"
-               
-              onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
-                selectedOption === "option3" ? "font-[600]" : "font-[300]"
-              }`}
+
+              onClick={() => handleOptionChange}
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${selectedOption === "option3" ? "font-[600]" : "font-[300]"
+                }`}
             >
               C++ Builder
             </label>
           </li>
           <li className="flex items-center gap-[16px]">
             <input
-             id="4"
+              id="4"
               className="w-[12px] h-[12px] border-none cursor-pointer  appearance-none
     rounded-full
     bg-[#D4D4D4]
@@ -157,11 +154,10 @@ export default function Card() {
             />
             <label
               htmlFor="4"
-             
-              onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
-                selectedOption === "option4" ? "font-[600]" : "font-[300]"
-              }`}
+
+              onClick={() => handleOptionChange}
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${selectedOption === "option4" ? "font-[600]" : "font-[300]"
+                }`}
             >
 
 
@@ -173,7 +169,7 @@ export default function Card() {
           </li>
           <li className="flex items-center gap-[16px]">
             <input
-            id="5"
+              id="5"
               className="w-[12px] h-[12px] border-none cursor-pointer  appearance-none
     rounded-full
     bg-[#D4D4D4]
@@ -185,21 +181,20 @@ export default function Card() {
             />
             <label
               htmlFor="5"
-              
-              onClick={()=>handleOptionChange}
-              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${
-                selectedOption === "option5" ? "font-[600]" : "font-[300]"
-              }`}
+
+              onClick={() => handleOptionChange}
+              className={`text-[#525252]  Tracking-[-1px]  font-[Archivo] text-[20px] leading-[120%] cursor-pointer ${selectedOption === "option5" ? "font-[600]" : "font-[300]"
+                }`}
             >
               RadServer
             </label>
           </li>
         </ul>
-       
+
       </div>
 
       <Innercard
-        
+
         text={textContent[selectedOption]?.text ?? "Not Available"}
         Head_span={textContent[selectedOption]?.heading_span ?? "Not Available"}
         Head_version={
@@ -214,7 +209,7 @@ export default function Card() {
           textContent[selectedOption]?.button2text ?? "Not available"
         }
       />
-      
+
     </div>
   );
 }

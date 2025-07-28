@@ -5,7 +5,7 @@ import React from "react";
 export default function Icons({
   className,
   IconPath,
-  
+
 }: {
   IconPath: string;
   className?: string;
@@ -13,7 +13,7 @@ export default function Icons({
   height?: number;
 }) {
   return (
-    <img src={IconPath} alt=""  className={className}/>
-  
+    <img src={IconPath} alt="" className={className} />
+
   );
 }
